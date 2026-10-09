@@ -110,8 +110,8 @@ title: Home
 
         .Griglia-Accessi-Inferiore {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 30px;
             align-items: flex-start;
             width: 100%;
         }
@@ -246,6 +246,7 @@ title: Home
 
             <div class="Griglia-Accessi-Inferiore">
                 
+                <!-- 1. TRADUZIONE RAPIDA -->
                 <div class="Colonna-Pannello-Accesso">
                     <div class="Categoria-Pulsanti-Titolo" id="cat-traduzione">Traduzione Rapida</div>
                     <div class="Gruppo-Bottoni">
@@ -266,6 +267,7 @@ title: Home
                     </div>
                 </div>
 
+                <!-- 2. CONSULTAZIONE GLOSSARIO -->
                 <div class="Colonna-Pannello-Accesso">
                     <div class="Categoria-Pulsanti-Titolo" id="cat-glossario">Consultazione Glossario</div>
                     <div class="Gruppo-Bottoni">
@@ -286,14 +288,22 @@ title: Home
                     </div>
                 </div>
 
-                <div class="Colonna-Pannello-Accesso" style="background-color: #e8f9f7; border-color: #cbd5e1;">
-                    <div class="Categoria-Pulsanti-Titolo" id="cat-peer" style="color: #1a365d; border-left-color: #1a365d;">Validazione Peer</div>
+                <!-- 3. GRAFO 3D ONTOLOGICO (FOCUS) -->
+                <div class="Colonna-Pannello-Accesso" style="background-color: rgba(168, 85, 247, 0.04); border-color: rgba(168, 85, 247, 0.3);">
+                    <div class="Categoria-Pulsanti-Titolo" id="cat-3d" style="color: #7c3aed; border-left-color: #7c3aed;">Esplorazione Immersiva</div>
                     <div class="Gruppo-Bottoni">
-                        <a href="/glossariobalbisenarega/contatti/" class="Card-Ingresso" style="border-color: #1a365d; height: 100%; align-items: center; justify-content: center; min-height: 140px;">
-                            <div class="Testi-Bottone" style="text-align: center; align-items: center;">
-                                <span style="font-size: 2em; margin-bottom: 5px;">💬</span>
+                        <a href="{{ '/sfera.html' | relative_url }}" class="Card-Ingresso" style="border-color: rgba(168, 85, 247, 0.4); background: #ffffff;">
+                            <span style="font-size: 1.8em; flex-shrink: 0;">🌐</span>
+                            <div class="Testi-Bottone">
+                                <span class="Titolo-Bottone" id="btn-3d-title" style="color: #7c3aed;">Grafo 3D (Focus)</span>
+                                <span class="Sottotitolo-Bottone" id="btn-3d-sub" style="color: #4a5568;">Visualizzazione olografica interattiva dell'ontologia</span>
+                            </div>
+                        </a>
+                        <a href="/glossariobalbisenarega/contatti/" class="Card-Ingresso" style="border-color: #cbd5e1;">
+                            <span style="font-size: 1.8em; flex-shrink: 0;">💬</span>
+                            <div class="Testi-Bottone">
                                 <span class="Titolo-Bottone" id="btn-feed-title" style="color: #1a365d;">Revisione & Suggerimenti</span>
-                                <span class="Sottotitolo-Bottone" id="btn-feed-sub" style="color: #4a5568; text-align: center;">Invia proposte terminologiche o segnala refusi della ricerca</span>
+                                <span class="Sottotitolo-Bottone" id="btn-feed-sub" style="color: #4a5568;">Invia proposte o segnala refusi</span>
                             </div>
                         </a>
                     </div>
@@ -315,7 +325,7 @@ title: Home
                 introduzione: "Benvenuti nel repertorio terminologico digitale dedicato alla descrizione architettonica e artistica del sistema dei Palazzi dei Rolli di Genova di proprietà dell'Ateneo. Questo progetto di ricerca si propone di migliorare l'accessibilità culturale del patrimonio architettonico universitario attraverso l'implementazione di schede terminologiche basate sul modello teorico e metodologico utilizzato presso il Centro di Ricerca in Terminologia Multilingue (CeRTeM) dell'Università di Genova, consentendo al contempo una profonda valorizzazione del patrimonio culturale storico della città.",
                 catTraduzione: "Traduzione Rapida",
                 catGlossario: "Consultazione Glossario",
-                catPeer: "Validazione Peer",
+                cat3D: "Esplorazione Immersiva",
                 btnItInterfaccia: "Interfaccia Italiana",
                 btnItSub: "Navigazione tridimensionale sincrona",
                 btnFrInterfaccia: "Interface Française",
@@ -324,8 +334,10 @@ title: Home
                 btnGloItSub: "Ricerca alfabetica tradizionale",
                 btnGloFr: "Glossaire Français",
                 btnGloFrSub: "Recherche alphabétique par filtres",
+                btn3DTitle: "Grafo 3D (Focus)",
+                btn3DSub: "Visualizzazione olografica interattiva dell'ontologia",
                 btnFeedTitle: "Revisione & Suggerimenti",
-                btnFeedSub: "Invia proposte terminologiche o segnala refusi della ricerca",
+                btnFeedSub: "Invia proposte o segnala refusi",
                 footer: `
                     <div style="display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap;">
                         <div style="flex: 2; min-width: 280px;">
@@ -349,7 +361,7 @@ title: Home
                 introduzione: "Bienvenue dans le répertoire terminologique numérique dédié à la description architecturale et artistique du système des Palais des Rolli di Gênes appartenant à l'Université. Ce projet de recherche vise à améliorer l'accessibilité culturelle du patrimoine architectural universitaire à travers la mise en œuvre de fiches terminologiques basées sur le modèle théorique et méthodologique utilisé au Centre de Recherche en Terminologie Multilingue (CeRTeM) de l'Université de Gênes, permettant en même temps une valorisation profonde du patrimoine culturel historique de la ville.",
                 catTraduzione: "Traduction Rapide",
                 catGlossario: "Consultation du Glossaire",
-                catPeer: "Évaluation par les Pairs",
+                cat3D: "Exploration Immersive",
                 btnItInterfaccia: "Interface Italienne",
                 btnItSub: "Navigation tridimensionnelle synchrone",
                 btnFrInterfaccia: "Interface Française",
@@ -358,13 +370,15 @@ title: Home
                 btnGloItSub: "Recherche alphabétique traditionnelle",
                 btnGloFr: "Glossaire Français",
                 btnGloFrSub: "Recherche alphabétique par filtres",
+                btn3DTitle: "Graphe 3D (Focus)",
+                btn3DSub: "Visualisation holographique interactive de l'ontologie",
                 btnFeedTitle: "Commentaires & Suggestions",
-                btnFeedSub: "Envoyez des propositions terminologiques ou signalez des coquilles",
+                btnFeedSub: "Envoyez des propositions ou signalez des coquilles",
                 footer: `
                     <div style="display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap;">
                         <div style="flex: 2; min-width: 280px;">
                             <strong style="color: #1a365d; display: block; margin-bottom: 5px;">Glossaire Terminologique du Palais Balbi Senarega</strong>
-                            <p style="margin: 0;">Projet de ricerca doctorale en <em>Digital Humanities</em> développé au sein du <strong>Centre de Recherche en Terminologie Multilingue (CeRTeM)</strong>, Département de Langues et Cultures Modernes, Université des Études de Gênes.</p>
+                            <p style="margin: 0;">Projet de recherche doctorale en <em>Digital Humanities</em> développé au sein du <strong>Centre de Recherche en Terminologie Multilingue (CeRTeM)</strong>, Département de Langues et Cultures Modernes, Université des Études de Gênes.</p>
                         </div>
                         <div style="flex: 1; min-width: 200px;">
                             <strong style="color: #1a365d; display: block; margin-bottom: 5px;">Contacts et Retours</strong>
@@ -384,8 +398,8 @@ title: Home
             document.getElementById('txt-titolo').innerText = translations[lang].titolo;
             document.getElementById('txt-introduzione').innerText = translations[lang].introduzione;
             document.getElementById('cat-traduzione').innerText = translations[lang].catTraduzione;
-            document.getElementById('cat-glossario').innerText = translations[lang].catGlossario; // Corretto qui!
-            document.getElementById('cat-peer').innerText = translations[lang].catPeer;
+            document.getElementById('cat-glossario').innerText = translations[lang].catGlossario;
+            document.getElementById('cat-3d').innerText = translations[lang].cat3D;
             document.getElementById('btn-it-interfaccia').innerText = translations[lang].btnItInterfaccia;
             document.getElementById('btn-it-sub').innerText = translations[lang].btnItSub;
             document.getElementById('btn-fr-interfaccia').innerText = translations[lang].btnFrInterfaccia;
@@ -394,6 +408,8 @@ title: Home
             document.getElementById('btn-glo-it-sub').innerText = translations[lang].btnGloItSub;
             document.getElementById('btn-glo-fr').innerText = translations[lang].btnGloFr;
             document.getElementById('btn-glo-fr-sub').innerText = translations[lang].btnGloFrSub;
+            document.getElementById('btn-3d-title').innerText = translations[lang].btn3DTitle;
+            document.getElementById('btn-3d-sub').innerText = translations[lang].btn3DSub;
             document.getElementById('btn-feed-title').innerText = translations[lang].btnFeedTitle;
             document.getElementById('btn-feed-sub').innerText = translations[lang].btnFeedSub;
             document.getElementById('footer-portale').innerHTML = translations[lang].footer;

@@ -1,0 +1,5866 @@
+{
+  "nodes": [
+    {
+      "id": "Abside",
+      "label": "Abside",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Parte della basilica costituita da un muro semicilindrico coperto da una volta, che ha per intradosso la quarta parte di una sfera, e che articola il perimetro murario determinando una cavità interna e una sporgenza esterna.",
+        "fr": "Espace de plan semi-circulaire situé dans un édifice ou à l’extrémité est d’une église."
+      },
+      "urls": {
+        "it": "abside_it.html",
+        "fr": "abside_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Absidiola",
+      "label": "Absidiola",
+      "type": "concept",
+      "parentId": "Abside",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Petite abside secondaire placée à côté d’une abside.",
+        "fr": "Abside di dimensioni ridotte che, frequentemente, negli edifici di tipo basilicale fiancheggia l’abside maggiore."
+      },
+      "urls": {
+        "it": "absidiola_it.html",
+        "fr": "absidiola_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Affresco",
+      "label": "affresco",
+      "type": "concept",
+      "parentId": "Dipinto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Dipinto eseguito sopra una intonacatura di calce fresca.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "affresco_it.html",
+        "fr": "affresco_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Affresco_tec",
+      "label": "affresco",
+      "type": "concept",
+      "parentId": "Tecnica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Tecnica di pittura murale in cui i pigmenti, diluiti con acqua, vengono applicati sull’intonaco fresco a cui si incorporano sfruttando il processo chimico della carbonatazione della calce contenuta nell’intonaco.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "affresco_tec_it.html",
+        "fr": "affresco_tec_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Agente",
+      "label": "Agente",
+      "type": "concept",
+      "parentId": "Persona",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "agente_it.html",
+        "fr": "agente_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Aggetto",
+      "label": "Aggetto",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Caratteristica per cui un elemento architettonico risulta sporgente rispetto alle parti della struttura adiacenti.",
+        "fr": "Position d'une construction (balcon, corniche, tourelle) en saillie sur un mur, soutenue par des corbeaux, des consoles."
+      },
+      "urls": {
+        "it": "aggetto_it.html",
+        "fr": "aggetto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Aiuola",
+      "label": "Aiuola",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Superficie di terreno delimitata e destinata generalmente a colture decorative per il disegno ornamentale del giardino, tipo di sistemazione agricola del terreno adatta per i terreni argillosi.",
+        "fr": "Partie découverte d'un jardin, régulièrement divisée en compartiments et plates-bandes garnies de fleurs."
+      },
+      "urls": {
+        "it": "aiuola_it.html",
+        "fr": "aiuola_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Ala",
+      "label": "Ala",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Corpo laterale che può avere o non il suo equivalente simmetrico rispetto al centro.",
+        "fr": "Partie latérale d'un bâtiment jointe au corps principal soit à angle droit, soit dans toute autre direction."
+      },
+      "urls": {
+        "it": "ala_it.html",
+        "fr": "ala_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Alcova",
+      "label": "Alcova",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "alcova_it.html",
+        "fr": "alcova_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Allegoria",
+      "label": "allehoria",
+      "type": "concept",
+      "parentId": "Significato",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Figurazione pittorica o plastica di un concetto astratto.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "allegoria_it.html",
+        "fr": "allegoria_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Altana",
+      "label": "Altana",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico che si eleva al disopra dei tetti a falda.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "altana_it.html",
+        "fr": "altana_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Altare",
+      "label": "Altare",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Endroit le plus sacré de l’église, où l’on célèbre l’Eucharistie."
+      },
+      "urls": {
+        "it": "altare_it.html",
+        "fr": "altare_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Anticamera",
+      "label": "Anticamera",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica o ambiente di sosta, che introduce a una o più stanze adiacenti.",
+        "fr": "Pièce d'entrée qui donne accès aux autres pièces et qui sert d’attente à l’entrée d’un hôtel particulier où se tiennent les domestiques chargés de recevoir et d'introduire les visiteurs."
+      },
+      "urls": {
+        "it": "anticamera_it.html",
+        "fr": "anticamera_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Apertura",
+      "label": "Apertura",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Il solo foro nella struttura muraria definito da forma, materiali ed elementi tecnologici propri.",
+        "fr": "Vide, baie ménagée dans un mur ou percée dans une voûte."
+      },
+      "urls": {
+        "it": "apertura_it.html",
+        "fr": "apertura_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Aranceto",
+      "label": "Aranceto",
+      "type": "concept",
+      "parentId": "Giardino",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Terreno piantato ad aranci.",
+        "fr": "Verger d'orangers cultivés en pleine terre."
+      },
+      "urls": {
+        "it": "aranceto_it.html",
+        "fr": "aranceto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Arcata",
+      "label": "Arcata",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica composta da una successione di archi.",
+        "fr": "Succession d’arcs."
+      },
+      "urls": {
+        "it": "arcata_it.html",
+        "fr": "arcata_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Architetto",
+      "label": "Architetto",
+      "type": "concept",
+      "parentId": "Progettista",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "architetto_it.html",
+        "fr": "architetto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Architettura",
+      "label": "Architettura",
+      "type": "root",
+      "parentId": null,
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "architettura_it.html",
+        "fr": "architettura_fr.html"
+      },
+      "distance": 0
+    },
+    {
+      "id": "Architrave",
+      "label": "Architrave",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento costruttivo che, disposto orizzontalmente su di un vano vuoto della muratura o su dei supporti verticali “puntiformi”, sostiene il peso delle parti sovrastanti trasferendone i carichi sulle spalle.",
+        "fr": "Partie inférieure de l'entablement qui porte directement sur les chapiteaux des colonnes ou des pilastres."
+      },
+      "urls": {
+        "it": "architrave_it.html",
+        "fr": "architrave_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Archivolto",
+      "label": "Archivolto",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Architrave che s’incurva ad incorniciare un arco, intagliato sul lato anteriore dei conci che formano l’arco stesso.",
+        "fr": "Élément architectural correspondant à une moulure, décoration supérieure sur un arc de portail ou sur une simple baie."
+      },
+      "urls": {
+        "it": "archivolto_it.html",
+        "fr": "archivolto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Arco",
+      "label": "Arco",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica curvilinea spingente vincolata in due punti.",
+        "fr": "Structure de maçonnerie de forme courbe."
+      },
+      "urls": {
+        "it": "arco_it.html",
+        "fr": "arco_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Arco_ribassato",
+      "label": "Arco ribassato",
+      "type": "concept",
+      "parentId": "Arco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Arco il cui intradosso raggiunge una freccia massima inferiore alla meta della luce.",
+        "fr": "Arc dont la flèche est inférieure à la moitié de sa portée"
+      },
+      "urls": {
+        "it": "arco_ribassato_it.html",
+        "fr": "arco_ribassato_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Argento",
+      "label": "argento",
+      "type": "concept",
+      "parentId": "Materiale",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Metallo di transizione bianco lucido, malleabile, resistente alla corrosione e all'umidità e con elevata stabilità chimica.",
+        "fr": "Métal blanc, brillant, malléable et à l’état trace dans la croute terrestre."
+      },
+      "urls": {
+        "it": "argento_it.html",
+        "fr": "argento_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Arredo",
+      "label": "Arredo",
+      "type": "concept",
+      "parentId": "Arte",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Suppellettile o complesso di oggetti che servono a completare l’addobbo di un appartamento o di una stanza, di un locale pubblico.",
+        "fr": "Ensemble des meubles destinés à l’usage personnel et à l’aménagement d’une habitation."
+      },
+      "urls": {
+        "it": "arredo_it.html",
+        "fr": "arredo_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Arte",
+      "label": "Arte",
+      "type": "root",
+      "parentId": null,
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "arte_it.html",
+        "fr": "arte_fr.html"
+      },
+      "distance": 0
+    },
+    {
+      "id": "Artista",
+      "label": "artista",
+      "type": "concept",
+      "parentId": "Agente",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Persona che produce qualcosa che non esisteva prima, e che induce l’ascoltatore e lo spettatore a credere nella sua creazione.",
+        "fr": "Personne qui exerce professionnellement un des Beaux-Arts ou, à un niveau supérieur à celui de l’artisanat, un des Arts Appliqués."
+      },
+      "urls": {
+        "it": "artista_it.html",
+        "fr": "artista_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Atrio",
+      "label": "Atrio",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura corrispondente all’ingresso di diversi edifici.",
+        "fr": "Grand espace souvent ouvert, sur plusieurs étages en hauteur avec un toit vitré ou des grandes fenêtres et généralement situés immédiatement au-delà des principales portes d'entrée."
+      },
+      "urls": {
+        "it": "atrio_it.html",
+        "fr": "atrio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Aula",
+      "label": "Aula",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica o ambiente, spesso di dimensioni rilevanti, destinato a riunioni, congressi, ecc. e quindi attrezzato per ospitare convenientemente un certo numero di persone.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "aula_it.html",
+        "fr": "aula_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Aula_Magna",
+      "label": "Aula Magna",
+      "type": "concept",
+      "parentId": "Aula",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Ambiente o spazio istituzionalmente più importante delle Università.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "aula_magna_it.html",
+        "fr": "aula_magna_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Avancorpo",
+      "label": "Avancorpo",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura corrispondente alla] parte secondaria di un edificio, sporgente in avanti rispetto a un nucleo volumetrico fondamentale.",
+        "fr": "Éléments d’une construction se trouvant en avant de la ligne de la façade."
+      },
+      "urls": {
+        "it": "avancorpo_it.html",
+        "fr": "avancorpo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Balaustra",
+      "label": "Balaustra",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico corrispondente a un tipo di parapetto costituito da elementi verticali detti balaustri, che generalmente poggiano su un basamento e sono sormontati da un architrave.",
+        "fr": "Balustres alignés en rang et recouverts d’une tablette qui les unit."
+      },
+      "urls": {
+        "it": "balaustra_it.html",
+        "fr": "balaustra_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Balaustro",
+      "label": "Balaustro",
+      "type": "concept",
+      "parentId": "Colonna",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Colonnina a sezione rotonda o rettangolare, variamente profilata, appoggiata su uno zoccolo e portante una cimasa come davanzale.",
+        "fr": "Élément architectural correspondant à une colonnette de forme renflée, généralement assemblée à d'autres colonnettes par une tablette à hauteur d'appui."
+      },
+      "urls": {
+        "it": "balaustro_it.html",
+        "fr": "balaustro_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Balcone",
+      "label": "Balcone",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura [architettonica] piana a sbalzo sporgente dalla facciata di un edificio in corrispondenza degli orizzontamenti per costituire uno spazio praticabile esterno.",
+        "fr": "Plate-forme en saillie de la façade, limitée vers l’extérieur par un ouvrage vertical formant un garde-corps."
+      },
+      "urls": {
+        "it": "balcone_it.html",
+        "fr": "balcone_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Ballatoio",
+      "label": "ballatoio",
+      "type": "concept",
+      "parentId": "Galleria",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Galleria o terrazzo a sbalzo, usato come disimpegno in vari tipi di edifici.",
+        "fr": "Galerie de circulation (extérieure, en façade) ou couloir (intérieur) desservant plusieurs logements ou locaux."
+      },
+      "urls": {
+        "it": "ballatoio_it.html",
+        "fr": "ballatoio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Basamento",
+      "label": "Basamento",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico costituito da un blocco, con i lati spesso incorniciati da modanature, ed eventualmente con decorazione, talvolta anche figurata, che sostiene una struttura o un altro elemento.",
+        "fr": "Le soubassement est la partie de la façade immédiatement en contact avec le sol naturel ou la cour ou la chaussée."
+      },
+      "urls": {
+        "it": "basamento_it.html",
+        "fr": "basamento_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Basamento_della_colonna",
+      "label": "Basamento",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico posto al di sotto della colonna e della sua base, è costituito da un parallelepipedo, detto dado, appoggiato su modanature e coronato da una cornice sporgente.",
+        "fr": "Partie opposée au chapiteau, et qui varie de forme et d'ornement suivant que l'on emploie l'ordre toscan, l'ordre dorique, l'ordre ionique ou l'ordre corinthien."
+      },
+      "urls": {
+        "it": "basamento_della_colonna_it.html",
+        "fr": "basamento_della_colonna_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Basilica",
+      "label": "Basilica",
+      "type": "concept",
+      "parentId": "Chiesa_ed",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Chiesa a cui sono stati concessi privilegi speciali dal Papa.",
+        "fr": "Église consacrée par le pape en raison d’une importance particulière, généralement parce qu’elle abrite une relique ou qu’elle a été édifiée sur le lieu où un saint a vécu."
+      },
+      "urls": {
+        "it": "basilica_it.html",
+        "fr": "basilica_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Biblioteca",
+      "label": "Biblioteca",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura intesa come deposito, edificio o ambiente in cui si conservano libri e scritti vari a scopo di cultura e divulgazione.",
+        "fr": "Lieu où sont entreposés les livres, pour en permettre implicitement la consultation."
+      },
+      "urls": {
+        "it": "biblioteca_it.html",
+        "fr": "biblioteca_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Bordura",
+      "label": "Bordura",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "bordura_it.html",
+        "fr": "bordura_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Bucatura",
+      "label": "Bucatura",
+      "type": "concept",
+      "parentId": "Apertura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Una qualunque apertura considerata solo sotto l’aspetto degli effetti chiaroscurali.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "bucatura_it.html",
+        "fr": "bucatura_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Caminetto",
+      "label": "Caminetto",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "[Elemento architettonico corrispondente a un] camino di limitate dimensioni, con focolare interamente alloggiato nello spessore del muro o pochissimo sporgente e cappa interna, ridotta a un aumento della sezione della canna fumaria.",
+        "fr": "Espace spécialement aménagé pour y faire du feu."
+      },
+      "urls": {
+        "it": "caminetto_it.html",
+        "fr": "caminetto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Camino",
+      "label": "Camino",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Strumento utilizzato per il confinamento del fuoco domestico al fine di realizzare tutte le attività legate al fuoco.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "camino_it.html",
+        "fr": "camino_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Campanile",
+      "label": "Campanile",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "campanile_it.html",
+        "fr": "campanile_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Campata",
+      "label": "Campata",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico corrispondente al tratto compreso tra due successivi elementi portanti, cavalletti, colonne, pilastri, spalle di ponte, posti a sostegno di trave o arco.",
+        "fr": "Espace entre deux arcs."
+      },
+      "urls": {
+        "it": "campata_it.html",
+        "fr": "campata_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Cancellata",
+      "label": "Cancellata",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Chiusura costituita da elementi in legno o metallo collegati in vario modo e fissati al terreno direttamente o mediante un supporto.",
+        "fr": "Enceinte (mur, haie, grillage...) qui clôt un terrain ou une partie d’un terrain."
+      },
+      "urls": {
+        "it": "cancellata_it.html",
+        "fr": "cancellata_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Capitello",
+      "label": "Capitello",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Membratura superiore del piedritto (colonna, pilastro, parasta, anta) posta a raccordare il fusto con la struttura sovrastante (architrave, arco).",
+        "fr": "Élément architectural et ornemental de forme évasée qui surmonte une colonne et lui transmet les charges qu’elle supporte."
+      },
+      "urls": {
+        "it": "capitello_it.html",
+        "fr": "capitello_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Caposcala",
+      "label": "Caposcala",
+      "type": "concept",
+      "parentId": "Pianerottolo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico costituito dal pianerottolo che sta in capo a una scala.",
+        "fr": "Dernière marche d'un escalier ou d'une volée d'escalier, dont la face supérieure se situe au même niveau que le plancher ou le palier."
+      },
+      "urls": {
+        "it": "caposcala_it.html",
+        "fr": "caposcala_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Cappella",
+      "label": "Cappella",
+      "type": "concept",
+      "parentId": "Edificio_di_culto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Edificio di culto adibito a destinazioni diverse, di piccole dimensioni, isolato o inserito in un organismo architettonico maggiore, quale una chiesa.",
+        "fr": "Édifice religieux et lieu de culte chrétien qui peut, selon le cas, constituer un édifice distinct ou être intégré dans un autre bâtiment."
+      },
+      "urls": {
+        "it": "cappella_it.html",
+        "fr": "cappella_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Capriata",
+      "label": "capriata",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura composta da una travatura reticolare disposta in piani verticali e costituita da diversi elementi collegati tra loro mediante vincoli assimilabili a cerniere, in modo da formare un sistema indeformabile.",
+        "fr": "Assemblage de pièces de bois, de bois et fer ou de fer, destiné à supporter la couverture d’un édifice quand les murs pignons sont trop écartés pour soutenir les pannes et le faîtage d’un comble."
+      },
+      "urls": {
+        "it": "capriata_it.html",
+        "fr": "capriata_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Carruggio",
+      "label": "carruggio",
+      "type": "concept",
+      "parentId": "Strada",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Vicolo stretto, tipico delle cittadine liguri.",
+        "fr": "Ruelle étroite du centre historique de Gênes."
+      },
+      "urls": {
+        "it": "carruggio_it.html",
+        "fr": "carruggio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Cartiglio",
+      "label": "cartiglio",
+      "type": "concept",
+      "parentId": "Elemento_decorativo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Raffigurazione, per lo più dipinta o scolpita, di un rotolo cartaceo, in parte spiegato, spesso contenente un’iscrizione, ma talora destinato a puro scopo ornamentale.",
+        "fr": "Ornement en forme de carte aux bords enroulés dont le champ porte des armoiries, une inscription."
+      },
+      "urls": {
+        "it": "cartiglio_it.html",
+        "fr": "cartiglio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Cavedio",
+      "label": "cavedio",
+      "type": "concept",
+      "parentId": "Cortile",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Cortile interno di dimensioni minime destinato solo all’illuminazione di passaggi o ambienti di servizio.",
+        "fr": "Petite cour intérieure."
+      },
+      "urls": {
+        "it": "cavedio_it.html",
+        "fr": "cavedio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Chiesa",
+      "label": "Chiesa",
+      "type": "concept",
+      "parentId": "Organismo_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Organismo architettonico in cui ogni singola parte è legata a precise funzioni liturgiche e simboliche.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "chiesa_it.html",
+        "fr": "chiesa_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Chiesa_ed",
+      "label": "Chiesa",
+      "type": "concept",
+      "parentId": "Edificio_di_culto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Edificio sacro destinato al culto divino, ove i fedeli abbiano il diritto di entrare per esercitare soprattutto pubblicamente tale culto.",
+        "fr": "Édifice cultuel catholique (ou orthodoxe) qui possède un rôle paroissial."
+      },
+      "urls": {
+        "it": "chiesa_ed_it.html",
+        "fr": "chiesa_ed_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Chiostro",
+      "label": "chiostro",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura o ambiente di passaggio posto solita- mente tra la chiesa e il resto dell’organismo e formato da un cortile cinto da porticati, intorno al quale gravitano i vari ambienti destinati alla vita comunitaria.",
+        "fr": "Jardin intérieur, entouré d’une galerie couverte et fermée en quadrilatère."
+      },
+      "urls": {
+        "it": "chiostro_it.html",
+        "fr": "chiostro_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Collegio",
+      "label": "Collegio",
+      "type": "concept",
+      "parentId": "Edificio",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Edificio che contiene un istituto statale o privato di istruzione o di educazione, avente propri caratteri e proprie funzioni.",
+        "fr": "Établissement d’enseignement privé où les élèves sont nourris et logés ; par métonymie, l’ensemble des élèves de cet établissement."
+      },
+      "urls": {
+        "it": "collegio_it.html",
+        "fr": "collegio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Collezione",
+      "label": "collezione",
+      "type": "concept",
+      "parentId": "Arte",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Insieme di oggetti collegati da qualche denominatore comune per il quale acquistano agli occhi di chi li raccoglie un particolare interesse, anche puramente soggettivo.",
+        "fr": "Réunion d'objets choisis pour leur beauté, leur rareté, leur valeur documentaire ou leur prix."
+      },
+      "urls": {
+        "it": "collezione_it.html",
+        "fr": "collezione_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Colonna",
+      "label": "Colonna",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico verticale di sostegno a sezione circolare variabile.",
+        "fr": "Une colonne est un élément vertical qui supporte également la charge d'un bâtiment ou d'une structure."
+      },
+      "urls": {
+        "it": "colonna_it.html",
+        "fr": "colonna_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Colonna_binata",
+      "label": "Colonna binata",
+      "type": "concept",
+      "parentId": "Colonna",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Colonna giustapposta a un’altra, entrambe poggianti spesso su un medesimo plinto e sormontate talvolta da un capitello unico.",
+        "fr": "Colonnes placées deux par deux sous le même tailloir parallèlement à la façade."
+      },
+      "urls": {
+        "it": "colonna_binata_it.html",
+        "fr": "colonna_binata_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Colonna_dorica",
+      "label": "Colonna dorica",
+      "type": "concept",
+      "parentId": "Colonna",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Colonna dorica",
+        "fr": "Colonne cannelée à arêtes vives, sans base, un chapiteau à échine nue et un entablement à triglyphes et métopes alternés."
+      },
+      "urls": {
+        "it": "colonna_dorica_it.html",
+        "fr": "colonna_dorica_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Colonna_pensile",
+      "label": "Colonna pensile",
+      "type": "concept",
+      "parentId": "Colonna",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Colonna addossata alla parete e poggiante su mensola, con funzione non più di sostegno ma decorativa.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "colonna_pensile_it.html",
+        "fr": "colonna_pensile_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Colonna_tortile",
+      "label": "Colonna tortile",
+      "type": "concept",
+      "parentId": "Colonna",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Colonna il cui fusto segue una direttrice spiraliforme.",
+        "fr": "Colonne dont le fût mont en hélice."
+      },
+      "urls": {
+        "it": "colonna_tortile_it.html",
+        "fr": "colonna_tortile_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Colonnato",
+      "label": "colonnato",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica composta da una successione di colonne poste all’esterno o all’interno di un edificio.",
+        "fr": "La colonnade est une succession de colonnes, sur une ou plusieurs rangées, constitutive d’un édifice"
+      },
+      "urls": {
+        "it": "colonnato_it.html",
+        "fr": "colonnato_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Committenti",
+      "label": "Committenti",
+      "type": "concept",
+      "parentId": "Persona",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "committenti_it.html",
+        "fr": "committenti_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Complesso_architettonico",
+      "label": "Complesso architettonico",
+      "type": "concept",
+      "parentId": "Architettura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Gruppo omogeneo di costruzioni urbane o rurali notevoli per il loro interesse storico, artistico, scientifico, sociale o tecnico e sufficientemente coerenti per formare oggetto di una delimitazione geografica.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "complesso_architettonico_it.html",
+        "fr": "complesso_architettonico_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Controfacciata",
+      "label": "Controfacciata",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Parete interna corrispondente alla facciata anteriore.",
+        "fr": "La partie intérieure des murs extérieurs."
+      },
+      "urls": {
+        "it": "controfacciata_it.html",
+        "fr": "controfacciata_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Copertura",
+      "label": "Copertura",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L’insieme delle strutture e degli elementi portanti o semplicemente di protezione destinati a formare la chiusura superiore di un tetto.",
+        "fr": "Revêtement appliqué sur le comble d’un bâtiment dont il forme la toiture."
+      },
+      "urls": {
+        "it": "copertura_it.html",
+        "fr": "copertura_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Corallo",
+      "label": "Corallo",
+      "type": "concept",
+      "parentId": "Materiale",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Materiale gemmifero di origine organica.",
+        "fr": "Sécrétion marine, pierreuse et calcaire, de certains polypes, qui a la forme d'un arbuste plus ou moins rameux, et d'une extrême dureté."
+      },
+      "urls": {
+        "it": "corallo_it.html",
+        "fr": "corallo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Cornice",
+      "label": "cornice",
+      "type": "concept",
+      "parentId": "Elemento_decorativo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Intelaiatura di legno o altro materiale, variamente sagomata o decorata, posta intorno a quadri, specchi, fotografie.",
+        "fr": "Bordure qui entoure et délimite physiquement le tableau."
+      },
+      "urls": {
+        "it": "cornice_it.html",
+        "fr": "cornice_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Cornicione",
+      "label": "Cornicione",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico formato da una cornice di grandi dimensioni posta di solito a coronamento di un edificio.",
+        "fr": "Élément horizontal en léger relief qui contribue à l’organisation de la façade"
+      },
+      "urls": {
+        "it": "cornicione_it.html",
+        "fr": "cornicione_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Coro",
+      "label": "coro",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Luogo della chiesa in cui si radunavano i cantori.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "coro_it.html",
+        "fr": "coro_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Coronamento",
+      "label": "Coronamento",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico costituente la parte terminale o soprastruttura che conclude architettonicamente un edificio o una sua parte.",
+        "fr": "Partie supérieure qui termine quelque ouvrage architectural."
+      },
+      "urls": {
+        "it": "coronamento_it.html",
+        "fr": "coronamento_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Corridoio",
+      "label": "corridoio",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica o ambiente che, per la particolare disposizione planimetrica e dimensionale, serve come disimpegno ad una serie di locali.",
+        "fr": "Passage qui met en communication plusieurs pièces, appartements ou immeubles, ou qui leur sert de dégagement."
+      },
+      "urls": {
+        "it": "corridoio_it.html",
+        "fr": "corridoio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Cortile",
+      "label": "cortile",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica costituita da uno spazio scoperto interamente o parzialmente delimitato dai corpi di fabbrica di un edificio e destinato, oltre che a dare aria e luce agli ambienti interni, allo svolgimento di funzioni particolari riguardanti la destinazione d’uso dell’edificio stesso.",
+        "fr": "Espace clos de murs ou de bâtiments presque toujours découvert et dépendant d’un édifice public ou privé."
+      },
+      "urls": {
+        "it": "cortile_it.html",
+        "fr": "cortile_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Cupola",
+      "label": "cupola",
+      "type": "concept",
+      "parentId": "Copertura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Copertura voltata dalla rotazione di una curva intorno a un asse verticale.",
+        "fr": "Comble, de forme généralement hémisphérique, couvrant tout ou partie d'un édifice."
+      },
+      "urls": {
+        "it": "cupola_it.html",
+        "fr": "cupola_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Decorazione",
+      "label": "Decorazione",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'insieme di ornamenti di oggetti o di elementi architettonici di edifici che hanno un ritmo di linea, o di rilievo geometrico o figurativo, o di colore.",
+        "fr": "Ensemble des ornements d'architecture, peinture, sculpture, etc., employés pour embellir un édifice, un appartement, etc."
+      },
+      "urls": {
+        "it": "decorazione_it.html",
+        "fr": "decorazione_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Dipinto",
+      "label": "dipinto",
+      "type": "concept",
+      "parentId": "Opera_pittorica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Opera di pittura di qualunque tipo.",
+        "fr": "Représentation et/ou une suggestion du monde imaginaire ou visible, sur une surface plane, à l’aide de couleurs."
+      },
+      "urls": {
+        "it": "dipinto_it.html",
+        "fr": "dipinto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Disegno",
+      "label": "disegno",
+      "type": "concept",
+      "parentId": "Rappresentazione_grafica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Rappresentazione grafica di oggetti della realtà o dell’immaginazione, di persone, di luoghi, di figure geometriche, fatta con o senza intento d’arte.",
+        "fr": "Un dessin est un ensemble de traits et de lignes qui représente une technique et un art à part entière."
+      },
+      "urls": {
+        "it": "disegno_it.html",
+        "fr": "disegno_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Drappo",
+      "label": "drappo",
+      "type": "concept",
+      "parentId": "Materiale",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Tessuto di notevole pregio e finezza.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "drappo_it.html",
+        "fr": "drappo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Edificio",
+      "label": "Edificio",
+      "type": "concept",
+      "parentId": "Architettura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Costruzione coperta, isolata da vie o da spazi vuoti, oppure separata da altre costruzioni mediante muri che si elevano senza soluzione di continuità dalle fondamenta al tetto.",
+        "fr": "Construction souterraine et/ou au-dessus du sol, ayant pour objectif d'être permanente, pour abriter des humains ou des activités humaines ; elle possède a minima un accès depuis l’extérieur et, dans la mesure du possible, un bâtiment est distinct d’un autre dès lors qu’il est impossible de circuler entre eux."
+      },
+      "urls": {
+        "it": "edificio_it.html",
+        "fr": "edificio_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Edificio_di_culto",
+      "label": "Edificio di culto",
+      "type": "concept",
+      "parentId": "Edificio",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Edificio destinato all’esercizio del culto.",
+        "fr": "Édifices affectés ou servant à l'exercice public du culte de façon exclusive et pérenne."
+      },
+      "urls": {
+        "it": "edificio_di_culto_it.html",
+        "fr": "edificio_di_culto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Elemento_architettonico",
+      "label": "Elemento architettonico",
+      "type": "concept",
+      "parentId": "Architettura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "La più piccola unità di riferimento in architettura.",
+        "fr": "Parties de l’ensemble architectural qui peuvent être trouvés par décomposition."
+      },
+      "urls": {
+        "it": "elemento_architettonico_it.html",
+        "fr": "elemento_architettonico_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Elemento_decorativo",
+      "label": "Elemento decorativo",
+      "type": "concept",
+      "parentId": "Manufatto_artistico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "elemento_decorativo_it.html",
+        "fr": "elemento_decorativo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Facciata",
+      "label": "facciata",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Strutture esterne di un edificio, corrispondenti a uno o più lati del suo perimetro.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "facciata_it.html",
+        "fr": "facciata_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Ferro",
+      "label": "ferro",
+      "type": "concept",
+      "parentId": "Materiale",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Metallo brillante, duttile, malleabile, grigio-argenteo.",
+        "fr": "Métal blanc-gris, tenace, ductile, malléable et magnétique, le plus important pour son utilisation industrielle, surtout sous forme d'alliages, d'aciers et de fontes."
+      },
+      "urls": {
+        "it": "ferro_it.html",
+        "fr": "ferro_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Ferro_battuto",
+      "label": "ferro battuto",
+      "type": "concept",
+      "parentId": "Materiale",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Lega composta da ferro e  da una percentuale inferiore allo 0,1% di carbonio.",
+        "fr": "Fer à faible taux en carbone et malléable à chaud."
+      },
+      "urls": {
+        "it": "ferro_battuto_it.html",
+        "fr": "ferro_battuto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Festone",
+      "label": "festone",
+      "type": "concept",
+      "parentId": "Elemento_decorativo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Motivo ornamentale dipinto o scolpito, composto di foglie, fiori e frutta intrecciati e legati da nastri e sospesi.",
+        "fr": "Décor figurant une guirlande de fleurs, de feuilles ou d’étoffes, pendant en forme d'arc."
+      },
+      "urls": {
+        "it": "festone_it.html",
+        "fr": "festone_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Finestra",
+      "label": "Finestra",
+      "type": "concept",
+      "parentId": "Apertura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Apertura praticata nello spessore dei muri, per consentire l’illuminazione e l’areazione dei vani interni e la visuale da questi verso l’esterno.",
+        "fr": "Baie pratiquée dans un mur pour éclairer, aérer et ventiler l’intérieur des édifices."
+      },
+      "urls": {
+        "it": "finestra_it.html",
+        "fr": "finestra_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Finestra_a_edicola",
+      "label": "Finestra a edicola",
+      "type": "concept",
+      "parentId": "Finestra",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Finestra con il vano contornato da sagome o mostre più o meno decorate, oppure da paraste o colonne sorreggenti una trabeazione architravata o timpanata.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "finestra_a_edicola_it.html",
+        "fr": "finestra_a_edicola_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Finestra_a_lunetta",
+      "label": "Finestra a lunetta",
+      "type": "concept",
+      "parentId": "Finestra",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Finestra a lunetta",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "finestra_a_lunetta_it.html",
+        "fr": "finestra_a_lunetta_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Finestra_a_nastro",
+      "label": "Finestra a nastro",
+      "type": "concept",
+      "parentId": "Finestra",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "[Finestra] tipica dell’architettura moderna, resa possibile da una struttura con pilastri arretrati che lascia libera da ingombri la parete esterna [e in cui] la dimensione longitudinale prevale su quella verticale.",
+        "fr": "Fenêtre percée sur une grande partie de la largeur de la façade et formant visuellement un bandeau."
+      },
+      "urls": {
+        "it": "finestra_a_nastro_it.html",
+        "fr": "finestra_a_nastro_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Finestra_balcone",
+      "label": "Balcone",
+      "type": "concept",
+      "parentId": "Finestra",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Finestra aperta fino al piano del pavimento con sporto e ringhiera.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "finestra_balcone_it.html",
+        "fr": "finestra_balcone_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Finestra_monofora",
+      "label": "Finestra monofora",
+      "type": "concept",
+      "parentId": "Finestra",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Finestra con vano unico ad arco, generalmente a pieno sesto, ma anche ad arco acuto o architravata",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "finestra_monofora_it.html",
+        "fr": "finestra_monofora_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Finestrone",
+      "label": "Finestrone",
+      "type": "concept",
+      "parentId": "Finestra",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Finestra di grandi dimensioni.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "finestrone_it.html",
+        "fr": "finestrone_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Fontana",
+      "label": "Fontana",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento scultoreo e architettonico con cui si modifica lo sbocco di una fonte naturale o di un impianto idrico.",
+        "fr": "Vaisseau de pierre ou de métal dans lequel on conserve l’eau."
+      },
+      "urls": {
+        "it": "fontana_it.html",
+        "fr": "fontana_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Fregio",
+      "label": "fregio",
+      "type": "concept",
+      "parentId": "Elemento_decorativo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Ornamento dipinto o scolpito su cornici o fasce.",
+        "fr": "Bandeau de faible largeur peint ou sculpté qui décore le haut d'un édifice, d'une pièce ou d'un objet quelconque."
+      },
+      "urls": {
+        "it": "fregio_it.html",
+        "fr": "fregio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Frescante",
+      "label": "frescante",
+      "type": "concept",
+      "parentId": "Artista",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Pittore di affreschi.",
+        "fr": "Peintre de fresques."
+      },
+      "urls": {
+        "it": "frescante_it.html",
+        "fr": "frescante_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Frontone",
+      "label": "Frontone",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico a forma di triangolo formato dalla trabeazione con gli spioventi del tetto, sulle facciate degli edifici (soprattutto i templi) classici e di derivazione classica.",
+        "fr": "Ornement architectural triangulaire ou en forme de segment de cercle, au-dessus d’un portail ou d’une façade."
+      },
+      "urls": {
+        "it": "frontone_it.html",
+        "fr": "frontone_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Galleria",
+      "label": "Galleria",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Pièce intérieure ou extérieure (d'un appartement, d'un bâtiment), beaucoup plus longue que large et qui sert de passage, de dégagement ou qui permet de mettre en communication plusieurs pièces d'un même étage."
+      },
+      "urls": {
+        "it": "galleria_it.html",
+        "fr": "galleria_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Giardino",
+      "label": "giardino",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Terreno coltivato senza scopo produttivo (in senso economico), nel quale l’uomo può svolgere una elevata gamma di attività a contatto con la natura: riposo, svago, gioco, passeggiata, coltivazione di piante.",
+        "fr": "Espace généralement clos, indépendant ou associé à un édifice, dans lequel l'homme organise, et contient à son échelle, des végétaux d'agrément ou d'utilité cultivés en pleine terre ou hors sol."
+      },
+      "urls": {
+        "it": "giardino_it.html",
+        "fr": "giardino_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Giardino_pensile",
+      "label": "giardino pensile",
+      "type": "concept",
+      "parentId": "Giardino",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Spazio verde che non ha diretto contatto con il suolo naturale.",
+        "fr": "Jardin disposé dans un lieu insolite et exceptionnel et dont le développement aurait été irréalisable sans des techniques humaines réfléchies."
+      },
+      "urls": {
+        "it": "giardino_pensile_it.html",
+        "fr": "giardino_pensile_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Gradino",
+      "label": "Gradino",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento costruttivo che permette di superare un dislivello corrispondente a un passo normale.",
+        "fr": "Degré d'un escalier de longueur variée, par lequel on accède à un étage supérieur ou inférieur."
+      },
+      "urls": {
+        "it": "gradino_it.html",
+        "fr": "gradino_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Gradonata",
+      "label": "gradonata",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica fissa, a inclinazione complessiva dal 12 al 25% circa, che consente di superare un dislivello mediante gradini con ampia pedata (da due o più: passi) ad acquatura rilevante (fino al 12%).",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "gradonata_it.html",
+        "fr": "gradonata_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Gradone",
+      "label": "Gradone",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento unitario che, col susseguirsi senza soluzione di continuità, forma la rampa di una gradinata o cordonata.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "gradone_it.html",
+        "fr": "gradone_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Hortus_Conclusus",
+      "label": "hortus conclusus",
+      "type": "concept",
+      "parentId": "Giardino",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Giardino circoscritto, chiuso entro una frontiera muraria.",
+        "fr": "Jardin médiéval clos."
+      },
+      "urls": {
+        "it": "hortus_conclusus_it.html",
+        "fr": "hortus_conclusus_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Iconografia",
+      "label": "iconografia",
+      "type": "concept",
+      "parentId": "Significato",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Parte dell’iconologia che si occupa dell’elencazione sistematica delle raffigurazioni relative ad un soggetto.",
+        "fr": "Ensemble des représentations d'un même sujet ou d'un même thème dans les arts visuels."
+      },
+      "urls": {
+        "it": "iconografia_it.html",
+        "fr": "iconografia_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Iconologia",
+      "label": "iconologia",
+      "type": "concept",
+      "parentId": "Significato",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Studio dei significati simbolici, allegorici, emblematici, metaforici, ideologici delle immagini.",
+        "fr": "Science relative à l’étude et à l’analyse des symboles et des modes de représentation dans les arts graphiques et plastiques."
+      },
+      "urls": {
+        "it": "iconologia_it.html",
+        "fr": "iconologia_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Incorniciatura",
+      "label": "Incorniciatura",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico o membratura aggettante da una superficie architettonica, che sporge dal vivo di un organismo strutturale o compositivo, con funzioni costruttive o per esigenze architettoniche o a scopo decorativo.",
+        "fr": "Ornementation faite de moulures entourant sur plusieurs côtés une baie de porte ou de fenêtre, un panneau, une absidiole, etc."
+      },
+      "urls": {
+        "it": "incorniciatura_it.html",
+        "fr": "incorniciatura_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Infrastruttura",
+      "label": "infrastruttura",
+      "type": "concept",
+      "parentId": "Urbanistica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Insieme di beni materiali e servizi che non entra direttamente nel processo produttivo (strade, canali, linee ferroviarie, linee elettriche e telefoniche, porti, acquedotti, fognature, opere igienico-sanitarie ecc.), ma costituisce la base dello sviluppo economico-sociale di un paese.",
+        "fr": "Ensemble des ouvrages constituant la fondation et l'implantation sur le sol d'une construction ou d'un ensemble d'installations."
+      },
+      "urls": {
+        "it": "infrastruttura_it.html",
+        "fr": "infrastruttura_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Ingresso",
+      "label": "ingresso",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento [architettonico] della distribuzione interna di un edificio, adibito a zona di filtro tra il nucleo edilizio e l’ambiente esterno.",
+        "fr": "Pièce qui se présente la première à ceux qui entrent, dans un appartement, un édifice."
+      },
+      "urls": {
+        "it": "ingresso_it.html",
+        "fr": "ingresso_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Intradosso",
+      "label": "Intradosso",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico costituente la] superficie interna di archi e volte, a partire dai piedritti.",
+        "fr": "Surface inférieure curviligne de l’arc et de la voute."
+      },
+      "urls": {
+        "it": "intradosso_it.html",
+        "fr": "intradosso_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Lampadario",
+      "label": "lampadario",
+      "type": "concept",
+      "parentId": "Arredo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Oggetto d’arredamento da appendere al soffitto, costituito da una struttura rigida che fa da supporto alle fonti di luce.",
+        "fr": "Appareil d'éclairage, de cristal, de bronze, de bois, etc., à plusieurs branches, qu'on suspend au plafond."
+      },
+      "urls": {
+        "it": "lampadario_it.html",
+        "fr": "lampadario_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Lapide",
+      "label": "Lapide",
+      "type": "concept",
+      "parentId": "Lastra",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Lastra di pietra, per lo più marmo, con iscrizione ed eventualmente effigi e decorazioni apposta su edifici o monumenti per commemorare persone o fatti di rilievo, o più semplicemente nei cimiteri a ricordo dei defunti.",
+        "fr": "Plaque quia pour but de perpétuer le souvenir d’une personnalité ou d'un événement en un lieu précis."
+      },
+      "urls": {
+        "it": "lapide_it.html",
+        "fr": "lapide_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Lastra",
+      "label": "Lastra",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura esterna caratteristica che assumono materiali diversi presentando due dimensioni (lunghezza e larghezza) notevolmente prevalenti rispetto alla terza (spessore).",
+        "fr": "Objet en général plat et de peu de surface, fait en matières très variées."
+      },
+      "urls": {
+        "it": "lastra_it.html",
+        "fr": "lastra_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Lazzaretto",
+      "label": "Lazzaretto",
+      "type": "concept",
+      "parentId": "Edificio",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Edificio destinato ad accogliere malati inguaribili o contagiosi.",
+        "fr": "Bâtiment isolé où séjournent en quarantaine les personnes provenant d’un pays étranger susceptibles d’introduire une maladie contagieuse comme la peste."
+      },
+      "urls": {
+        "it": "lazzaretto_it.html",
+        "fr": "lazzaretto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Legno",
+      "label": "legno",
+      "type": "concept",
+      "parentId": "Materiale",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Insieme dei tessuti vegetali che formano il fusto (o tronco) e le radici degli alberi.",
+        "fr": "Substance compacte de l'arbre utilisée dans la fabrication de nombreux objets."
+      },
+      "urls": {
+        "it": "legno_it.html",
+        "fr": "legno_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Lesena",
+      "label": "Leesena",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico corrispondente a un risalto verticale di una parete muraria, ripetuto in genere ritmicamente, che può avere funzione sia decorativa sia di rinforzo della parete medesima.",
+        "fr": "Bande en faible saillie, non pas horizontale, mais verticale, reliée en haut par de petites arcatures."
+      },
+      "urls": {
+        "it": "lesena_it.html",
+        "fr": "lesena_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Lobo",
+      "label": "Lobo",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento corrispondente a ciascuno dei tratti di cerchio intersecantisi, in cui può essere suddiviso l’intradosso di un arco o di una finestra.",
+        "fr": "Segment de cercle découpé dans un arc."
+      },
+      "urls": {
+        "it": "lobo_it.html",
+        "fr": "lobo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Loggia",
+      "label": "loggia",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica od organismo aperto su uno o più lati, formati da colonne o pilastri, usato talvolta come motivo decorativo, loggetta, o con funzione di raccordo.",
+        "fr": "Plate-forme, en retrait de la façade, fermée latéralement par deux voiles et limitée vers l’extérieur par un ouvrage vertical formant un garde-corps."
+      },
+      "urls": {
+        "it": "loggia_it.html",
+        "fr": "loggia_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Loggiato",
+      "label": "loggiato",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica analoga alla loggia, ma adoperata con funzione secondaria (di raccordo, decorativa, ecc.), nel complesso di uno o più edifici.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "loggiato_it.html",
+        "fr": "loggiato_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Lunetta",
+      "label": "Lunetta",
+      "type": "concept",
+      "parentId": "Parete_el",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Porzione di parete determinata dalla intersezione di una volta con il piano della parete stessa.",
+        "fr": "Ouverture formée par la pénétration d’une voûte en berceau dans une autre voûte ordinairement d’un plus grand rayon."
+      },
+      "urls": {
+        "it": "lunetta_it.html",
+        "fr": "lunetta_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Maiolica",
+      "label": "maiolica",
+      "type": "concept",
+      "parentId": "Materiale",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Raffinata tipologia di ceramica, di derivazione islamica, con la caratteristica presenza di uno smalto.",
+        "fr": "Faïence d’origine italienne peinte d’un décor."
+      },
+      "urls": {
+        "it": "maiolica_it.html",
+        "fr": "maiolica_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Manufatto_artistico",
+      "label": "Manufatto artistico",
+      "type": "concept",
+      "parentId": "Arte",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "manufatto_artistico_it.html",
+        "fr": "manufatto_artistico_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Marcapiano",
+      "label": "Marcapiano",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico corrispondente a una fascia che sul prospetto di un edificio suggerisce la suddivisione orizzontale in piani.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "marcapiano_it.html",
+        "fr": "marcapiano_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Marmo",
+      "label": "marmo",
+      "type": "concept",
+      "parentId": "Materiale",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Roccia metamorfica che deriva appunto dalla trasformazione, o metamorfismo, di una originaria roccia sedimentaria calcarea.",
+        "fr": "Roche métamorphique dérivée du calcaire."
+      },
+      "urls": {
+        "it": "marmo_it.html",
+        "fr": "marmo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Mascherone",
+      "label": "mascherone",
+      "type": "concept",
+      "parentId": "Elemento_decorativo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento ornamentale d'opere architettoniche, costituito da protome umana o d'animale lavorata a rilievo.",
+        "fr": "Un mascaron est un ornement sculpté représentant un visage humain, animal, fantastique ou grotesque."
+      },
+      "urls": {
+        "it": "mascherone_it.html",
+        "fr": "mascherone_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Materiale",
+      "label": "Materiale",
+      "type": "concept",
+      "parentId": "Arte",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "materiale_it.html",
+        "fr": "materiale_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Mausoleo",
+      "label": "Mausoleo",
+      "type": "concept",
+      "parentId": "Edificio",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "[Edificio] per uso funerario di carattere privato, generalmente dalle forme architettoniche monumentali e privo di funzione cultuale.",
+        "fr": "Monument funéraire richement orné de sculptures et quelquefois de mosaïques, de pilastres."
+      },
+      "urls": {
+        "it": "mausoleo_it.html",
+        "fr": "mausoleo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Mensola",
+      "label": "mensola",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Ogni struttura architettonica che sporga da una parete in cui é incastrata, sottoposta nella parte libera a carichi e usata per sostenere elementi sovrastanti in aggetto.",
+        "fr": "Tablette fixe ou mobile, placée horizontalement et destinée à supporter une charge."
+      },
+      "urls": {
+        "it": "mensola_it.html",
+        "fr": "mensola_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Meridiana",
+      "label": "Meridiana",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico corrispondente a un tipo di orologio solare costituito da un piano orizzontale sul quale uno gnomone getta ombra.",
+        "fr": "Espace carré et plan sur lequel sont tracées des lignes que suit l’ombre d’un stylet en métal, en marquant les heures selon la position du soleil."
+      },
+      "urls": {
+        "it": "meridiana_it.html",
+        "fr": "meridiana_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Merlo",
+      "label": "Merlo",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico verticale posto, generalmente a intervalli regolari, a coronamento di un edificio per lo pit a scopo difensivo.",
+        "fr": "Partie pleine d’un parapet se plaçant entre deux créneaux."
+      },
+      "urls": {
+        "it": "merlo_it.html",
+        "fr": "merlo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Metodo",
+      "label": "Metodo",
+      "type": "concept",
+      "parentId": "Arte",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "metodo_it.html",
+        "fr": "metodo_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Mezzanino",
+      "label": "mezzanine",
+      "type": "concept",
+      "parentId": "Piano",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Le MEZANINE est un petit étage situé entre deux grands étages ou un niveau intermédiaire aménagé dans une pièce haute de plafond.",
+        "fr": "L'ENTRESOL est un étage bas de plafond, le plus souvent entre le rez-de-chaussée et le 1er étage courant."
+      },
+      "urls": {
+        "it": "mezzanino_it.html",
+        "fr": "mezzanino_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Modanatura",
+      "label": "Modanatura",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico di raccordo tra due parti, omogenee o no, di un unico contesto costruttivo o decorativo, realizzato mediante un modano o modine materiale o ideale",
+        "fr": "Ensemble des éléments en relief de la façade."
+      },
+      "urls": {
+        "it": "modanatura_it.html",
+        "fr": "modanatura_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Monastero",
+      "label": "Monastero",
+      "type": "concept",
+      "parentId": "Edificio",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Edificio o casa religiosa capace di ospitare la più piccola comunità, partecipe di un ordine religioso, che possa sussistere autonomamente.",
+        "fr": "Bâtiment dans lequel vivent isolés du monde moines ou moniales catholiques ou orthodoxes, dédiant leur vie à Dieu, à la prière et au travail."
+      },
+      "urls": {
+        "it": "monastero_it.html",
+        "fr": "monastero_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Muraglione",
+      "label": "muraglione",
+      "type": "concept",
+      "parentId": "Muro",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Muro od opera muraria di maggiore imponenza.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "muraglione_it.html",
+        "fr": "muraglione_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Muratura",
+      "label": "muratura",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica risultante dall’operazione del murare.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "muratura_it.html",
+        "fr": "muratura_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Muro",
+      "label": "muro",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura composta da elementi di materiale inerte e resistente, riuniti organicamente in modo da costituire un unico insieme costruttivo in genere caratterizzato dall’avere le due dimensioni rispetto al piano verticale prevalenti sullo spessore.",
+        "fr": "Ouvrage de maçonnerie d’une épaisseur donnée formé de matériaux superposés."
+      },
+      "urls": {
+        "it": "muro_it.html",
+        "fr": "muro_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Navata",
+      "label": "navata",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Ambiente o parte dello spazio interno risultante dalla divisione in più settori di un ambiente longitudinale, nelle costruzioni la cui copertura è sorretta oltre che dai muri perimetrali da sostegni intermedi.",
+        "fr": "Vaisseau principal d’une église, situé entre le portail et le transept, que délimitent les deux rangées de piliers soutenant la voûte."
+      },
+      "urls": {
+        "it": "navata_it.html",
+        "fr": "navata_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Nicchia",
+      "label": "Nicchia",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico in una muratura [corrispondente a] una cavità più o meno profonda, di grandezza variabile, con pianta rettangolare, semicircolare o poligonale in sezione, generalmente terminante in alto con una semicalotta di raccordo con la parte superiore del muro stesso.",
+        "fr": "Enfoncement pratiqué dans l’épaisseut d’un mur afin de pouvoir y placer un groupe, une statue, un buste, un vase ou un tout autre objet, dans une intention décorative."
+      },
+      "urls": {
+        "it": "nicchia_it.html",
+        "fr": "nicchia_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Ninfeo",
+      "label": "Ninfeo",
+      "type": "concept",
+      "parentId": "Fontana",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Fontana monumentale ellenistico-romana, con ricchi prospetti architettonici e particolare valore urbanistico.",
+        "fr": "Sanctuaire dédié aux nymphes, créatures mythologiques associées aux sources, aux bois, aux montagnes et autres éléments naturels."
+      },
+      "urls": {
+        "it": "ninfeo_it.html",
+        "fr": "ninfeo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Opera_pittorica",
+      "label": "Opera pittorica",
+      "type": "concept",
+      "parentId": "Manufatto_artistico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "opera_pittorica_it.html",
+        "fr": "opera_pittorica_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Oratorio",
+      "label": "Edificio di culto, luogo sacro, generalmente in costruzione isolata, destinato a ospitare un nucleo ristretto e determinato di fedeli.",
+      "type": "concept",
+      "parentId": "Edificio_di_culto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Édifice religieux destiné à la prière."
+      },
+      "urls": {
+        "it": "oratorio_it.html",
+        "fr": "oratorio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Organismo_architettonico",
+      "label": "Organismo architettonico",
+      "type": "concept",
+      "parentId": "Architettura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Prodotto che non risulta formato da una semplice giustapposizione di funzioni (e quindi di volumi e di ambienti), ma nasce da necessità complesse e inscindibilmente legate fra loro, tanto che diviene impossibile compiere uno smembramento tra caratteri funzionali, distributivi, formali, strutturali, estetici e sociologici.",
+        "fr": "L’Organisme architectural est cette nécessité globale du Tout qui engendre des parties dont chacune l’exprime à sa manière."
+      },
+      "urls": {
+        "it": "organismo_architettonico_it.html",
+        "fr": "organismo_architettonico_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Ornamento",
+      "label": "ornamento",
+      "type": "concept",
+      "parentId": "Elemento_decorativo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Invenzione artistica e creazione collettiva il cui compito è quello di attrarre lo sguardo, dare importanza, significato e identità a corpi, prodotti, spazi e immagini.",
+        "fr": "Élément qui orne, agrémente un ensemble, qui ajoute quelque chose qui embellit."
+      },
+      "urls": {
+        "it": "ornamento_it.html",
+        "fr": "ornamento_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Padiglione",
+      "label": "Padiglione",
+      "type": "concept",
+      "parentId": "Edificio",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Piccolo edificio con destinazione sacra, residenziale, ornamentale.",
+        "fr": "Bâtiment isolé ou partie de bâtiment se distinguant par sa hauteur, sa décoration, etc., qui est ordinairement de plan carré et dont la forme évoque celle d'un pavillon d'armée."
+      },
+      "urls": {
+        "it": "padiglione_it.html",
+        "fr": "padiglione_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Palazzo",
+      "label": "Palazzo",
+      "type": "concept",
+      "parentId": "Organismo_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Organismo architettonico che, nella sua semplicità o complessità, sempre si adegua a specifiche funzioni di rappresentanza e di interesse pubblico.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "palazzo_it.html",
+        "fr": "palazzo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Parapetto",
+      "label": "Parapetto",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico o manufatto di altezza variabile installato a riparo dal vuoto su terrazze, balconi, finestre, scale, strade, ponti.",
+        "fr": "Barrière ou protection à hauteur d’appui élevée au bord d’une plateforme, d’un\nbalcon, d’un pont, pour éviter des chutes dans le vide."
+      },
+      "urls": {
+        "it": "parapetto_it.html",
+        "fr": "parapetto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Parete",
+      "label": "Parete",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "parete_it.html",
+        "fr": "parete_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Parete_el",
+      "label": "Parete",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico costituito dall’insieme dei caratteri visibili delle strutture perimetrali in elevazione che delimitano un ambiente.",
+        "fr": "Cloison de maçonnerie qui sépare les pièces à l'intérieur d'une maison, d'un bâtiment."
+      },
+      "urls": {
+        "it": "parete_el_it.html",
+        "fr": "parete_el_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Pavimento",
+      "label": "Pavimento",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Il complesso dei materiali che costituiscono l’ultimo strato di un orizzontamento inferiore in un ambiente interno o esterno e ne definiscono l’aspetto visibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "pavimento_it.html",
+        "fr": "pavimento_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Pennello",
+      "label": "pennello",
+      "type": "concept",
+      "parentId": "Utensile",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Attrezzo costituito da un mazzetto di peli naturali (animali o vegetali) o artificiali, fissato all’estremità di un’asticciola o di un manico di legno.",
+        "fr": "Touffe, souvent effilée, de poils ou de fibres souples serrés par une virole au bout d'un manche, servant à étendre en couche mince une substance liquide ou semi-liquide sur un support."
+      },
+      "urls": {
+        "it": "pennello_it.html",
+        "fr": "pennello_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Persona",
+      "label": "Persona",
+      "type": "root",
+      "parentId": null,
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "persona_it.html",
+        "fr": "persona_fr.html"
+      },
+      "distance": 0
+    },
+    {
+      "id": "Peschiera",
+      "label": "Peschiera",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico costituito da un bacino a forma regolare solitamente incassato nel terreno, alimentato da acqua corrente per l’allevamento dei pesci.",
+        "fr": "Bassin d'eau constamment renouvelée, aménagé pour la conservation, l'engraissement et l'élevage de poissons et/ou de crustacés."
+      },
+      "urls": {
+        "it": "peschiera_it.html",
+        "fr": "peschiera_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Pianerottolo",
+      "label": "Pianerottolo",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico costituito da un ripiano che in una scala interrompe una rampa di gradini.",
+        "fr": "Plateforme entre deux volées d’un escalier."
+      },
+      "urls": {
+        "it": "pianerottolo_it.html",
+        "fr": "pianerottolo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Piano",
+      "label": "piano",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica o porzione di un edificio compresa fra due orizzontamenti successivi.",
+        "fr": "Espace habitable délimité à l'intérieur d'un bâtiment par des divisions horizontales, planchers ou voûtes."
+      },
+      "urls": {
+        "it": "piano_it.html",
+        "fr": "piano_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Piano_nobile",
+      "label": "piano nobile",
+      "type": "concept",
+      "parentId": "Piano",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Piano o elemento architettonico che si distingue nel contesto del fabbricato sia per il particolare decoro esteriore che per la preminente importanza funzionale e dimensionale.",
+        "fr": "Étage, dans les immeubles anciens de qualité, le premier étage, plus haut de plafond, plus luxueusement décoré, autrefois le plus prisé."
+      },
+      "urls": {
+        "it": "piano_nobile_it.html",
+        "fr": "piano_nobile_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Piano_terreno",
+      "label": "pianterreno",
+      "type": "concept",
+      "parentId": "Piano",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "[Elemento architettonico o] piano di un edificio situato alla quota naturale del terreno o di poco sopraelevato.",
+        "fr": "Partie d'un bâtiment dont le sol se trouve au niveau du terrain."
+      },
+      "urls": {
+        "it": "piano_terreno_it.html",
+        "fr": "piano_terreno_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Pianta",
+      "label": "pianta",
+      "type": "concept",
+      "parentId": "Rappresentazione_grafica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elaborato grafico destinato a rappresentare in una scala prestabilita un aspetto ideale della costruzione o di parte di essa, dal quale risultino le caratteristiche geometriche e dimensionali dei suoi elementi.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "pianta_it.html",
+        "fr": "pianta_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Piedistallo",
+      "label": "Piedistallo",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico che sorregge un altro elemento architettonico, scultoreo o di arredo.",
+        "fr": "Plateforme formant le soubassement d’une colonne, d’une statue, d’un vase."
+      },
+      "urls": {
+        "it": "piedistallo_it.html",
+        "fr": "piedistallo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Pittore",
+      "label": "pittore",
+      "type": "concept",
+      "parentId": "Artista",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Persona che si dedica all’arte della pittura.",
+        "fr": "Artiste qui s’illustre à travers des œuvres réalisées avec de la peinture."
+      },
+      "urls": {
+        "it": "pittore_it.html",
+        "fr": "pittore_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Porta",
+      "label": "Porta",
+      "type": "concept",
+      "parentId": "Apertura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Apertura praticata nello spessore dei muri per consentire il passaggio.",
+        "fr": "Ouverture pratiquée dans un mur et servant à donner passage, et en même temps l’ouvrage mobile qui sert à clore cette ouverture."
+      },
+      "urls": {
+        "it": "porta_it.html",
+        "fr": "porta_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Portafinestra",
+      "label": "Portafinestra",
+      "type": "concept",
+      "parentId": "Apertura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Apertura nei muri o altra struttura ésterna di una costruzione edilizia, che assolve alle funzioni di illuminazione e areazione degli ambienti interni e consente inoltre il passaggio.",
+        "fr": "Ouverture pratiquée jusqu’au niveau du sol"
+      },
+      "urls": {
+        "it": "portafinestra_it.html",
+        "fr": "portafinestra_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Portale",
+      "label": "Portale",
+      "type": "concept",
+      "parentId": "Porta",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Porta esterna di accesso a un complesso edilizio, in genere di notevole interesse architettonico, caratterizzata dall’avere una precisa importanza funzionale, dimensionale o artistica.",
+        "fr": "Entrée, souvent monumentale, d'un édifice ou d'une propriété, comportant une porte de grande dimension."
+      },
+      "urls": {
+        "it": "portale_it.html",
+        "fr": "portale_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Portello",
+      "label": "Portello",
+      "type": "concept",
+      "parentId": "Porta",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Porta di piccola dimensione a un solo battente ricavata nella grande porta di una città o nel portone di un palazzo.",
+        "fr": "Petite porte pratiquée dans un des vantaux d’une porte cochère."
+      },
+      "urls": {
+        "it": "portello_it.html",
+        "fr": "portello_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Porticato",
+      "label": "porticato",
+      "type": "concept",
+      "parentId": "Portico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Portico allungato e ampio, oppure l’insieme dei portici disposti a quadrilatero, nel chiostro o nel cortile a emiciclo del ninfeo o in una piazza; longitudinalmente lungo una strada.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "porticato_it.html",
+        "fr": "porticato_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Portico",
+      "label": "portico",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura o parte di un edificio a livello del suolo, aperta o parzialmente chiusa, con copertura (piana, a volta, a botte) sorretta da colonne o pilastri, con funzione decorativa, di riparo, di passeggio.",
+        "fr": "Pièce, passage ou galerie ouverte en rez-de-chaussée et couverte entre deux colonnades ou rangs d'arcades."
+      },
+      "urls": {
+        "it": "portico_it.html",
+        "fr": "portico_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Portone",
+      "label": "Portone",
+      "type": "concept",
+      "parentId": "Porta",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Porta di notevoli dimensioni, che costituisce l’ingresso principale di un edificio.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "portone_it.html",
+        "fr": "portone_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Presbiterio",
+      "label": "presbiterio",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Spazio delle chiese cristiane riservato al clero, detto anche sacrarium, santuario, e, più propriamente, coro.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "presbiterio_it.html",
+        "fr": "presbiterio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Progettista",
+      "label": "Progettista",
+      "type": "concept",
+      "parentId": "Agente",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "progettista_it.html",
+        "fr": "progettista_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Pronao",
+      "label": "prona",
+      "type": "concept",
+      "parentId": "Porticato",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Porticato che nell’antichità precedeva la cella di un tempio e oggi parte anteriore di un edificio, anche moderno, di forma simile a quella di un tempio.",
+        "fr": "Partie antérieure de l'ancien temple grec précédant le naos et comportant un portique en façade."
+      },
+      "urls": {
+        "it": "pronao_it.html",
+        "fr": "pronao_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Proprietari",
+      "label": "Proprietari",
+      "type": "concept",
+      "parentId": "Persona",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "proprietari_it.html",
+        "fr": "proprietari_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Prospettiva",
+      "label": "prospettiva",
+      "type": "concept",
+      "parentId": "Metodo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Tecnica il cui scopo è quella di rappresentare in maniera verosimile gli oggetti tridimensionali.",
+        "fr": "Technique qui permet de représenter le monde en trois dimensions dans un espace bidimensionnel."
+      },
+      "urls": {
+        "it": "prospettiva_it.html",
+        "fr": "prospettiva_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Prospetto",
+      "label": "prospetto",
+      "type": "concept",
+      "parentId": "Rappresentazione_grafica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Rappresentazione grafica di un edificio, ottenuta proiettandolo ortogonalmente su un piano verticale esterno.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "prospetto_it.html",
+        "fr": "prospetto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Protome",
+      "label": "protome",
+      "type": "concept",
+      "parentId": "Manufatto_artistico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento decorativo costituito dalla testa, talora anche con parte del busto, di una figura umana o animalesca o fantastica.",
+        "fr": "Représentation sculptée d'un buste d'homme ou de la partie antérieure d'un animal."
+      },
+      "urls": {
+        "it": "protome_it.html",
+        "fr": "protome_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Quadratura",
+      "label": "quadratura",
+      "type": "concept",
+      "parentId": "Rappresentazione_grafica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Architettura dipinta entro una rigorosa intelaiatura prospettica e illusionistica.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "quadratura_it.html",
+        "fr": "quadratura_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Quadraturista",
+      "label": "quadraturista",
+      "type": "concept",
+      "parentId": "Artista",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Pittore specializzato nel dipingere quadrature.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "quadraturista_it.html",
+        "fr": "quadraturista_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Quadro",
+      "label": "quadro",
+      "type": "concept",
+      "parentId": "Dipinto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Dipinto di forma quadrata o rettangolare o, più genericamente, un dipinto di qualunque forma.",
+        "fr": "Représentation et/ou une suggestion du monde imaginaire ou visible, sur une surface plane, à l’aide de couleurs."
+      },
+      "urls": {
+        "it": "quadro_it.html",
+        "fr": "quadro_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Rampa",
+      "label": "Rampa",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento costitutivo di una scala che si compone di una successione ininterrotta di gradini.",
+        "fr": "Partie d’un escalier qui se projette horizontalement par une ligne droite."
+      },
+      "urls": {
+        "it": "rampa_it.html",
+        "fr": "rampa_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Rappresentazione_grafica",
+      "label": "Rappresentazione grafica",
+      "type": "concept",
+      "parentId": "Opera_pittorica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "rappresentazione_grafica_it.html",
+        "fr": "rappresentazione_grafica_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Reclusorio",
+      "label": "Reclusorio",
+      "type": "concept",
+      "parentId": "Complesso_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Complesso architettonico destinato alla detenzione (preventiva o penale) dei prigionieri.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "reclusorio_it.html",
+        "fr": "reclusorio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Refettorio",
+      "label": "refettorio",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Ambiente attrezzato per la consumazione dei pasti in comune in edifici per l’abitazione collettiva e in alcuni complessi per il lavoro organizzato.",
+        "fr": "Salle où, dans les communautés, les collectivités, les établissements d'éducation et d'enseignement, on prend les repas en commun."
+      },
+      "urls": {
+        "it": "refettorio_it.html",
+        "fr": "refettorio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Rettorato",
+      "label": "Rettorato",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Ambiente sede ufficiale del rettore in un istituto scolastico, in genere universitario, provveduto di locali di rappresentanza e di uffici inerenti alla sua funzione.",
+        "fr": "Bureaux et services d'administration dépendant du recteur (d'Académie, en France) et bâtiment où est installé le recteur"
+      },
+      "urls": {
+        "it": "rettorato_it.html",
+        "fr": "rettorato_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Rissaiêö",
+      "label": "rissaiêõ",
+      "type": "concept",
+      "parentId": "Artista",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Artigiano edile esperto nella costruzione di acciottolati (rissêu) e mosaici fatti con pietre da rive dei torrenti o rinvenuti al mare sulle spiagge.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "rissaiêö_it.html",
+        "fr": "rissaiêö_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Risseau",
+      "label": "Risseau",
+      "type": "concept",
+      "parentId": "Pavimento",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Pavimentazione in mosaico di ciottoli.",
+        "fr": "Motif Traditionnel des chaussées en galets noir et blancs qui décorent les places et les parvis des églises à Gêne et dans la région."
+      },
+      "urls": {
+        "it": "risseau_it.html",
+        "fr": "risseau_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Ritratto",
+      "label": "ritratto",
+      "type": "concept",
+      "parentId": "Rappresentazione_grafica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Rappresentazione – a busto, mezzo busto o figura intera – di una singola persona (ritratti autonomi) o di un gruppo di persone.",
+        "fr": "Un portrait est une œuvre d'art en deux dimensions dont le but est de représenter, en général de façon ressemblante, une personne avec sa tenue et ses expressions caractéristiques."
+      },
+      "urls": {
+        "it": "ritratto_it.html",
+        "fr": "ritratto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Roccia",
+      "label": "roccia",
+      "type": "concept",
+      "parentId": "Materiale",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Insieme di uno o più tipi di minerali diversi che formano una massa ben definita, geologicamente indipendente e cartografabile.",
+        "fr": "Matériau solide en général formé d’un assemblage de minéraux."
+      },
+      "urls": {
+        "it": "roccia_it.html",
+        "fr": "roccia_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Rosone",
+      "label": "Rososne",
+      "type": "concept",
+      "parentId": "Apertura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Apertura di forma circolare che richiama la forma del fiore, ottenuta con la disposizione stellare o radiale dei vari elementi compositivi (nella forma più semplice, colonnine collegate da archetti disposte a raggiera intorno a una ghiera).",
+        "fr": "Grande baie circulaire servant à décorer les façades d’églises et à éclairer l’intérieur."
+      },
+      "urls": {
+        "it": "rosone_it.html",
+        "fr": "rosone_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Sacello",
+      "label": "Sacello",
+      "type": "concept",
+      "parentId": "Edificio_di_culto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Edificio di culto di dimensioni molto ridotte, edificato a scopi vari.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "sacello_it.html",
+        "fr": "sacello_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Sacrario",
+      "label": "Sacrario",
+      "type": "concept",
+      "parentId": "Edificio",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "sacrario_it.html",
+        "fr": "sacrario_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Sala",
+      "label": "Struttura o stanza principale residenza, spesso di dimensioni rilevanti.",
+      "type": "concept",
+      "parentId": "Stanza",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "sala_it.html",
+        "fr": "sala_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Salone",
+      "label": "salone",
+      "type": "concept",
+      "parentId": "Stanza",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura, stanza o ambiente che, per particolari caratteristiche dimensioni, è adibito a speciali funzioni.",
+        "fr": "Salon d'apparat réservé aux réceptions."
+      },
+      "urls": {
+        "it": "salone_it.html",
+        "fr": "salone_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Salone_Maggiore",
+      "label": "salone maggiore",
+      "type": "concept",
+      "parentId": "Salone",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Salone che serviva il piano nobile trovandosi allo sbocco dello scalone o di una galleria posta fra i due e che costituiva il tradizionale accesso agli appartamenti.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "salone_maggiore_it.html",
+        "fr": "salone_maggiore_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Salotto",
+      "label": "Salotto",
+      "type": "concept",
+      "parentId": "Stanza",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Salotto",
+        "fr": "Pièce aménagée avec un soin particulier où l'on reçoit les visiteurs et où l'on se réunit en famille et entre amis."
+      },
+      "urls": {
+        "it": "salotto_it.html",
+        "fr": "salotto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Scaffalatura",
+      "label": "scaffalatura",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura composta dalla disposizione di più scaffali costruiti in modo da formare un insieme unico con destinazioni differenziate.",
+        "fr": "Ensemble de planches fixées horizontalement pour constituer une bibliothèque, une vitrine, un meuble de rangement, etc."
+      },
+      "urls": {
+        "it": "scaffalatura_it.html",
+        "fr": "scaffalatura_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Scala",
+      "label": "scala",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura o apparato fisso o mobile che serve a superare dislivelli gradatamente.",
+        "fr": "Un escalier est une suite régulière de plans horizontaux permettant de passer d'un niveau à un autre avec le moins de fatigue possible."
+      },
+      "urls": {
+        "it": "scala_it.html",
+        "fr": "scala_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Scalone",
+      "label": "scalone",
+      "type": "concept",
+      "parentId": "Scala",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Scala interna di palazzi monumentali e di edifici pubblici di dimensioni importanti e di notevole pregio architettonico.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "scalone_it.html",
+        "fr": "scalone_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Scorcio",
+      "label": "Scorcio",
+      "type": "concept",
+      "parentId": "Prospettiva",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "scorcio_it.html",
+        "fr": "scorcio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Scultore",
+      "label": "scultore",
+      "type": "concept",
+      "parentId": "Artista",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Figura professionale in grado di gestire i dispositivi espressivi che stanno alla base dell'arte scultorea.",
+        "fr": "Artiste qui pratique l'art de la sculpture."
+      },
+      "urls": {
+        "it": "scultore_it.html",
+        "fr": "scultore_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Scultura",
+      "label": "scultura",
+      "type": "concept",
+      "parentId": "Manufatto_artistico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Oggetto realizzato per sottrazione o aggiunta di materiale, offrendo una molteplicità di prospettive, il tutto in un materiale durevole come legno, pietra, metallo.",
+        "fr": "Une sculpture est une œuvre en trois dimensions avec des formes et des volumes."
+      },
+      "urls": {
+        "it": "scultura_it.html",
+        "fr": "scultura_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Semicolonna",
+      "label": "Semicolonna",
+      "type": "concept",
+      "parentId": "Colonna",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico costituito da un pilastro con funzione meramente decorativa, che si presenta come una colonna sezionata longitudinalmente.",
+        "fr": "Colonne prise dans le mur jusqu’au centre."
+      },
+      "urls": {
+        "it": "semicolonna_it.html",
+        "fr": "semicolonna_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Sfondato",
+      "label": "Sfondato",
+      "type": "concept",
+      "parentId": "Prospettiva",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "sfondato_it.html",
+        "fr": "sfondato_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Sfondo",
+      "label": "sfondo",
+      "type": "concept",
+      "parentId": "Elemento_decorativo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Parte dell’immagine che avvolge la figura e che appare più lontana.",
+        "fr": "Partie de l'espace située derrière l'élément principal de l'image."
+      },
+      "urls": {
+        "it": "sfondo_it.html",
+        "fr": "sfondo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Significato",
+      "label": "Significato",
+      "type": "concept",
+      "parentId": "Arte",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "significato_it.html",
+        "fr": "significato_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Soffitto",
+      "label": "soffitto",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica orizzontale o superficie delimitante la parte superiore di un vano.",
+        "fr": "Surface inférieure du plancher placé entre deux étages."
+      },
+      "urls": {
+        "it": "soffitto_it.html",
+        "fr": "soffitto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Soggetto",
+      "label": "Soggetto",
+      "type": "concept",
+      "parentId": "Elemento_decorativo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "soggetto_it.html",
+        "fr": "soggetto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Soggetto_Allegorico",
+      "label": "Soggetto Allegorico",
+      "type": "concept",
+      "parentId": "Soggetto_iconografico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "soggetto_allegorico_it.html",
+        "fr": "soggetto_allegorico_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Soggetto_Araldico",
+      "label": "Soggetto Araldico",
+      "type": "concept",
+      "parentId": "Soggetto_iconografico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "soggetto_araldico_it.html",
+        "fr": "soggetto_araldico_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Soggetto_Mitologico",
+      "label": "Soggetto Mitologico",
+      "type": "concept",
+      "parentId": "Soggetto_iconografico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "soggetto_mitologico_it.html",
+        "fr": "soggetto_mitologico_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Soggetto_Ornamentale",
+      "label": "Soggetto Ornamentale",
+      "type": "concept",
+      "parentId": "Soggetto_iconografico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "soggetto_ornamentale_it.html",
+        "fr": "soggetto_ornamentale_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Soggetto_Storico",
+      "label": "Soggetto Storico",
+      "type": "concept",
+      "parentId": "Soggetto_iconografico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "soggetto_storico_it.html",
+        "fr": "soggetto_storico_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Soggetto_iconografico",
+      "label": "Soggetto iconografico",
+      "type": "concept",
+      "parentId": "Soggetto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "soggetto_iconografico_it.html",
+        "fr": "soggetto_iconografico_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Solaio",
+      "label": "solaio",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura o piattaforma orizzontale che non trasmette azioni spingenti alle strutture verticali.",
+        "fr": "Ouvrage de charpente, tout ou partie en bois, en fer ou en béton, formant une plate-forme horizontale au rez-de-chaussée ou une séparation entre les étages d'une construction."
+      },
+      "urls": {
+        "it": "solaio_it.html",
+        "fr": "solaio_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Sopraelevazione",
+      "label": "sopraelevazione",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura o parte supplementare di un edificio, poggiante sulle strutture principali dello stesso, eseguite in una fase precedente.",
+        "fr": "Construction faite après coup sur un bâtiment déjà construit, soit pout l’agrandir, soit pour toute autre cause."
+      },
+      "urls": {
+        "it": "sopraelevazione_it.html",
+        "fr": "sopraelevazione_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Sopraporta",
+      "label": "Sopraporta",
+      "type": "concept",
+      "parentId": "Apertura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Apertura praticata al di sopra della porta e predisposta alla illuminazione naturale e talora al ricambio d’aria degli ambienti interni",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "sopraporta_it.html",
+        "fr": "sopraporta_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Sottarco",
+      "label": "Sottarco",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Superficie curva inferiore, per lo più in vista, di un arco o una arcata.",
+        "fr": "Surface intérieure, par conséquent convexe, d’une voûte, d’un arc."
+      },
+      "urls": {
+        "it": "sottarco_it.html",
+        "fr": "sottarco_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Sottinsù",
+      "label": "Sottinsù",
+      "type": "concept",
+      "parentId": "Scorcio",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "sottinsù_it.html",
+        "fr": "sottinsù_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Sottofondazione",
+      "label": "sottofondazione",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura eseguita sotto il livello di una fondazione esistente in sostituzione o a rinforzo di essa.",
+        "fr": "Processus consistant à soutenir ou à renforcer les fondations d’une maison, d’un bâtiment ou d’une structure semblable afin d’améliorer les capacités d’une fondation existante."
+      },
+      "urls": {
+        "it": "sottofondazione_it.html",
+        "fr": "sottofondazione_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Sottotetto",
+      "label": "Sottotetto",
+      "type": "concept",
+      "parentId": "Piano",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Piano di un edificio compreso tra l’ultimo solaio orizzontale e la falda del tetto.",
+        "fr": "Partie la plus haute d'une maison, située immédiatement sous les combles, servant le plus souvent de débarras ou de logement."
+      },
+      "urls": {
+        "it": "sottotetto_it.html",
+        "fr": "sottotetto_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Sovrapporta",
+      "label": "Sottarco",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Superficie curva inferiore, per lo più in vista, di un arco o una arcata.",
+        "fr": "Ornement de boiserie, de peinture ou de sculpture, placé dans un encadrement de boiserie au-dessus du chambranle d’une porte."
+      },
+      "urls": {
+        "it": "sovrapporta_it.html",
+        "fr": "sovrapporta_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Stalattite",
+      "label": "stalattite",
+      "type": "concept",
+      "parentId": "Elemento_decorativo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Motivo decorativo pendente.",
+        "fr": "Concrétion formée à partir des gouttes d’eau perlant au plafond d’une galerie."
+      },
+      "urls": {
+        "it": "stalattite_it.html",
+        "fr": "stalattite_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Stanza",
+      "label": "Stanza",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Ambiente o elemento compositivo della distribuzione interna di un edificio che non si distingue per particolari caratteristiche dimensionali o di impianti.",
+        "fr": "Chacune des parties d'une maison ou d'un appartement (à l'exclusion des couloirs, dégagements, parties communes et généralement de la cuisine et des sanitaires) destinées à un usage précis (chambre, salon, bureau, etc.)."
+      },
+      "urls": {
+        "it": "stanza_it.html",
+        "fr": "stanza_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Statua",
+      "label": "Statua",
+      "type": "concept",
+      "parentId": "Scultura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Opera di scultura, a tutto rilievo, che rappresenta una figura umana o animale, oppure un’idea o un concetto astratti raffigurati in forma umana o animale.",
+        "fr": "Ouvrage de plein relief, sculpté ou moulé, représentant en entier un être animé et par allégorie, une qualité abstraite, un élément ou un effet de la nature."
+      },
+      "urls": {
+        "it": "statua_it.html",
+        "fr": "statua_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Stemma",
+      "label": "Stemma",
+      "type": "concept",
+      "parentId": "Manufatto_artistico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Lo Stemma è il complesso di figure, emblemi, colori e ornamentazioni che servono ad individuare una persona, una famiglia, una comunità o un ente.",
+        "fr": "Symbole, représentant une famille noble, une ville, une région ou un pays."
+      },
+      "urls": {
+        "it": "stemma_it.html",
+        "fr": "stemma_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Strada",
+      "label": "strada",
+      "type": "concept",
+      "parentId": "Infrastruttura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Infrastruttura o manufatto che funge da supporto stabile per il transito di persone e veicoli, dotato di una dimensione prevalente, derivante dalla continuità di infiniti elementi vettoriali che ne definiscono, tronco per tronco, la giacitura rispetto al terreno.",
+        "fr": "Infrastructure de transport la plus importante pour les marchandises et les personnes."
+      },
+      "urls": {
+        "it": "strada_it.html",
+        "fr": "strada_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Struttura_architettonica",
+      "label": "Struttura architettonica",
+      "type": "concept",
+      "parentId": "Architettura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Organizzazione delle parti e degli elementi in un continuum la cui scala viene assunta come riferimento unitario.",
+        "fr": "Ensemble des éléments que donnent l’organisation et l’ordre de la construction."
+      },
+      "urls": {
+        "it": "struttura_architettonica_it.html",
+        "fr": "struttura_architettonica_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Stucco",
+      "label": "stucco",
+      "type": "concept",
+      "parentId": "Materiale",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Amalgama di calce, polvere di marmo, sabbia lavata e colla di caseina, la cui plasticità e finezza d’impasto ne ha fatto uno dei materiali favoriti nella realizzazione di decori raffinati.",
+        "fr": "Enduit composé de marbre blanc pulvérisé, de chaux éteinte et de craie gâchés dans l'eau, ou de plâtre très fin dissous dans une colle forte."
+      },
+      "urls": {
+        "it": "stucco_it.html",
+        "fr": "stucco_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Tamponatura",
+      "label": "Tamponatura",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Qualunque elemento atto ad ottenere la chiusura di un ambiente, con una funzione non strutturale, ma esclusivamente protettiva e isolante contro gli agenti atmosferici e le variazioni di temperatura e di umidita.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "tamponatura_it.html",
+        "fr": "tamponatura_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Tecnica",
+      "label": "Tecnica",
+      "type": "concept",
+      "parentId": "Arte",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "tecnica_it.html",
+        "fr": "tecnica_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Tema",
+      "label": "Tema",
+      "type": "concept",
+      "parentId": "Elemento_decorativo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "tema_it.html",
+        "fr": "tema_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Terrazzamento",
+      "label": "terrazzamento",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica od opera artificiale che richiama il fenomeno naturale per cui il terreno assume una conformazione a gradino suborizzontale.",
+        "fr": "Amas de terre soutenu par un mur de soutènement."
+      },
+      "urls": {
+        "it": "terrazzamento_it.html",
+        "fr": "terrazzamento_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Terrazzo",
+      "label": "terrazzo",
+      "type": "concept",
+      "parentId": "Copertura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Tipo di copertura con superficie ad andamento pressoché orizzontale, dotata dell’inclinazione sufficiente allo smaltimento delle acque piovane; può essere praticabile (di solito recintata) o non praticabile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "terrazzo_it.html",
+        "fr": "terrazzo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Timpano",
+      "label": "timpano",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica corrispondente alla superficie racchiusa entro la cornice del frontone, concepita originariamente come una membrana avente scopo di chiusura, senza funzione portante.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "timpano_it.html",
+        "fr": "timpano_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Torre",
+      "label": "Torre",
+      "type": "concept",
+      "parentId": "Edificio",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Qualsiasi edificio alto con funzioni militari, celebrative o anche residenziali.",
+        "fr": "Édifice de plan rond ou carré dont la hauteur comprend la valeur de plusieurs étages et dont l'intérieur n'offre de place que pour une pièce par étage."
+      },
+      "urls": {
+        "it": "torre_it.html",
+        "fr": "torre_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Torrione",
+      "label": "Torrione",
+      "type": "concept",
+      "parentId": "Torre",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Bassa e grossa torre in muratura, generalmente a pianta quadrata o circolare, con basamento a scarpa talvolta tanto alto da raggiungere quasi la base del coronamento merlato.",
+        "fr": "Grosse tour forte d'un château médiéval, généralement isolée de la construction, ayant ses fortifications particulières, et servant de dernier refuge aux défenseurs."
+      },
+      "urls": {
+        "it": "torrione_it.html",
+        "fr": "torrione_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Trabeazione",
+      "label": "trabeazione",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura o insieme di membrature che formano la struttura orizzontale, sostenuta dai piedritt, del sistema trilitico.",
+        "fr": "Couronnement d'une ordonnance d'architecture."
+      },
+      "urls": {
+        "it": "trabeazione_it.html",
+        "fr": "trabeazione_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Travatura",
+      "label": "travatura",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura composta dall’insieme delle travi e altri legnami che reggono la coperta del tetto.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "travatura_it.html",
+        "fr": "travatura_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Traverso",
+      "label": "Portoghesi, P. e AA. VV., Dizionario Enciclopedico di Architettura e Urbanistica, Istituto Editoriale Romano, Roma, 1968-1969, Volume VI, pag. 252.",
+      "type": "concept",
+      "parentId": "Elemento_architettonico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento architettonico corrispondente a una trave che, presente nelle strutture orizzontali a due ordini di travi fra di loro ortogonali con due dimensioni diverse, viene disposta secondo la dimensione minore.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "traverso_it.html",
+        "fr": "traverso_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Urbanistica",
+      "label": "urbanistica",
+      "type": "root",
+      "parentId": null,
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Disciplina che studia il fenomeno urbano nella sua complessa interezza.",
+        "fr": "Discipline rassemblant les sciences, techniques et arts nécessaires à l’organisation et l’aménagement des espaces urbains."
+      },
+      "urls": {
+        "it": "urbanistica_it.html",
+        "fr": "urbanistica_fr.html"
+      },
+      "distance": 0
+    },
+    {
+      "id": "Utensile",
+      "label": "Utensile",
+      "type": "concept",
+      "parentId": "Arte",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Definizione non disponibile.",
+        "fr": "Définition non disponible."
+      },
+      "urls": {
+        "it": "utensile_it.html",
+        "fr": "utensile_fr.html"
+      },
+      "distance": 60
+    },
+    {
+      "id": "Vestibolo",
+      "label": "vestibolo",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica costituita da un vano di ingresso ad una sala o ad altre stanze di una abitazione.",
+        "fr": "Pièce d'entrée d'un appartement, d'une maison, d'un édifice privé, donnant accès aux autres pièces."
+      },
+      "urls": {
+        "it": "vestibolo_it.html",
+        "fr": "vestibolo_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Volta",
+      "label": "volta",
+      "type": "concept",
+      "parentId": "Struttura_architettonica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Struttura architettonica di copertura le cui principali caratteristiche siano la concavità della superficie interna e l’azione laterale di spinta degli elementi che la costituiscono.",
+        "fr": "Ouvrage de maçonnerie cintré, qui sert à couvrir un espace."
+      },
+      "urls": {
+        "it": "volta_it.html",
+        "fr": "volta_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Volta_a_botte",
+      "label": "volta a botte",
+      "type": "concept",
+      "parentId": "Volta",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Volta semplice a matrice cilindrica, derivata direttamente dall’arco del quale ha le stesse caratteristiche strutturali.",
+        "fr": "Voûte dont l'intrados est engendré par la translation d'un arc suivant un axe."
+      },
+      "urls": {
+        "it": "volta_a_botte_it.html",
+        "fr": "volta_a_botte_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Volta_a_crociera",
+      "label": "volta a crociera",
+      "type": "concept",
+      "parentId": "Volta",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Volta generata dall’intersezione di due volte a botte.",
+        "fr": "Voûte d'arêtes établie sur le croisement de deux ou trois ogives, spécifique du voûtement gothique."
+      },
+      "urls": {
+        "it": "volta_a_crociera_it.html",
+        "fr": "volta_a_crociera_fr.html"
+      },
+      "distance": 95
+    },
+    {
+      "id": "Pala_d'altare",
+      "label": "pala d’altare",
+      "type": "concept",
+      "parentId": "Elemento_decorativo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Tavola rettangolare, posta verticalmente sul piano dell’altare, nel mezzo, dietro il tabernacolo.",
+        "fr": "Construction verticale qui porte des décors sculptés, parfois peints, en arrière de la table d’autel d’un édifice religieux."
+      },
+      "urls": {
+        "it": "pala_d'altare_it.html",
+        "fr": "pala_d'altare_fr.html"
+      },
+      "distance": 95
+    }
+  ],
+  "links": [
+    {
+      "source": "Struttura_architettonica",
+      "target": "Abside",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Ala",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Alcova",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Anticamera",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Arcata",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Arco",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Atrio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Aula",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Avancorpo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Balcone",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Biblioteca",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Campanile",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Capriata",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Chiostro",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Colonnato",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Controfacciata",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Copertura",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Coro",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Corridoio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Cortile",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Facciata",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Galleria",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Giardino",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Gradonata",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Ingresso",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Loggia",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Loggiato",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Mensola",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Muratura",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Muro",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Navata",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Parete",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Pavimento",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Piano",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Portico",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Presbiterio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Refettorio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Rettorato",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Scaffalatura",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Scala",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Soffitto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Solaio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Sopraelevazione",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Sottofondazione",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Stanza",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Terrazzamento",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Timpano",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Trabeazione",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Travatura",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Vestibolo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Struttura_architettonica",
+      "target": "Volta",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Abside",
+      "target": "Absidiola",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Dipinto",
+      "target": "Affresco",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Dipinto",
+      "target": "Quadro",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Tecnica",
+      "target": "Affresco_tec",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Persona",
+      "target": "Agente",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Persona",
+      "target": "Committenti",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Persona",
+      "target": "Proprietari",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Aggetto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Aiuola",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Altana",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Altare",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Apertura",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Architrave",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Archivolto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Balaustra",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Basamento",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Basamento_della_colonna",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Bordura",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Caminetto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Camino",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Campata",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Cancellata",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Capitello",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Colonna",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Cornicione",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Coronamento",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Decorazione",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Fontana",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Frontone",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Gradino",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Gradone",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Incorniciatura",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Intradosso",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Lastra",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Lesena",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Lobo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Marcapiano",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Meridiana",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Merlo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Modanatura",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Nicchia",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Parapetto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Parete_el",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Peschiera",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Pianerottolo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Piedistallo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Rampa",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Sottarco",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Sovrapporta",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Tamponatura",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_architettonico",
+      "target": "Traverso",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Significato",
+      "target": "Allegoria",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Significato",
+      "target": "Iconografia",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Significato",
+      "target": "Iconologia",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Giardino",
+      "target": "Aranceto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Giardino",
+      "target": "Giardino_pensile",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Giardino",
+      "target": "Hortus_Conclusus",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Progettista",
+      "target": "Architetto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Arco",
+      "target": "Arco_ribassato",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Materiale",
+      "target": "Argento",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Materiale",
+      "target": "Corallo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Materiale",
+      "target": "Drappo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Materiale",
+      "target": "Ferro",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Materiale",
+      "target": "Ferro_battuto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Materiale",
+      "target": "Legno",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Materiale",
+      "target": "Maiolica",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Materiale",
+      "target": "Marmo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Materiale",
+      "target": "Roccia",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Materiale",
+      "target": "Stucco",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Arte",
+      "target": "Arredo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Arte",
+      "target": "Collezione",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Arte",
+      "target": "Manufatto_artistico",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Arte",
+      "target": "Materiale",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Arte",
+      "target": "Metodo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Arte",
+      "target": "Significato",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Arte",
+      "target": "Tecnica",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Arte",
+      "target": "Utensile",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Agente",
+      "target": "Artista",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Agente",
+      "target": "Progettista",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Aula",
+      "target": "Aula_Magna",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Colonna",
+      "target": "Balaustro",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Colonna",
+      "target": "Colonna_binata",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Colonna",
+      "target": "Colonna_dorica",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Colonna",
+      "target": "Colonna_pensile",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Colonna",
+      "target": "Colonna_tortile",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Colonna",
+      "target": "Semicolonna",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Galleria",
+      "target": "Ballatoio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Chiesa_ed",
+      "target": "Basilica",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Apertura",
+      "target": "Bucatura",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Apertura",
+      "target": "Finestra",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Apertura",
+      "target": "Porta",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Apertura",
+      "target": "Portafinestra",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Apertura",
+      "target": "Rosone",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Apertura",
+      "target": "Sopraporta",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Pianerottolo",
+      "target": "Caposcala",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Edificio_di_culto",
+      "target": "Cappella",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Edificio_di_culto",
+      "target": "Chiesa_ed",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Edificio_di_culto",
+      "target": "Oratorio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Edificio_di_culto",
+      "target": "Sacello",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Strada",
+      "target": "Carruggio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_decorativo",
+      "target": "Cartiglio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_decorativo",
+      "target": "Cornice",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_decorativo",
+      "target": "Festone",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_decorativo",
+      "target": "Fregio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_decorativo",
+      "target": "Mascherone",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_decorativo",
+      "target": "Ornamento",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_decorativo",
+      "target": "Sfondo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_decorativo",
+      "target": "Soggetto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_decorativo",
+      "target": "Stalattite",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_decorativo",
+      "target": "Tema",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Elemento_decorativo",
+      "target": "Pala_d'altare",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Cortile",
+      "target": "Cavedio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Organismo_architettonico",
+      "target": "Chiesa",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Organismo_architettonico",
+      "target": "Palazzo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Edificio",
+      "target": "Collegio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Edificio",
+      "target": "Edificio_di_culto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Edificio",
+      "target": "Lazzaretto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Edificio",
+      "target": "Mausoleo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Edificio",
+      "target": "Monastero",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Edificio",
+      "target": "Padiglione",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Edificio",
+      "target": "Sacrario",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Edificio",
+      "target": "Torre",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Architettura",
+      "target": "Complesso_architettonico",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Architettura",
+      "target": "Edificio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Architettura",
+      "target": "Elemento_architettonico",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Architettura",
+      "target": "Organismo_architettonico",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Architettura",
+      "target": "Struttura_architettonica",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Copertura",
+      "target": "Cupola",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Copertura",
+      "target": "Terrazzo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Opera_pittorica",
+      "target": "Dipinto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Opera_pittorica",
+      "target": "Rappresentazione_grafica",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Rappresentazione_grafica",
+      "target": "Disegno",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Rappresentazione_grafica",
+      "target": "Pianta",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Rappresentazione_grafica",
+      "target": "Prospetto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Rappresentazione_grafica",
+      "target": "Quadratura",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Rappresentazione_grafica",
+      "target": "Ritratto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Manufatto_artistico",
+      "target": "Elemento_decorativo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Manufatto_artistico",
+      "target": "Opera_pittorica",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Manufatto_artistico",
+      "target": "Protome",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Manufatto_artistico",
+      "target": "Scultura",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Manufatto_artistico",
+      "target": "Stemma",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Finestra",
+      "target": "Finestra_a_edicola",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Finestra",
+      "target": "Finestra_a_lunetta",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Finestra",
+      "target": "Finestra_a_nastro",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Finestra",
+      "target": "Finestra_balcone",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Finestra",
+      "target": "Finestra_monofora",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Finestra",
+      "target": "Finestrone",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Artista",
+      "target": "Frescante",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Artista",
+      "target": "Pittore",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Artista",
+      "target": "Quadraturista",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Artista",
+      "target": "Rissaiêö",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Artista",
+      "target": "Scultore",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Urbanistica",
+      "target": "Infrastruttura",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Arredo",
+      "target": "Lampadario",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Lastra",
+      "target": "Lapide",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Parete_el",
+      "target": "Lunetta",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Piano",
+      "target": "Mezzanino",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Piano",
+      "target": "Piano_nobile",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Piano",
+      "target": "Piano_terreno",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Piano",
+      "target": "Sottotetto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Muro",
+      "target": "Muraglione",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Fontana",
+      "target": "Ninfeo",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Utensile",
+      "target": "Pennello",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Porta",
+      "target": "Portale",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Porta",
+      "target": "Portello",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Porta",
+      "target": "Portone",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Portico",
+      "target": "Porticato",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Porticato",
+      "target": "Pronao",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Metodo",
+      "target": "Prospettiva",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Complesso_architettonico",
+      "target": "Reclusorio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Pavimento",
+      "target": "Risseau",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Stanza",
+      "target": "Sala",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Stanza",
+      "target": "Salone",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Stanza",
+      "target": "Salotto",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Salone",
+      "target": "Salone_Maggiore",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Scala",
+      "target": "Scalone",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Prospettiva",
+      "target": "Scorcio",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Prospettiva",
+      "target": "Sfondato",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Soggetto_iconografico",
+      "target": "Soggetto_Allegorico",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Soggetto_iconografico",
+      "target": "Soggetto_Araldico",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Soggetto_iconografico",
+      "target": "Soggetto_Mitologico",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Soggetto_iconografico",
+      "target": "Soggetto_Ornamentale",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Soggetto_iconografico",
+      "target": "Soggetto_Storico",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Soggetto",
+      "target": "Soggetto_iconografico",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Scorcio",
+      "target": "Sottinsù",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Scultura",
+      "target": "Statua",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Infrastruttura",
+      "target": "Strada",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Torre",
+      "target": "Torrione",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Volta",
+      "target": "Volta_a_botte",
+      "rel": "subClassOf"
+    },
+    {
+      "source": "Volta",
+      "target": "Volta_a_crociera",
+      "rel": "subClassOf"
+    }
+  ]
+}

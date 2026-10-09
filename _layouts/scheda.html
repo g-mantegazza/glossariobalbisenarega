@@ -291,7 +291,7 @@ title: {{ page.title }} | Glossario Rolli
                                 {% if s.lingua == "it" and current_it_val == target_it_val %}
                                     {% assign corrispettivo_trovato = s %}
                                     {% break %}
-                                  {% endif %}
+                                {% endif %}
                             {% endfor %}
                         {% endif %}
                     {% endif %}
@@ -360,6 +360,9 @@ title: {{ page.title }} | Glossario Rolli
                         <a href="/glossariobalbisenarega/glossario-it/" class="Btn-Comando-Laterale">
                             📋 Elenco Glossario (IT)
                         </a>
+                        <a href="{{ '/sfera.html' | relative_url }}?nodo={{ page.title | url_encode }}" class="Btn-Comando-Laterale" target="_blank" rel="noopener noreferrer" style="border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.05); color: #7c3aed;">
+                            🌐 Esplora nel Grafo 3D ↗
+                        </a>
                         <a href="/glossariobalbisenarega/ricerca-it/" class="Btn-Comando-Laterale">
                             🔄 Ruota di Traduzione
                         </a>
@@ -372,6 +375,9 @@ title: {{ page.title }} | Glossario Rolli
                     {% else %}
                         <a href="/glossariobalbisenarega/glossario-fr/" class="Btn-Comando-Laterale">
                             📋 Liste du Glossaire (FR)
+                        </a>
+                        <a href="{{ '/sfera.html' | relative_url }}?nodo={{ page.title | url_encode }}" class="Btn-Comando-Laterale" target="_blank" rel="noopener noreferrer" style="border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.05); color: #7c3aed;">
+                            🌐 Explorer le Graphe 3D ↗
                         </a>
                         <a href="/glossariobalbisenarega/ricerca-fr/" class="Btn-Comando-Laterale">
                             🔄 Roue de Traduction
