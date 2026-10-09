@@ -141,13 +141,15 @@ title: Recherche Termes (FR)
         }
 
         .ruota-wrapper {
-            position: relative;
-            height: 350px;
-            overflow: hidden;
-            width: 100%;
-            perspective: 1200px;
-            mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent);
-            -webkit-mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent);
+        position: relative;
+        height: 350px;
+        overflow: hidden;
+        width: 100%;
+        perspective: 1200px;
+        mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent);
+        -webkit-mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent);
+        overscroll-behavior-y: contain;
+        touch-action: none; /* FONDAMENTALE: impedisce al browser di trascinare la pagina intera quando il dito tocca qui */
         }
 
         .ruota-lista {
