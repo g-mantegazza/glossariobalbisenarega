@@ -1,1 +1,1163 @@
+---
+layout: null
+title: Sfera 3D
+---
 
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Ontologia 3D - Esploratore Semantico</title>
+  <style>
+    :root {
+      --bg-gradient: radial-gradient(circle at center, #0b0f19 0%, #030712 100%);
+      --hud-bg: rgba(11, 15, 25, 0.94);
+      --hud-border: rgba(139, 92, 246, 0.35);
+      --hud-text: #f8fafc;
+      --hud-muted: #94a3b8;
+      --hud-title: #a855f7;
+      --box-accent: rgba(168, 85, 247, 0.14);
+    }
+
+    body.light-theme {
+      --bg-gradient: radial-gradient(circle at center, #ffffff 0%, #e2e8f0 100%);
+      --hud-bg: rgba(255, 255, 255, 0.95);
+      --hud-border: rgba(139, 92, 246, 0.4);
+      --hud-text: #0f172a;
+      --hud-muted: #475569;
+      --hud-title: #7c3aed;
+      --box-accent: rgba(124, 58, 237, 0.08);
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: var(--bg-gradient);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: var(--hud-text);
+      user-select: none;
+      transition: background 0.3s ease;
+    }
+
+    #loading-screen {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #030712;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      color: #c084fc;
+      font-size: 1.1rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: opacity 0.4s ease;
+    }
+
+    #loading-screen.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    #hud {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: var(--hud-bg);
+      backdrop-filter: blur(14px);
+      padding: 16px 20px;
+      border-radius: 12px;
+      border: 1px solid var(--hud-border);
+      width: 330px;
+      box-sizing: border-box;
+      box-shadow: 0 10px 40px rgba(139, 92, 246, 0.15);
+      pointer-events: auto;
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+
+    .hud-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .hud-header h1 {
+      font-size: 0.95rem;
+      margin: 0;
+      color: var(--hud-title);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .hud-header-actions {
+      display: flex;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .theme-toggle-btn {
+      background: var(--box-accent);
+      border: 1px solid var(--hud-border);
+      color: var(--hud-text);
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .theme-toggle-btn:hover {
+      filter: brightness(1.2);
+    }
+
+    .hud-section {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid var(--hud-border);
+      font-size: 0.8rem;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin: 4px 0;
+      font-size: 0.78rem;
+      color: var(--hud-text);
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 8px;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .line-dot {
+      width: 16px;
+      height: 4px;
+      border-radius: 2px;
+      margin-right: 8px;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    #controls-card {
+      margin-top: 12px;
+      background: var(--box-accent);
+      border: 1px solid var(--hud-border);
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+
+    #controls-card strong {
+      display: block;
+      color: var(--hud-title);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 6px;
+    }
+
+    .control-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 4px 0;
+      font-size: 0.78rem;
+      color: var(--hud-text);
+    }
+
+    .key {
+      background: rgba(125, 125, 125, 0.3);
+      border: 1px solid var(--hud-border);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--hud-text);
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-weight: 700;
+      font-size: 0.75rem;
+    }
+
+    body.light-theme #legenda-subclass {
+      background: #1e293b !important;
+    }
+
+    /* CARD DEFINIZIONE ANCORATA */
+    #definition-bubble {
+      position: absolute;
+      display: none;
+      pointer-events: auto;
+      width: 310px;
+      background: var(--hud-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--hud-border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.5);
+      z-index: 100;
+      font-size: 0.82rem;
+      transform: translate(-50%, calc(-100% - 15px));
+      transition: opacity 0.2s ease;
+      opacity: 0;
+    }
+
+    #definition-bubble.active {
+      display: block;
+      opacity: 1;
+    }
+
+    #definition-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      width: 12px;
+      height: 12px;
+      background: var(--hud-bg);
+      border-right: 1px solid var(--hud-border);
+      border-bottom: 1px solid var(--hud-border);
+    }
+
+    .bubble-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .bubble-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--hud-text);
+      margin: 0;
+    }
+
+    .bubble-lang-btn {
+      background: var(--box-accent);
+      border: 1px solid var(--hud-border);
+      color: var(--hud-title);
+      padding: 3px 8px;
+      border-radius: 5px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .bubble-lang-btn:hover {
+      filter: brightness(1.2);
+    }
+
+    .bubble-ipa {
+      font-size: 0.74rem;
+      color: var(--hud-muted);
+      font-style: italic;
+      margin-bottom: 6px;
+    }
+
+    .bubble-def {
+      color: var(--hud-text);
+      line-height: 1.45;
+      margin: 0;
+      font-size: 0.8rem;
+    }
+
+    .bubble-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      padding: 5px 10px;
+      background: var(--box-accent);
+      border: 1px solid var(--hud-border);
+      color: var(--hud-title);
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.76rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .bubble-link-btn:hover {
+      filter: brightness(1.25);
+      text-decoration: underline;
+    }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+</head>
+<body>
+
+  <div id="loading-screen">
+    <span id="loading-text">Calibrazione Focus... Scansione Grafo in corso</span>
+  </div>
+
+  <!-- HUD PRINCIPALE -->
+  <div id="hud">
+    <div class="hud-header">
+      <h1>Focus UI</h1>
+      <div class="hud-header-actions">
+        <a href="./" class="theme-toggle-btn" title="Torna alla Home" style="background: rgba(168, 85, 247, 0.2); border-color: rgba(168, 85, 247, 0.5); color: #c084fc;">🏠 Home</a>
+        <button class="theme-toggle-btn" id="themeToggle" onclick="toggleTheme()">☀️ Chiaro</button>
+      </div>
+    </div>
+    
+    <div>
+      <span style="font-size: 0.75rem; color: var(--hud-muted);">Segnale Selezionato:</span><br>
+      <strong id="node-name" style="font-size: 1.05rem;">-</strong> 
+      <span id="node-type-badge" class="badge" style="background:#10b981; color:#022c22;">Radice</span>
+    </div>
+
+    <div id="target-info" style="margin-top: 6px; font-size: 0.82rem;">
+      Canale dati: <span id="target-name" style="font-weight: 700; color:#eab308;">-</span><br>
+      <span style="font-size: 0.75rem; color: var(--hud-muted);">Vettore: <span id="target-rel" style="color: #e2e8f0;">-</span></span>
+    </div>
+
+    <div class="hud-section">
+      <strong style="color: var(--hud-muted); font-size: 0.7rem; text-transform: uppercase;">Nodi:</strong>
+      <div class="legend-item"><span class="dot" style="background: #10b981;"></span> Radice Universale / Ambiti</div>
+      <div class="legend-item"><span class="dot" style="background: #eab308;"></span> Concetti / Classi</div>
+      <div class="legend-item"><span class="dot" style="background: #9333ea;"></span> Individui / Istanze</div>
+    </div>
+
+    <div class="hud-section">
+      <strong style="color: var(--hud-muted); font-size: 0.7rem; text-transform: uppercase;">Binari:</strong>
+      <div class="legend-item"><span class="line-dot" id="legenda-subclass" style="background: #e2e8f0;"></span> Gerarchia (subClassOf)</div>
+    </div>
+
+    <div id="controls-card">
+      <strong>Interfaccia Focus</strong>
+      <div class="control-row">
+        <span>Seleziona vettore</span>
+        <span><span class="key">←</span> <span class="key">→</span></span>
+      </div>
+      <div class="control-row">
+        <span>Aggancia vettore</span>
+        <span class="key">Spazio</span>
+      </div>
+      <div class="control-row">
+        <span>Volo Avanti / Indietro</span>
+        <span><span class="key">W</span> <span class="key">S</span></span>
+      </div>
+      <div class="control-row">
+        <span>Orbita sensore</span>
+        <span style="font-size: 0.72rem; color: var(--hud-muted);">Trascina col mouse</span>
+      </div>
+      <div class="control-row">
+        <span>Spettro Visivo</span>
+        <span class="key">L</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOLLA HOVER ANCORATA -->
+  <div id="definition-bubble">
+    <div class="bubble-header">
+      <h3 class="bubble-title" id="b-title">-</h3>
+      <button class="bubble-lang-btn" id="b-lang-btn" onclick="toggleBubbleLanguage()">IT ⇄ FR</button>
+    </div>
+    <div class="bubble-ipa" id="b-ipa"></div>
+    <p class="bubble-def" id="b-def">-</p>
+    <a href="#" id="b-link" class="bubble-link-btn" target="_blank" rel="noopener noreferrer">
+      <span id="b-link-text">Apri scheda completa</span> ↗
+    </a>
+  </div>
+
+  <script>
+    const NODE_COLORS = {
+      root: 0x10b981,
+      concept: 0xeab308,
+      instance: 0x9333ea
+    };
+
+    const REL_COLORS_DARK = { subClassOf: 0xe2e8f0 };
+    const REL_COLORS_LIGHT = { subClassOf: 0x1e293b };
+
+    let isDarkTheme = true;
+    let CURRENT_REL_COLORS = REL_COLORS_DARK;
+
+    const scene = new THREE.Scene();
+    scene.fog = null;
+
+    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 8000);
+    camera.position.set(0, 80, 520);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    document.body.appendChild(renderer.domElement);
+
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1.15);
+    scene.add(ambientLight);
+
+    const dirLight1 = new THREE.DirectionalLight(0xffffff, 0.9);
+    dirLight1.position.set(500, 800, 500);
+    scene.add(dirLight1);
+
+    const dirLight2 = new THREE.DirectionalLight(0xa855f7, 0.6);
+    dirLight2.position.set(-500, -600, -500);
+    scene.add(dirLight2);
+
+    const nodeMap = {};
+    const nodeMeshes = [];
+    const labelSprites = [];
+    const rails = [];
+    
+    let horizonHoloGroup = null;
+    let ringOrbitYaw = null;
+    let ringOrbitPitch = null;
+    let ringOrbitRoll = null;
+    let geoIcosahedron = null;
+    let holoPulseMaterial = null;
+
+    let currentNode = null;
+    let neighborIndex = 0;
+    let currentNeighbors = [];
+    let isFlying = false;
+
+    function getOptimalNodeViewPosition(node, currentCamPos) {
+      const radius = node.size || 4;
+      const viewDir = currentCamPos.clone().sub(node.position).normalize();
+      const distance = Math.max(radius * 5.0, 56);
+      const dest = node.position.clone().addScaledVector(viewDir, distance);
+      dest.y += radius * 0.9;
+      return dest;
+    }
+
+    function createLabelTexture(text, isDark) {
+      const canvas = document.createElement('canvas');
+      canvas.width = 512;
+      canvas.height = 128;
+      const ctx = canvas.getContext('2d');
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.font = 'Bold 42px "Segoe UI", system-ui, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+
+      if (isDark) {
+        ctx.shadowColor = 'rgba(168, 85, 247, 0.85)';
+        ctx.shadowBlur = 12;
+        ctx.fillStyle = '#ffffff';
+      } else {
+        ctx.shadowColor = 'rgba(255, 255, 255, 0.95)';
+        ctx.shadowBlur = 10;
+        ctx.fillStyle = '#0f172a';
+      }
+
+      ctx.fillText(text, 256, 64);
+      return new THREE.CanvasTexture(canvas);
+    }
+
+    function initSceneWithData(ontology) {
+      try {
+        const thingNode = {
+          id: "Thing",
+          label: "owl:Thing",
+          type: "root",
+          parentId: null,
+          position: new THREE.Vector3(0, 0, 0),
+          size: 11.0,
+          ipa: { it: "", fr: "" },
+          def: {
+            it: "Classe universale al vertice dell'ontologia formale OWL. Tutte le entità e le classi ne sono sottoclassi.",
+            fr: "Classe universelle suprême de l'ontologie OWL. Toutes les entités en sont des sous-classes."
+          },
+          urls: { it: "#", fr: "#" }
+        };
+
+        ontology.nodes.forEach(n => {
+          if (n.id !== "Thing" && (n.parentId === null || n.type === "root")) {
+            n.parentId = "Thing";
+            n.type = "concept";
+            ontology.links.push({
+              source: "Thing",
+              target: n.id,
+              rel: "subClassOf"
+            });
+          }
+        });
+
+        ontology.nodes.unshift(thingNode);
+
+        ontology.nodes.forEach(n => {
+          nodeMap[n.id] = n;
+        });
+
+        const childrenByParent = {};
+        ontology.nodes.forEach(n => {
+          if (n.parentId) {
+            if (!childrenByParent[n.parentId]) childrenByParent[n.parentId] = [];
+            childrenByParent[n.parentId].push(n);
+          }
+        });
+
+        const primaryBranches = childrenByParent["Thing"] || [];
+        const ROOT_ORBIT_RADIUS = 260;
+
+        primaryBranches.forEach((branch, idx) => {
+          const radAngle = (idx / Math.max(primaryBranches.length, 1)) * Math.PI * 2;
+          branch.position = new THREE.Vector3(
+            Math.cos(radAngle) * ROOT_ORBIT_RADIUS,
+            (idx % 2 === 0 ? 35 : -35),
+            Math.sin(radAngle) * ROOT_ORBIT_RADIUS
+          );
+        });
+
+        function layoutChildren(parentId) {
+          const parent = nodeMap[parentId];
+          const children = childrenByParent[parentId] || [];
+          if (!parent || !parent.position || children.length === 0) return;
+
+          if (parentId !== "Thing") {
+            const count = children.length;
+            const baseDist = 80 + Math.min(count * 4.5, 90);
+
+            children.forEach((child, idx) => {
+              const phi = Math.acos(-1 + (2 * (idx + 0.5)) / Math.max(count, 1));
+              const theta = Math.sqrt(count * Math.PI) * phi;
+
+              let dir = new THREE.Vector3(
+                Math.cos(theta) * Math.sin(phi),
+                Math.cos(phi) * 0.75,
+                Math.sin(theta) * Math.sin(phi)
+              );
+
+              const outwardBias = parent.position.clone().normalize();
+              dir.addScaledVector(outwardBias, 0.6).normalize();
+
+              child.position = parent.position.clone().addScaledVector(dir, baseDist);
+            });
+          }
+
+          children.forEach(child => layoutChildren(child.id));
+        }
+
+        layoutChildren("Thing");
+
+        let maxNodeDist = 0;
+        ontology.nodes.forEach(node => {
+          if (!node.position) {
+            node.position = new THREE.Vector3(
+              (Math.random() - 0.5) * 300,
+              (Math.random() - 0.5) * 100,
+              (Math.random() - 0.5) * 300
+            );
+          }
+          const d = node.position.length();
+          if (d > maxNodeDist) maxNodeDist = d;
+        });
+
+        // SFERA OLOGRAFICA STILE HORIZON
+        const holoRadius = Math.max(maxNodeDist + 75, 430);
+        horizonHoloGroup = new THREE.Group();
+
+        const icosaGeo = new THREE.IcosahedronGeometry(holoRadius, 2);
+        holoPulseMaterial = new THREE.MeshBasicMaterial({
+          color: 0x9333ea,
+          wireframe: true,
+          transparent: true,
+          opacity: 0.38,
+          blending: THREE.AdditiveBlending
+        });
+        geoIcosahedron = new THREE.Mesh(icosaGeo, holoPulseMaterial);
+        horizonHoloGroup.add(geoIcosahedron);
+
+        const icosaVerts = icosaGeo.attributes.position;
+        const pCount = icosaVerts.count;
+        const pointsGeo = new THREE.BufferGeometry();
+        const positions = new Float32Array(pCount * 3);
+        for (let i = 0; i < pCount * 3; i++) {
+          positions[i] = icosaVerts.array[i];
+        }
+        pointsGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+        const pMat = new THREE.PointsMaterial({
+          color: 0x38bdf8,
+          size: 4.5,
+          transparent: true,
+          opacity: 0.85,
+          blending: THREE.AdditiveBlending
+        });
+        const holoPoints = new THREE.Points(pointsGeo, pMat);
+        horizonHoloGroup.add(holoPoints);
+
+        function createFocusRing(radius, thickness, color, opacity) {
+          const ringGeo = new THREE.RingGeometry(radius - thickness, radius, 128);
+          const ringMat = new THREE.MeshBasicMaterial({
+            color: color,
+            side: THREE.DoubleSide,
+            transparent: true,
+            opacity: opacity,
+            blending: THREE.AdditiveBlending
+          });
+          return new THREE.Mesh(ringGeo, ringMat);
+        }
+
+        ringOrbitYaw = createFocusRing(holoRadius + 4, 3.2, 0xc084fc, 0.75);
+        ringOrbitYaw.rotation.x = Math.PI / 2;
+        horizonHoloGroup.add(ringOrbitYaw);
+
+        ringOrbitPitch = createFocusRing(holoRadius + 8, 2.5, 0x06b6d4, 0.65);
+        ringOrbitPitch.rotation.y = Math.PI / 3;
+        horizonHoloGroup.add(ringOrbitPitch);
+
+        ringOrbitRoll = createFocusRing(holoRadius + 12, 2.0, 0xf59e0b, 0.55);
+        ringOrbitRoll.rotation.x = Math.PI / 4;
+        ringOrbitRoll.rotation.z = Math.PI / 6;
+        horizonHoloGroup.add(ringOrbitRoll);
+
+        const innerGlowGeo = new THREE.SphereGeometry(holoRadius - 2, 32, 32);
+        const innerGlowMat = new THREE.MeshBasicMaterial({
+          color: 0x4f46e5,
+          transparent: true,
+          opacity: 0.06,
+          side: THREE.BackSide,
+          blending: THREE.AdditiveBlending
+        });
+        const innerGlow = new THREE.Mesh(innerGlowGeo, innerGlowMat);
+        horizonHoloGroup.add(innerGlow);
+
+        scene.add(horizonHoloGroup);
+
+        const vFovRad = (camera.fov * Math.PI) / 180;
+        const aspect = Math.max(window.innerWidth / window.innerHeight, 0.6);
+        const effectiveFov = aspect < 1 ? 2 * Math.atan(Math.tan(vFovRad / 2) / aspect) : vFovRad;
+        const maxFitDistance = (holoRadius / Math.sin(effectiveFov / 2)) * 1.05;
+
+        controls.minDistance = 15;
+        controls.maxDistance = maxFitDistance;
+
+        // Mesh sfere ed etichette
+        ontology.nodes.forEach(node => {
+          const size = node.size || (node.type === 'root' ? 9.5 : (node.type === 'concept' ? 4.2 : 2.8));
+          node.size = size;
+          const color = NODE_COLORS[node.type] || 0xeab308;
+
+          const sphereGeo = new THREE.SphereGeometry(size, 32, 32);
+          const sphereMat = new THREE.MeshStandardMaterial({
+            color: color,
+            emissive: color,
+            emissiveIntensity: 0.45,
+            roughness: 0.2,
+            metalness: 0.3
+          });
+          const mesh = new THREE.Mesh(sphereGeo, sphereMat);
+          mesh.position.copy(node.position);
+          mesh.userData = node;
+          node.mesh = mesh;
+          scene.add(mesh);
+          nodeMeshes.push(mesh);
+
+          const labelTex = createLabelTexture(node.label || node.id, isDarkTheme);
+          const spriteMat = new THREE.SpriteMaterial({
+            map: labelTex,
+            transparent: true,
+            depthTest: false
+          });
+          const sprite = new THREE.Sprite(spriteMat);
+          sprite.position.set(node.position.x, node.position.y + size + 6.0, node.position.z);
+          sprite.scale.set(34, 8.5, 1);
+          sprite.userData = { node: node };
+          scene.add(sprite);
+          labelSprites.push(sprite);
+        });
+
+        // Binari
+        ontology.links.forEach(link => {
+          const sourceNode = nodeMap[link.source];
+          const targetNode = nodeMap[link.target];
+          if (!sourceNode || !targetNode || !sourceNode.position || !targetNode.position) return;
+
+          const start = sourceNode.position;
+          const end = targetNode.position;
+
+          const mid = new THREE.Vector3().addVectors(start, end).multiplyScalar(0.5);
+          const outward = mid.clone().normalize().multiplyScalar(4);
+          mid.add(outward);
+
+          const curve = new THREE.CatmullRomCurve3([start, mid, end], false, 'centripetal', 0.5);
+          link.curve = curve;
+          rails.push(link);
+
+          const relColor = CURRENT_REL_COLORS[link.rel] || 0x94a3b8;
+          const tubeGeo = new THREE.TubeGeometry(curve, 32, 0.55, 6, false);
+          const tubeMat = new THREE.MeshStandardMaterial({
+            color: relColor,
+            emissive: relColor,
+            emissiveIntensity: 0.35,
+            roughness: 0.3
+          });
+          const tubeMesh = new THREE.Mesh(tubeGeo, tubeMat);
+          tubeMesh.userData = link;
+          link.mesh = tubeMesh;
+          scene.add(tubeMesh);
+        });
+
+        // Inquadratura iniziale & Deep-linking (?nodo=...)
+        const urlParams = new URLSearchParams(window.location.search);
+        const targetParam = urlParams.get('nodo');
+
+        let startTarget = null;
+        if (targetParam) {
+          const normParam = targetParam.toLowerCase().replace(/[^a-z0-9]/g, '');
+          startTarget = ontology.nodes.find(n => n.id.toLowerCase().replace(/[^a-z0-9]/g, '') === normParam);
+        }
+
+        if (startTarget && startTarget.position) {
+          currentNode = startTarget;
+          const initialDest = getOptimalNodeViewPosition(startTarget, new THREE.Vector3(0, 80, 520));
+          camera.position.copy(initialDest);
+          controls.target.copy(startTarget.position);
+          openBubbleForNode(startTarget);
+        } else {
+          currentNode = thingNode;
+          camera.position.set(0, 60, 480);
+          controls.target.copy(thingNode.position);
+        }
+
+        controls.update();
+        updateNeighborTargets();
+
+        const loader = document.getElementById('loading-screen');
+        if (loader) loader.classList.add('hidden');
+
+      } catch (err) {
+        console.error("Errore durante l'inizializzazione:", err);
+        const loadingText = document.getElementById('loading-text');
+        if (loadingText) {
+          loadingText.style.color = '#ef4444';
+          loadingText.innerHTML = `Errore interfaccia: ${err.message}<br><small>Apri la console (F12) per i dettagli.</small>`;
+        }
+      }
+    }
+
+    function updateNeighborTargets() {
+      if (!currentNode) return;
+      currentNeighbors = [];
+      rails.forEach(r => {
+        if (r.source === currentNode.id && nodeMap[r.target]) {
+          currentNeighbors.push({ targetNode: nodeMap[r.target], rail: r, forward: true });
+        } else if (r.target === currentNode.id && nodeMap[r.source]) {
+          currentNeighbors.push({ targetNode: nodeMap[r.source], rail: r, forward: false });
+        }
+      });
+
+      if (neighborIndex >= currentNeighbors.length) neighborIndex = 0;
+      if (neighborIndex < 0) neighborIndex = currentNeighbors.length - 1;
+
+      rails.forEach(r => {
+        if (r.mesh && r.mesh.material) {
+          const baseColor = CURRENT_REL_COLORS[r.rel] || 0x94a3b8;
+          r.mesh.material.color.setHex(baseColor);
+          r.mesh.material.emissive.setHex(baseColor);
+          r.mesh.material.emissiveIntensity = isDarkTheme ? 0.35 : 0.2;
+        }
+      });
+
+      if (currentNeighbors.length > 0) {
+        const active = currentNeighbors[neighborIndex];
+        if (active.rail && active.rail.mesh) {
+          active.rail.mesh.material.emissiveIntensity = 1.0;
+        }
+
+        document.getElementById('target-name').innerText = active.targetNode.label || active.targetNode.id;
+        document.getElementById('target-rel').innerText = active.rail.rel;
+        const colHex = CURRENT_REL_COLORS[active.rail.rel] || 0xffffff;
+        document.getElementById('target-rel').style.color = '#' + colHex.toString(16).padStart(6, '0');
+      } else {
+        document.getElementById('target-name').innerText = "Nessun collegamento";
+        document.getElementById('target-rel').innerText = "-";
+      }
+
+      document.getElementById('node-name').innerText = currentNode.label || currentNode.id;
+      const badge = document.getElementById('node-type-badge');
+      if (currentNode.type === 'root') {
+        badge.innerText = "Radice Universale";
+        badge.style.background = "#10b981";
+        badge.style.color = "#022c22";
+      } else if (currentNode.type === 'concept') {
+        badge.innerText = "Concetto";
+        badge.style.background = "#eab308";
+        badge.style.color = "#422006";
+      } else {
+        badge.innerText = "Individuo";
+        badge.style.background = "#9333ea";
+        badge.style.color = "#faf5ff";
+      }
+    }
+
+    function flyAlongSelectedRail() {
+      if (isFlying || currentNeighbors.length === 0) return;
+      isFlying = true;
+      controls.enabled = false;
+      closeBubble();
+
+      const active = currentNeighbors[neighborIndex];
+      const curve = active.rail.curve;
+      const isForward = active.forward;
+      const targetNode = active.targetNode;
+
+      const startCamPos = camera.position.clone();
+      const startAim = controls.target.clone();
+
+      const optimalEndPos = getOptimalNodeViewPosition(targetNode, camera.position);
+      const optimalEndAim = targetNode.position.clone();
+
+      const flightData = { progress: 0 };
+      const upAxis = new THREE.Vector3(0, 1, 0);
+
+      new TWEEN.Tween(flightData)
+        .to({ progress: 1 }, 2300)
+        .easing(TWEEN.Easing.Cubic.InOut)
+        .onUpdate(() => {
+          const t = flightData.progress;
+          const u = isForward ? t : 1 - t;
+          const curvePt = curve.getPointAt(Math.max(0, Math.min(1, u)));
+          const tangent = curve.getTangentAt(Math.max(0, Math.min(1, u)));
+          if (!isForward) tangent.negate();
+
+          const binormal = new THREE.Vector3().crossVectors(tangent, upAxis).normalize();
+          if (binormal.lengthSq() < 0.1) binormal.set(1, 0, 0);
+
+          const cruisePos = curvePt.clone()
+            .addScaledVector(tangent, -16)
+            .add(new THREE.Vector3(0, 8, 0));
+
+          if (t < 0.22) {
+            const ease = t / 0.22;
+            camera.position.lerpVectors(startCamPos, cruisePos, ease * ease);
+          } else if (t > 0.72) {
+            const ease = (t - 0.72) / 0.28;
+            camera.position.lerpVectors(cruisePos, optimalEndPos, ease);
+          } else {
+            camera.position.copy(cruisePos);
+          }
+
+          const lookAheadU = isForward ? Math.min(u + 0.14, 1) : Math.max(u - 0.14, 0);
+          const cruiseAim = curve.getPointAt(lookAheadU);
+
+          const currentLook = new THREE.Vector3();
+          if (t < 0.3) {
+            currentLook.lerpVectors(startAim, cruiseAim, t / 0.3);
+          } else if (t > 0.7) {
+            currentLook.lerpVectors(cruiseAim, optimalEndAim, (t - 0.7) / 0.3);
+          } else {
+            currentLook.copy(cruiseAim);
+          }
+
+          camera.lookAt(currentLook);
+          controls.target.copy(currentLook);
+        })
+        .onComplete(() => {
+          camera.position.copy(optimalEndPos);
+          controls.target.copy(optimalEndAim);
+          controls.update();
+
+          currentNode = targetNode;
+          neighborIndex = 0;
+          updateNeighborTargets();
+
+          controls.enabled = true;
+          isFlying = false;
+
+          openBubbleForNode(targetNode);
+        })
+        .start();
+    }
+
+    function toggleTheme() {
+      isDarkTheme = !isDarkTheme;
+      document.body.classList.toggle('light-theme', !isDarkTheme);
+      CURRENT_REL_COLORS = isDarkTheme ? REL_COLORS_DARK : REL_COLORS_LIGHT;
+
+      labelSprites.forEach(sp => {
+        sp.material.map = createLabelTexture(sp.userData.node.label || sp.userData.node.id, isDarkTheme);
+        sp.material.needsUpdate = true;
+      });
+
+      const btn = document.getElementById('themeToggle');
+      if (isDarkTheme) {
+        btn.innerText = "☀️ Chiaro";
+        ambientLight.intensity = 1.15;
+      } else {
+        btn.innerText = "🌙 Scuro";
+        ambientLight.intensity = 1.35;
+      }
+      updateNeighborTargets();
+    }
+
+    // ==========================================
+    // SISTEMA BOLLA ANCORATA
+    // ==========================================
+    const bubbleEl = document.getElementById('definition-bubble');
+    let activeAnchorNode = null;
+    let bubbleLang = 'it';
+    let isCursorOverBubble = false;
+    let isCursorOverSphere = false;
+    let closeBubbleTimeout = null;
+
+    bubbleEl.addEventListener('mouseenter', () => { 
+      isCursorOverBubble = true; 
+      if (closeBubbleTimeout) clearTimeout(closeBubbleTimeout);
+    });
+
+    bubbleEl.addEventListener('mouseleave', () => { 
+      isCursorOverBubble = false; 
+      scheduleCloseBubble();
+    });
+
+    function toggleBubbleLanguage() {
+      bubbleLang = bubbleLang === 'it' ? 'fr' : 'it';
+      if (activeAnchorNode) {
+        updateBubbleContent(activeAnchorNode);
+      }
+    }
+
+    function updateBubbleContent(node) {
+      document.getElementById('b-title').innerText = node.label || node.id;
+      document.getElementById('b-lang-btn').innerText = bubbleLang.toUpperCase() + " ⇄ " + (bubbleLang === 'it' ? 'FR' : 'IT');
+      document.getElementById('b-ipa').innerText = (node.ipa && node.ipa[bubbleLang]) ? node.ipa[bubbleLang] : "";
+      document.getElementById('b-def').innerText = (node.def && node.def[bubbleLang]) ? node.def[bubbleLang] : "Nessuna definizione disponibile.";
+
+      const linkEl = document.getElementById('b-link');
+      const linkText = document.getElementById('b-link-text');
+      if (node.urls && node.urls[bubbleLang] && node.urls[bubbleLang] !== "#") {
+        linkEl.href = node.urls[bubbleLang];
+        linkEl.style.display = 'inline-flex';
+        linkText.innerText = bubbleLang === 'it' ? 'Apri scheda completa' : 'Consulter la fiche complète';
+      } else {
+        linkEl.style.display = 'none';
+      }
+    }
+
+    function openBubbleForNode(node) {
+      if (closeBubbleTimeout) clearTimeout(closeBubbleTimeout);
+      activeAnchorNode = node;
+      updateBubbleContent(node);
+      bubbleEl.classList.add('active');
+      updateBubblePosition();
+    }
+
+    const _screenVec = new THREE.Vector3();
+    function updateBubblePosition() {
+      if (!activeAnchorNode || !activeAnchorNode.position) return;
+
+      _screenVec.copy(activeAnchorNode.position);
+      _screenVec.y += (activeAnchorNode.size || 4) + 1.2;
+      _screenVec.project(camera);
+
+      if (_screenVec.z > 1.0) {
+        bubbleEl.style.display = 'none';
+        return;
+      } else {
+        bubbleEl.style.display = 'block';
+      }
+
+      const x = (_screenVec.x * 0.5 + 0.5) * window.innerWidth;
+      const y = (-(_screenVec.y * 0.5) + 0.5) * window.innerHeight;
+
+      bubbleEl.style.left = `${x}px`;
+      bubbleEl.style.top = `${y}px`;
+    }
+
+    function scheduleCloseBubble() {
+      if (closeBubbleTimeout) clearTimeout(closeBubbleTimeout);
+      closeBubbleTimeout = setTimeout(() => {
+        if (!isCursorOverSphere && !isCursorOverBubble) {
+          closeBubble();
+        }
+      }, 160);
+    }
+
+    function closeBubble() {
+      bubbleEl.classList.remove('active');
+      activeAnchorNode = null;
+      isCursorOverBubble = false;
+      isCursorOverSphere = false;
+    }
+
+    // Raycaster Mouse
+    const raycaster = new THREE.Raycaster();
+    const mouseVec = new THREE.Vector2();
+
+    window.addEventListener('mousemove', (e) => {
+      if (isFlying) return;
+
+      mouseVec.x = (e.clientX / window.innerWidth) * 2 - 1;
+      mouseVec.y = -(e.clientY / window.innerHeight) * 2 + 1;
+      raycaster.setFromCamera(mouseVec, camera);
+
+      const intersects = raycaster.intersectObjects(nodeMeshes);
+      if (intersects.length > 0) {
+        isCursorOverSphere = true;
+        const targetNode = intersects[0].object.userData;
+        if (activeAnchorNode !== targetNode) {
+          openBubbleForNode(targetNode);
+        }
+      } else {
+        isCursorOverSphere = false;
+        scheduleCloseBubble();
+      }
+    });
+
+    window.addEventListener('mouseleave', () => {
+      isCursorOverSphere = false;
+      closeBubble();
+    });
+
+    const keys = {};
+    window.addEventListener('keydown', (e) => {
+      keys[e.code] = true;
+
+      if (e.code === 'ArrowRight') {
+        neighborIndex = (neighborIndex + 1) % Math.max(1, currentNeighbors.length);
+        updateNeighborTargets();
+      } else if (e.code === 'ArrowLeft') {
+        neighborIndex = (neighborIndex - 1 + currentNeighbors.length) % Math.max(1, currentNeighbors.length);
+        updateNeighborTargets();
+      } else if (e.code === 'Space') {
+        flyAlongSelectedRail();
+      } else if (e.code === 'KeyL') {
+        toggleTheme();
+      }
+    });
+
+    window.addEventListener('keyup', (e) => {
+      keys[e.code] = false;
+    });
+
+    function handleNavigation() {
+      if (isFlying) return;
+      const forwardDir = new THREE.Vector3();
+      camera.getWorldDirection(forwardDir);
+
+      if (keys['KeyW']) {
+        camera.position.addScaledVector(forwardDir, 1.4);
+        controls.target.addScaledVector(forwardDir, 1.4);
+      }
+      if (keys['KeyS']) {
+        if (camera.position.length() < controls.maxDistance) {
+          camera.position.addScaledVector(forwardDir, -1.4);
+          controls.target.addScaledVector(forwardDir, -1.4);
+        }
+      }
+    }
+
+    window.addEventListener('click', (e) => {
+      if (e.target.closest('#hud') || e.target.closest('#definition-bubble')) return;
+      mouseVec.x = (e.clientX / window.innerWidth) * 2 - 1;
+      mouseVec.y = -(e.clientY / window.innerHeight) * 2 + 1;
+      raycaster.setFromCamera(mouseVec, camera);
+
+      const intersects = raycaster.intersectObjects(nodeMeshes);
+      if (intersects.length > 0) {
+        const clicked = intersects[0].object.userData;
+        const nIndex = currentNeighbors.findIndex(cn => cn.targetNode.id === clicked.id);
+        if (nIndex !== -1) {
+          neighborIndex = nIndex;
+          updateNeighborTargets();
+          flyAlongSelectedRail();
+        } else {
+          currentNode = clicked;
+          neighborIndex = 0;
+          updateNeighborTargets();
+
+          const destPos = getOptimalNodeViewPosition(clicked, camera.position);
+
+          new TWEEN.Tween(camera.position)
+            .to({ x: destPos.x, y: destPos.y, z: destPos.z }, 1200)
+            .easing(TWEEN.Easing.Cubic.Out)
+            .onUpdate(() => controls.target.copy(clicked.position))
+            .start();
+        }
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      updateBubblePosition();
+    });
+
+    function animate(time) {
+      requestAnimationFrame(animate);
+      TWEEN.update(time);
+      handleNavigation();
+      
+      if (!isFlying) {
+        controls.update();
+      }
+
+      if (horizonHoloGroup) {
+        if (ringOrbitYaw) ringOrbitYaw.rotation.z += 0.0018;
+        if (ringOrbitPitch) ringOrbitPitch.rotation.z -= 0.0024;
+        if (ringOrbitRoll) ringOrbitRoll.rotation.z += 0.0012;
+
+        if (geoIcosahedron) {
+          geoIcosahedron.rotation.y += 0.0006;
+          geoIcosahedron.rotation.x += 0.0003;
+        }
+
+        if (holoPulseMaterial) {
+          holoPulseMaterial.opacity = 0.28 + Math.sin(time * 0.0022) * 0.14;
+        }
+      }
+
+      if (activeAnchorNode) {
+        updateBubblePosition();
+      }
+
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    fetch('ontologia.json')
+      .then(res => {
+        if (!res.ok) throw new Error("Status " + res.status);
+        return res.json();
+      })
+      .then(data => {
+        initSceneWithData(data);
+      })
+      .catch(err => {
+        console.error("Errore caricamento ontologia.json:", err);
+        const loadingText = document.getElementById('loading-text');
+        if (loadingText) {
+          loadingText.style.color = '#ef4444';
+          loadingText.innerHTML = 'Errore nel caricamento del file ontologia.json.<br>Verifica che sia nella root del sito o servito via HTTP.';
+        }
+      });
+  </script>
+</body>
+</html>
