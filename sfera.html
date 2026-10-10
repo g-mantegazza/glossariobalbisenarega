@@ -1141,7 +1141,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
     }
     animate();
 
-    fetch('ontologia.json')
+    fetch('{{ "/ontologia.json" | relative_url }}')
       .then(res => {
         if (!res.ok) throw new Error("Status " + res.status);
         return res.json();
