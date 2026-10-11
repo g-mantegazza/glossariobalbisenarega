@@ -64,7 +64,11 @@ title: Contatti e Feedback
             <p id="txt-intro" style="color: #4a5568; text-align: center; max-width: 800px; margin: 0 auto;">Questo spazio è dedicato alla raccolta di osservazioni, segnalazioni di refusi o proposte di integrazione terminologica da parte di revisori, docenti ed esperti del settore.</p>
 
             <div class="Form-Container">
-                <form id="my-form" onsubmit="inviaFormAjax(event)">
+                <form id="feedback-form" onsubmit="inviaWeb3Forms(event)">
+                    <!-- INCOLLA QUI LA TUA CHIAVE DI WEB3FORMS -->
+                    <input type="hidden" name="access_key" value="b9a60e23-f32e-4685-bbab-8a1c7a6cf2af">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                     <div class="Form-Group">
                         <label id="lbl-nome" class="Form-Label">Nome e Affiliazione Istituzionale</label>
                         <input type="text" name="name" class="Form-Input" required>
@@ -76,9 +80,9 @@ title: Contatti e Feedback
                     <div class="Form-Group">
                         <label id="lbl-tipo" class="Form-Label">Tipologia di feedback</label>
                         <select name="type" class="Form-Input">
-                            <option id="opt-1" value="proposta">Proposta di modifica di una scheda</option>
-                            <option id="opt-2" value="refuso">Segnalazione di un refuso</option>
-                            <option id="opt-3" value="generale">Osservazione metodologica</option>
+                            <option id="opt-1" value="Proposta di modifica di una scheda">Proposta di modifica di una scheda</option>
+                            <option id="opt-2" value="Segnalazione di un refuso">Segnalazione di un refuso</option>
+                            <option id="opt-3" value="Osservazione metodologica">Osservazione metodologica</option>
                         </select>
                     </div>
                     <div class="Form-Group">
@@ -158,31 +162,32 @@ title: Contatti e Feedback
         document.getElementById('btn-lang-fr').style.opacity = (lang === 'fr') ? '1' : '0.5';
     }
 
-    async function inviaFormAjax(event) {
+    async function inviaWeb3Forms(event) {
         event.preventDefault();
         const form = event.target;
-        const data = new FormData(form);
-        
-        // SOSTITUISCI QUESTO URL CON IL TUO ENDPOINT DI FORMSPREE REALE
-        const endpointFormspree = "https://formspree.io/f/IL_TUO_CODICE_QUI";
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
 
         try {
-            const response = await fetch(endpointFormspree, {
-                method: 'POST',
-                body: data,
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
                 headers: {
-                    'Accept': 'application/json'
-                }
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: json
             });
+            const result = await response.json();
 
-            if (response.ok) {
+            if (result.success) {
                 form.style.display = "none";
                 document.getElementById("form-successo").style.display = "block";
             } else {
-                alert(linguaCorrente === 'it' ? "Si è verificato un errore durante l'invio. Riprova." : "Une erreur est survenue lors de l'envoi. Veuillez réessayer.");
+                alert(linguaCorrente === 'it' ? "Si è verificato un errore: " + result.message : "Une erreur est survenue : " + result.message);
             }
         } catch (error) {
-            alert(linguaCorrente === 'it' ? "Errore di connessione. Controlla la rete." : "Erreur de connexion. Vérifiez votre réseau.");
+            alert(linguaCorrente === 'it' ? "Errore di connessione al server." : "Erreur de connexion au serveur.");
         }
     }
 </script>
