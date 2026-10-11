@@ -6,6 +6,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
 <html lang="it">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Ontologia 3D - Esploratore Semantico</title>
   <style>
     :root {
@@ -36,6 +37,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
       color: var(--hud-text);
       user-select: none;
       transition: background 0.3s ease;
+      touch-action: none;
     }
 
     #loading-screen {
@@ -294,6 +296,12 @@ title: Grafo 3D - Palazzo Balbi Senarega
       margin: 0;
     }
 
+    .bubble-actions-right {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
     .bubble-lang-btn {
       background: var(--box-accent);
       border: 1px solid var(--hud-border);
@@ -309,6 +317,21 @@ title: Grafo 3D - Palazzo Balbi Senarega
       filter: brightness(1.2);
     }
 
+    .bubble-close-btn {
+      background: var(--box-accent);
+      border: 1px solid var(--hud-border);
+      color: var(--hud-title);
+      padding: 3px 7px;
+      border-radius: 5px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .bubble-close-btn:hover {
+      filter: brightness(1.2);
+    }
+
     .bubble-ipa {
       font-size: 0.74rem;
       color: var(--hud-muted);
@@ -321,6 +344,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
       line-height: 1.45;
       margin: 0 0 10px 0;
       font-size: 0.8rem;
+      white-space: pre-line;
     }
 
     .bubble-individuals {
@@ -373,6 +397,20 @@ title: Grafo 3D - Palazzo Balbi Senarega
     .bubble-link-btn:hover {
       filter: brightness(1.25);
       text-decoration: underline;
+    }
+
+    /* MEDIA QUERY RESPONSIVE PER DISPOSITIVI MOBILI */
+    @media (max-width: 768px) {
+      #hud {
+        width: calc(100% - 30px);
+        max-width: 345px;
+        max-height: 48vh;
+        overflow-y: auto;
+      }
+      #definition-bubble {
+        width: 275px;
+        max-height: 320px;
+      }
     }
   </style>
 
@@ -443,7 +481,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
       </div>
       <div class="control-row">
         <span>Orbita sensore</span>
-        <span style="font-size: 0.72rem; color: var(--hud-muted);">Trascina col mouse</span>
+        <span style="font-size: 0.72rem; color: var(--hud-muted);">Trascina col mouse/dito</span>
       </div>
       <div class="control-row">
         <span>Spettro Visivo</span>
@@ -455,7 +493,10 @@ title: Grafo 3D - Palazzo Balbi Senarega
   <div id="definition-bubble">
     <div class="bubble-header">
       <h3 class="bubble-title" id="b-title">-</h3>
-      <button class="bubble-lang-btn" id="b-lang-btn" onclick="toggleBubbleLanguage()">IT ⇄ FR</button>
+      <div class="bubble-actions-right">
+        <button class="bubble-lang-btn" id="b-lang-btn" onclick="toggleBubbleLanguage()">IT ⇄ FR</button>
+        <button class="bubble-close-btn" onclick="closeBubble()">✕</button>
+      </div>
     </div>
     <div class="bubble-ipa" id="b-ipa"></div>
     <p class="bubble-def" id="b-def">-</p>
@@ -614,7 +655,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
         ontology.nodes.unshift(thingNode);
 
         ontology.nodes.forEach(n => {
-          // CORREZIONE URL: Mappa i link alla struttura a cartelle pulite con suffisso _it/ e _fr/
           const baseSlug = n.id.toLowerCase().replace(/[^a-z0-9]/g, '_');
           n.urls = {
             it: `../${baseSlug}_it/`,
@@ -1224,6 +1264,8 @@ title: Grafo 3D - Palazzo Balbi Senarega
       const intersects = raycaster.intersectObjects(nodeMeshes);
       if (intersects.length > 0) {
         const clicked = intersects[0].object.userData;
+        openBubbleForNode(clicked); // Apertura immediata al click/tap utile per mobile
+
         const nIndex = currentNeighbors.findIndex(cn => cn.targetNode.id === clicked.id);
         if (nIndex !== -1) {
           neighborIndex = nIndex;
