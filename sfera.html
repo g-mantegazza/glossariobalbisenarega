@@ -586,7 +586,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
     const rails = [];
     let allLinksData = [];
     
-    // Gruppo per contenere i binari semantici dinamici accesi al click
+    // Gruppo per contenere i tubi semantici dinamici accesi al click
     const dynamicRailsGroup = new THREE.Group();
     scene.add(dynamicRailsGroup);
     
@@ -955,9 +955,9 @@ title: Grafo 3D - Palazzo Balbi Senarega
       }
     }
 
-    // Funzione per accendere i binari tratteggiati dinamici associati al nodo selezionato
+    // Funzione per accendere i tubi geometrici luminosi associati al nodo selezionato
     function showDynamicSemanticRails(node) {
-      // Pulisce i binari precedenti
+      // Pulisce i binari dinamici precedenti
       while (dynamicRailsGroup.children.length > 0) {
         const obj = dynamicRailsGroup.children[0];
         dynamicRailsGroup.remove(obj);
@@ -986,26 +986,24 @@ title: Grafo 3D - Palazzo Balbi Senarega
         mid.add(outward);
 
         const curve = new THREE.CatmullRomCurve3([start, mid, end], false, 'centripetal', 0.5);
-        const points = curve.getPoints(50);
-        const geo = new THREE.BufferGeometry().setFromPoints(points);
-
+        
+        // Creazione di un tubo sottile ed elegante colorato
+        const tubeGeo = new THREE.TubeGeometry(curve, 32, 0.45, 6, false);
         const relColor = SEMANTIC_REL_COLORS[link.rel] || 0xa855f7;
 
-        // Creazione linea tratteggiata luminosa
-        const mat = new THREE.LineDashedMaterial({
+        const tubeMat = new THREE.MeshStandardMaterial({
           color: relColor,
-          linewidth: 2,
-          scale: 1,
-          dashSize: 4,
-          gapSize: 2,
+          emissive: relColor,
+          emissiveIntensity: 0.8,
+          roughness: 0.2,
+          metalness: 0.3,
           transparent: true,
-          opacity: 0.9,
+          opacity: 0.85,
           blending: THREE.AdditiveBlending
         });
 
-        const line = new THREE.Line(geo, mat);
-        line.computeLineDistances(); // Obbligatorio per il tratteggio in Three.js
-        dynamicRailsGroup.add(line);
+        const tubeMesh = new THREE.Mesh(tubeGeo, tubeMat);
+        dynamicRailsGroup.add(tubeMesh);
       });
     }
 
@@ -1241,7 +1239,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
       updateBubbleContent(node);
       bubbleEl.classList.add('active');
       updateBubblePosition();
-      showDynamicSemanticRails(node); // Accende i binari tratteggiati colorati al click/apertura bolla
+      showDynamicSemanticRails(node); // Accende i binari geometrici colorati al click/apertura bolla
     }
 
     const _screenVec = new THREE.Vector3();
