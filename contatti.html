@@ -28,6 +28,18 @@ title: Contatti e Feedback
         .Btn-Home-Card { background: #ffffff; color: #1a365d; }
         .Btn-Home-Card:hover { background-color: #f2f9f8; }
 
+        .Messaggio-Successo {
+            display: none;
+            background-color: #e8f9f7;
+            border: 1px solid #2b8a73;
+            color: #1a365d;
+            padding: 20px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
         .Bollino-Flag-Home { width: 35px; height: 35px; border-radius: 50px; cursor: pointer; transition: transform 0.2s; border: 2px solid transparent; }
         @media (max-width: 950px) { .Header-Podio { flex-direction: column; align-items: center; } }
     </style>
@@ -52,26 +64,26 @@ title: Contatti e Feedback
             <p id="txt-intro" style="color: #4a5568; text-align: center; max-width: 800px; margin: 0 auto;">Questo spazio è dedicato alla raccolta di osservazioni, segnalazioni di refusi o proposte di integrazione terminologica da parte di revisori, docenti ed esperti del settore.</p>
 
             <div class="Form-Container">
-                <form id="feedback-form" onsubmit="inviaEmail(event)">
+                <form id="my-form" onsubmit="inviaFormAjax(event)">
                     <div class="Form-Group">
                         <label id="lbl-nome" class="Form-Label">Nome e Affiliazione Istituzionale</label>
-                        <input type="text" id="input-name" class="Form-Input" required>
+                        <input type="text" name="name" class="Form-Input" required>
                     </div>
                     <div class="Form-Group">
                         <label id="lbl-email" class="Form-Label">Indirizzo Email</label>
-                        <input type="email" id="input-email" class="Form-Input" required>
+                        <input type="email" name="email" class="Form-Input" required>
                     </div>
                     <div class="Form-Group">
                         <label id="lbl-tipo" class="Form-Label">Tipologia di feedback</label>
-                        <select id="input-type" class="Form-Input">
-                            <option id="opt-1" value="Proposta di modifica di una scheda">Proposta di modifica di una scheda</option>
-                            <option id="opt-2" value="Segnalazione di un refuso">Segnalazione di un refuso</option>
-                            <option id="opt-3" value="Osservazione metodologica">Osservazione metodologica</option>
+                        <select name="type" class="Form-Input">
+                            <option id="opt-1" value="proposta">Proposta di modifica di una scheda</option>
+                            <option id="opt-2" value="refuso">Segnalazione di un refuso</option>
+                            <option id="opt-3" value="generale">Osservazione metodologica</option>
                         </select>
                     </div>
                     <div class="Form-Group">
                         <label id="lbl-msg" class="Form-Label">Messaggio / Note</label>
-                        <textarea id="input-message" class="Form-Textarea" required></textarea>
+                        <textarea name="message" class="Form-Textarea" required></textarea>
                     </div>
                     
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 25px;">
@@ -83,6 +95,10 @@ title: Contatti e Feedback
                         </button>
                     </div>
                 </form>
+
+                <div id="form-successo" class="Messaggio-Successo">
+                    <span id="txt-successo">Grazie! La tua segnalazione è stata inviata con successo.</span>
+                </div>
             </div>
         </div>
     </main>
@@ -90,8 +106,34 @@ title: Contatti e Feedback
 
 <script>
     const trad = {
-        it: { titolo: "Valutazione e Feedback di Ricerca", intro: "Questo spazio è dedicato alla raccolta di osservazioni, segnalazioni di refusi o proposte di integrazione terminologica da parte di revisori, docenti ed esperti del settore.", nome: "Nome e Affiliazione Istituzionale", email: "Indirizzo Email", tipo: "Tipologia di feedback", opt1: "Proposta di modifica di una scheda", opt2: "Segnalazione di un refuso", opt3: "Osservazione metodologica", msg: "Messaggio / Note", invia: "Invia Segnalazione", home: "Torna alla Home" },
-        fr: { titolo: "Évaluation et Feedback de Recherche", intro: "Cet espace est dédié à la collecte d'observations, de signalements d'erreurs ou de propositions d'intégration terminologique de la part des réviseurs, enseignants et experts.", nome: "Nom et Affiliation Institutionnelle", email: "Adresse E-mail", tipo: "Type de feedback", opt1: "Proposition de modification", opt2: "Signalement d'une erreur", opt3: "Observation méthodologique", msg: "Message / Notes", invia: "Envoyer le signalement", home: "Retour à l'Accueil" }
+        it: { 
+            titolo: "Valutazione e Feedback di Ricerca", 
+            intro: "Questo spazio è dedicato alla raccolta di osservazioni, segnalazioni di refusi o proposte di integrazione terminologica da parte di revisori, docenti ed esperti del settore.", 
+            nome: "Nome e Affiliazione Istituzionale", 
+            email: "Indirizzo Email", 
+            tipo: "Tipologia di feedback", 
+            opt1: "Proposta di modifica di una scheda", 
+            opt2: "Segnalazione di un refuso", 
+            opt3: "Osservazione metodologica", 
+            msg: "Messaggio / Note", 
+            invia: "Invia Segnalazione", 
+            home: "Torna alla Home",
+            successo: "Grazie! La tua segnalazione è stata inviata con successo."
+        },
+        fr: { 
+            titolo: "Évaluation et Feedback de Recherche", 
+            intro: "Cet espace est dédié à la collecte d'observations, de signalements d'erreurs ou de propositions d'intégration terminologique de la part des réviseurs, enseignants et experts.", 
+            nome: "Nom et Affiliation Institutionnelle", 
+            email: "Adresse E-mail", 
+            tipo: "Type de feedback", 
+            opt1: "Proposition de modification", 
+            opt2: "Signalement d'une erreur", 
+            opt3: "Observation méthodologique", 
+            msg: "Message / Notes", 
+            invia: "Envoyer le signalement", 
+            home: "Retour à l'Accueil",
+            successo: "Merci ! Votre signalement a été envoyé avec succès."
+        }
     };
 
     let linguaCorrente = 'it';
@@ -109,24 +151,39 @@ title: Contatti e Feedback
         document.getElementById('lbl-msg').innerText = trad[lang].msg;
         document.getElementById('txt-invia-label').innerText = trad[lang].invia;
         document.getElementById('txt-home-label').innerText = trad[lang].home;
+        document.getElementById('txt-successo').innerText = trad[lang].successo;
         document.getElementById('btn-lang-it').style.border = (lang === 'it') ? '2px solid #1a365d' : '2px solid transparent';
         document.getElementById('btn-lang-fr').style.border = (lang === 'fr') ? '2px solid #1a365d' : '2px solid transparent';
         document.getElementById('btn-lang-it').style.opacity = (lang === 'it') ? '1' : '0.5';
         document.getElementById('btn-lang-fr').style.opacity = (lang === 'fr') ? '1' : '0.5';
     }
 
-    function inviaEmail(event) {
+    async function inviaFormAjax(event) {
         event.preventDefault();
-        const nome = document.getElementById('input-name').value;
-        const emailUtente = document.getElementById('input-email').value;
-        const tipo = document.getElementById('input-type').value;
-        const messaggio = document.getElementById('input-message').value;
+        const form = event.target;
+        const data = new FormData(form);
+        
+        // SOSTITUISCI QUESTO URL CON IL TUO ENDPOINT DI FORMSPREE REALE
+        const endpointFormspree = "https://formspree.io/f/IL_TUO_CODICE_QUI";
 
-        const destinatario = "giovanni.mantegazza@edu.unige.it";
-        const oggetto = encodeURIComponent(`[Glossario Rolli] Feedback da ${nome} (${tipo})`);
-        const corpo = encodeURIComponent(`Mittente: ${nome}\nEmail: ${emailUtente}\nTipologia: ${tipo}\n\nMessaggio:\n${messaggio}`);
+        try {
+            const response = await fetch(endpointFormspree, {
+                method: 'POST',
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
 
-        window.location.href = `mailto:${destinatario}?subject=${oggetto}&body=${corpo}`;
+            if (response.ok) {
+                form.style.display = "none";
+                document.getElementById("form-successo").style.display = "block";
+            } else {
+                alert(linguaCorrente === 'it' ? "Si è verificato un errore durante l'invio. Riprova." : "Une erreur est survenue lors de l'envoi. Veuillez réessayer.");
+            }
+        } catch (error) {
+            alert(linguaCorrente === 'it' ? "Errore di connessione. Controlla la rete." : "Erreur de connexion. Vérifiez votre réseau.");
+        }
     }
 </script>
 </body>
