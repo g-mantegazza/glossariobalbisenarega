@@ -519,9 +519,9 @@ title: Grafo 3D - Palazzo Balbi Senarega
     const REL_COLORS_DARK = { subClassOf: 0xe2e8f0, instanceOf: 0x9333ea };
     const REL_COLORS_LIGHT = { subClassOf: 0x1e293b, instanceOf: 0x7c3aed };
 
-    // Palette cromatica dedicata per le relazioni semantiche dinamiche
+    // Palette cromatica completa aggiornata con tutte le proprietà dell'ontologia
     const SEMANTIC_REL_COLORS = {
-      ha_progettato: 0x06b6d4,          // Cyan brillante
+      ha_progettato: 0x06b6d4,
       è_stato_progettato_da: 0x06b6d4,
       ha_per_autore: 0x06b6d4,
       è_autore_di: 0x06b6d4,
@@ -529,18 +529,25 @@ title: Grafo 3D - Palazzo Balbi Senarega
       è_stato_dipinto_da: 0x06b6d4,
       ha_scolpito: 0x06b6d4,
       è_stato_scolpito_da: 0x06b6d4,
+      ha_riprogettato: 0x06b6d4,
+      è_stato_riprogettato_da: 0x06b6d4,
       
-      ha_per_committente: 0xf59e0b,     // Ambra / Oro
+      ha_per_committente: 0xf59e0b,
+      ha_per_committente_originario: 0xf59e0b,
+      ha_per_committente_ristrutturazione: 0xf59e0b,
       è_committente: 0xf59e0b,
       ha_per_proprietario: 0xf59e0b,
       è_proprietario: 0xf59e0b,
+      era_proprietario_di: 0xf59e0b,
+      aveva_per_proprietario: 0xf59e0b,
       
-      rappresenta: 0xec4899,            // Rosa / Magenta (Iconografia / Soggetti)
+      rappresenta: 0xec4899,
       è_rappresentato_in: 0xec4899,
       ha_per_soggetto: 0xec4899,
       è_soggetto_di: 0xec4899,
       
-      è_parte_di: 0x14b8a6,             // Verde acqua (Spaziali / Parti / Delimitazioni)
+      è_parte_di: 0x14b8a6,
+      era_parte_di: 0x14b8a6,
       ha_per_parte: 0x14b8a6,
       si_affaccia_su: 0x14b8a6,
       ospita: 0x14b8a6,
@@ -548,7 +555,13 @@ title: Grafo 3D - Palazzo Balbi Senarega
       collega: 0x14b8a6,
       è_collegato_a: 0x14b8a6,
       delimita: 0x14b8a6,
-      è_delimitato_da: 0x14b8a6
+      è_delimitato_da: 0x14b8a6,
+      convertito_in: 0x14b8a6,
+      ha_chiuso: 0x14b8a6,
+      è_stato_chiuso_da: 0x14b8a6,
+      deriva_da: 0x14b8a6,
+      ha_dato_origine: 0x14b8a6,
+      è_sorretto_da: 0x14b8a6
     };
 
     let isDarkTheme = true;
@@ -586,7 +599,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
     const rails = [];
     let allLinksData = [];
     
-    // Gruppo per contenere i tubi semantici dinamici accesi al click
     const dynamicRailsGroup = new THREE.Group();
     scene.add(dynamicRailsGroup);
     
@@ -957,7 +969,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
 
     // Funzione per accendere i tubi geometrici luminosi associati al nodo selezionato
     function showDynamicSemanticRails(node) {
-      // Pulisce i binari dinamici precedenti
       while (dynamicRailsGroup.children.length > 0) {
         const obj = dynamicRailsGroup.children[0];
         dynamicRailsGroup.remove(obj);
@@ -967,7 +978,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
 
       if (!node) return;
 
-      // Filtra i link relazionali in cui il nodo è source o target (escludendo gerarchie fisse)
       const semanticLinks = allLinksData.filter(l => 
         (l.source === node.id || l.target === node.id) && 
         l.rel !== 'subClassOf' && l.rel !== 'instanceOf'
@@ -987,18 +997,17 @@ title: Grafo 3D - Palazzo Balbi Senarega
 
         const curve = new THREE.CatmullRomCurve3([start, mid, end], false, 'centripetal', 0.5);
         
-        // Creazione di un tubo sottile ed elegante colorato
         const tubeGeo = new THREE.TubeGeometry(curve, 32, 0.45, 6, false);
         const relColor = SEMANTIC_REL_COLORS[link.rel] || 0xa855f7;
 
         const tubeMat = new THREE.MeshStandardMaterial({
           color: relColor,
           emissive: relColor,
-          emissiveIntensity: 0.8,
+          emissiveIntensity: 0.9,
           roughness: 0.2,
           metalness: 0.3,
           transparent: true,
-          opacity: 0.85,
+          opacity: 0.9,
           blending: THREE.AdditiveBlending
         });
 
@@ -1239,7 +1248,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
       updateBubbleContent(node);
       bubbleEl.classList.add('active');
       updateBubblePosition();
-      showDynamicSemanticRails(node); // Accende i binari geometrici colorati al click/apertura bolla
+      showDynamicSemanticRails(node);
     }
 
     const _screenVec = new THREE.Vector3();
@@ -1278,7 +1287,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
       activeAnchorNode = null;
       isCursorOverBubble = false;
       isCursorOverSphere = false;
-      showDynamicSemanticRails(null); // Spegne i binari dinamici alla chiusura
+      showDynamicSemanticRails(null);
     }
 
     const raycaster = new THREE.Raycaster();
