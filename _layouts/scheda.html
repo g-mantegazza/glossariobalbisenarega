@@ -26,6 +26,83 @@ title: {{ page.title }} | Glossario Rolli
             background-position: 0 0, 12px 12px;
         }
 
+        /* --- BARRA STICKY DI NAVIGAZIONE A COMPARSA --- */
+        .Sticky-Navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #ffffff;
+            border-bottom: 2px solid #e2e8f0;
+            box-shadow: 0 4px 15px rgba(26, 54, 93, 0.08);
+            padding: 12px 4%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-100%);
+            transition: all 0.3s ease;
+        }
+
+        .Sticky-Navbar.visibile {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .Sticky-Nav-Group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .Sticky-Nav-Btn {
+            text-decoration: none;
+            font-size: 0.85em;
+            font-weight: 600;
+            padding: 8px 14px;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .Sticky-Nav-Home {
+            color: #ffffff;
+            background: #1a365d;
+            border: 1px solid #1a365d;
+        }
+        .Sticky-Nav-Home:hover {
+            background: #2b6cb0;
+            border-color: #2b6cb0;
+        }
+
+        .Sticky-Nav-Other {
+            color: #4a5568;
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+        }
+        .Sticky-Nav-Other:hover {
+            border-color: #1a365d;
+            color: #1a365d;
+            background: #e8f9f7;
+        }
+
+        .Sticky-Nav-3D {
+            color: #7c3aed;
+            background: #faf5ff;
+            border: 1px solid #d8b4fe;
+        }
+        .Sticky-Nav-3D:hover {
+            background: #f3e8ff;
+            border-color: #c084fc;
+        }
+
         .Scheda-Container {
             background: #ffffff;
             border-top: 10px solid #1a365d;
@@ -228,9 +305,31 @@ title: {{ page.title }} | Glossario Rolli
 </head>
 <body>
 
+    <!-- BARRA STICKY DI NAVIGAZIONE A COMPARSA -->
+    <nav class="Sticky-Navbar" id="StickyNav">
+        <div class="Sticky-Nav-Group">
+            {% if page.lingua == "it" %}
+                <a href="{{ '/' | relative_url }}" class="Sticky-Nav-Btn Sticky-Nav-Home">🏠 Torna alla Home</a>
+            {% else %}
+                <a href="{{ '/' | relative_url }}" class="Sticky-Nav-Btn Sticky-Nav-Home">🏠 Retour à l'Accueil</a>
+            {% endif %}
+        </div>
+        <div class="Sticky-Nav-Group">
+            {% if page.lingua == "it" %}
+                <a href="{{ '/glossario-it/' | relative_url }}" class="Sticky-Nav-Btn Sticky-Nav-Other">📋 Elenco Glossario</a>
+                <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" class="Sticky-Nav-Btn Sticky-Nav-3D" target="_blank" rel="noopener noreferrer">🌐 Grafo 3D ↗</a>
+                <a href="{{ '/ricerca-it/' | relative_url }}" class="Sticky-Nav-Btn Sticky-Nav-Other">🔄 Ruota Traduzione</a>
+            {% else %}
+                <a href="{{ '/glossario-fr/' | relative_url }}" class="Sticky-Nav-Btn Sticky-Nav-Other">📋 Liste du Glossaire</a>
+                <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" class="Sticky-Nav-Btn Sticky-Nav-3D" target="_blank" rel="noopener noreferrer">🌐 Graphe 3D ↗</a>
+                <a href="{{ '/ricerca-fr/' | relative_url }}" class="Sticky-Nav-Btn Sticky-Nav-Other">🔄 Roue Traduction</a>
+            {% endif %}
+        </div>
+    </nav>
+
     <div class="Scheda-Container">
         
-        <div class="Header-Podio">
+        <div class="Header-Podio" id="HeaderPodioTriggers">
             <div class="Podio-Dipartimento">
                 <img src="{{ '/Logo_DLCM_UniGe_black.png' | relative_url }}" alt="Dipartimento di Lingue e Culture Moderne" class="Logo-Dip">
             </div>
@@ -352,7 +451,6 @@ title: {{ page.title }} | Glossario Rolli
                         <a href="{{ '/glossario-it/' | relative_url }}" class="Btn-Comando-Laterale">
                             📋 Elenco Glossario (IT)
                         </a>
-                        <!-- LINK AGGIORNATO AL GRAFO 3D CON PARAMETRO NODO -->
                         <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" class="Btn-Comando-Laterale" target="_blank" rel="noopener noreferrer" style="border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.05); color: #7c3aed;">
                             🌐 Esplora nel Grafo 3D ↗
                         </a>
@@ -369,7 +467,6 @@ title: {{ page.title }} | Glossario Rolli
                         <a href="{{ '/glossario-fr/' | relative_url }}" class="Btn-Comando-Laterale">
                             📋 Liste du Glossaire (FR)
                         </a>
-                        <!-- LINK AGGIORNATO AL GRAFO 3D CON PARAMETRO NODO -->
                         <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" class="Btn-Comando-Laterale" target="_blank" rel="noopener noreferrer" style="border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.05); color: #7c3aed;">
                             🌐 Explorer le Graphe 3D ↗
                         </a>
@@ -421,7 +518,7 @@ title: {{ page.title }} | Glossario Rolli
                 <div style="display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap;">
                     <div style="flex: 2; min-width: 280px;">
                         <strong style="color: #1a365d; display: block; margin-bottom: 5px;">Glossaire Terminologique du Palais Balbi Senarega</strong>
-                        <p style="margin: 0;">Projet de recherche doctorale en <em>Digital Humanities</em> développé au sein du <strong>Centre de Recherche en Terminologie Multilingue (CeRTeM)</strong>, Département de Langues et Cultures Modernes, Université des Étubes de Gênes.</p>
+                        <p style="margin: 0;">Projet de recherche doctorale en <em>Digital Humanities</em> développé au sein du <strong>Centre de Recherche en Terminologia Multilingue (CeRTeM)</strong>, Département de Langues et Cultures Modernes, Université des Étubes de Gênes.</p>
                     </div>
                     <div style="flex: 1; min-width: 200px;">
                         <strong style="color: #1a365d; display: block; margin-bottom: 5px;">Contacts et Retours</strong>
@@ -450,6 +547,22 @@ title: {{ page.title }} | Glossario Rolli
     
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // Script per la gestione della barra sticky a comparsa in base allo scroll
+            const stickyNav = document.getElementById("StickyNav");
+            const headerPodio = document.getElementById("HeaderPodioTriggers");
+
+            window.addEventListener("scroll", function() {
+                if (headerPodio) {
+                    const rect = headerPodio.getBoundingClientRect();
+                    // Quando il podio esce completamente dallo schermo verso l'alto, attiva la barra sticky
+                    if (rect.bottom < 0) {
+                        stickyNav.classList.add("visibile");
+                    } else {
+                        stickyNav.classList.remove("visibile");
+                    }
+                }
+            });
+
             const searchInput = document.getElementById("Search-Sidebar-Input");
             const listaElementi = document.getElementById("Albero-Lemmi-Lista");
             const righe = Array.from(listaElementi.children);
