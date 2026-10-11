@@ -54,6 +54,8 @@ title: Contatti e Feedback
             <div class="Form-Container">
                 <form action="https://formsubmit.co/giovanni.mantegazza@edu.unige.it" method="POST">
                     <input type="hidden" name="_captcha" value="true">
+                    <!-- Reindirizzamento corretto post-invio per evitare il 404 -->
+                    <input type="hidden" name="_next" value="{{ '/' | relative_url }}">
 
                     <div class="Form-Group">
                         <label id="lbl-nome" class="Form-Label">Nome e Affiliazione Istituzionale</label>
