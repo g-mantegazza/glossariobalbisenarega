@@ -1104,7 +1104,9 @@ title: Grafo 3D - Palazzo Balbi Senarega
 
       const linkEl = document.getElementById('b-link');
       const linkText = document.getElementById('b-link-text');
-      if (node.urls && node.urls[bubbleLang] && node.urls[bubbleLang] !== "#") {
+      
+      // MOSTRA IL PULSANTE DELLA SCHEDA SOLO SE NON È UN INDIVIDUO E HA UN URL VALIDO
+      if (node.type !== 'instance' && node.urls && node.urls[bubbleLang] && node.urls[bubbleLang] !== "#") {
         linkEl.href = node.urls[bubbleLang];
         linkEl.style.display = 'inline-flex';
         linkText.innerText = bubbleLang === 'it' ? 'Apri scheda completa' : 'Consulter la fiche complète';
