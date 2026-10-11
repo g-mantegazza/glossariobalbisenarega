@@ -103,6 +103,16 @@ title: {{ page.title }} | Glossario Rolli
             border-color: #c084fc;
         }
 
+        /* --- RIGA DI NAVIGAZIONE SUPERIORE FISSA NELLA PAGINA --- */
+        .Top-Nav-Page-Row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
         .Scheda-Container {
             background: #ffffff;
             border-top: 10px solid #1a365d;
@@ -244,6 +254,50 @@ title: {{ page.title }} | Glossario Rolli
         }
         .Btn-Comando-Laterale:hover { border-color: #1a365d; color: #1a365d; background: #e8f9f7; transform: translateX(2px); }
 
+        /* --- STILI PER IL MODULO COMMENTI DIRETTO --- */
+        .Box-Modulo-Commento {
+            background-color: #f2f9f8;
+            border: 1px solid #e8f9f7;
+            border-radius: 8px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .Input-Commento-Testo {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            font-size: 0.85em;
+            font-family: inherit;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            resize: vertical;
+            outline: none;
+            box-sizing: border-box;
+            background: #ffffff;
+        }
+        .Input-Commento-Testo:focus {
+            border-color: #1a365d;
+            box-shadow: 0 0 5px rgba(26, 54, 93, 0.1);
+        }
+        .Btn-Invia-Commento {
+            background: #1a365d;
+            color: #ffffff;
+            border: 1px solid #1a365d;
+            padding: 8px 14px;
+            font-size: 0.85em;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+        .Btn-Invia-Commento:hover {
+            background: #2b6cb0;
+            border-color: #2b6cb0;
+        }
+
         .Navigazione-Schede { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 25px; border-top: 1px solid #e2e8f0; }
         .Btn-Navigazione { display: inline-flex; align-items: center; text-decoration: none; color: #4a5568; background-color: #ffffff; border: 1px solid #cbd5e1; padding: 10px 18px; border-radius: 6px; font-size: 0.9em; font-weight: 600; transition: all 0.2s ease; }
         .Btn-Navigazione:hover { background-color: #1a365d; color: #ffffff; border-color: #1a365d; }
@@ -338,6 +392,45 @@ title: {{ page.title }} | Glossario Rolli
             </div>
             <div class="Podio-Dottorato">
                 <img src="{{ '/Logo_PHD_DH_Informale_Verticale.png' | relative_url }}" alt="Dottorato in Digital Humanities" class="Logo-Phd">
+            </div>
+        </div>
+
+        <!-- RIGA DI NAVIGAZIONE SUPERIORE (HOME A SINISTRA, ALTRI A DESTRA) -->
+        <div class="Top-Nav-Page-Row">
+            <div>
+                {% if page.lingua == "it" %}
+                    <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: #ffffff; font-weight: 600; background: #1a365d; border: 1px solid #1a365d; padding: 10px 16px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
+                        🏠 Torna alla Home
+                    </a>
+                {% else %}
+                    <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: #ffffff; font-weight: 600; background: #1a365d; border: 1px solid #1a365d; padding: 10px 16px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
+                        🏠 Retour à l'Accueil
+                    </a>
+                {% endif %}
+            </div>
+
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                {% if page.lingua == "it" %}
+                    <a href="{{ '/glossario-it/' | relative_url }}" style="text-decoration: none; color: #4a5568; font-weight: 600; background: #ffffff; border: 1px solid #cbd5e1; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
+                        📋 Elenco Glossario
+                    </a>
+                    <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #7c3aed; font-weight: 600; background: #faf5ff; border: 1px solid #d8b4fe; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
+                        🌐 Grafo 3D ↗
+                    </a>
+                    <a href="{{ '/ricerca-it/' | relative_url }}" style="text-decoration: none; color: #4a5568; font-weight: 600; background: #ffffff; border: 1px solid #cbd5e1; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
+                        🔄 Ruota Traduzione
+                    </a>
+                {% else %}
+                    <a href="{{ '/glossario-fr/' | relative_url }}" style="text-decoration: none; color: #4a5568; font-weight: 600; background: #ffffff; border: 1px solid #cbd5e1; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
+                        📋 Liste du Glossaire
+                    </a>
+                    <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #7c3aed; font-weight: 600; background: #faf5ff; border: 1px solid #d8b4fe; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
+                        🌐 Graphe 3D ↗
+                    </a>
+                    <a href="{{ '/ricerca-fr/' | relative_url }}" style="text-decoration: none; color: #4a5568; font-weight: 600; background: #ffffff; border: 1px solid #cbd5e1; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
+                        🔄 Roue Traduction
+                    </a>
+                {% endif %}
             </div>
         </div>
 
@@ -457,9 +550,6 @@ title: {{ page.title }} | Glossario Rolli
                         <a href="{{ '/ricerca-it/' | relative_url }}" class="Btn-Comando-Laterale">
                             🔄 Ruota di Traduzione
                         </a>
-                        <a href="{{ '/contatti/' | relative_url }}" class="Btn-Comando-Laterale" style="background: #ffffff; border-color: #cbd5e1;">
-                            💬 Invia Feedback
-                        </a>
                         <a href="{{ '/' | relative_url }}" class="Btn-Comando-Laterale" style="border-color: #cbd5e1; background: #ffffff;">
                             🏠 Torna alla Home
                         </a>
@@ -473,13 +563,23 @@ title: {{ page.title }} | Glossario Rolli
                         <a href="{{ '/ricerca-fr/' | relative_url }}" class="Btn-Comando-Laterale">
                             🔄 Roue de Traduction
                         </a>
-                        <a href="{{ '/contatti/' | relative_url }}" class="Btn-Comando-Laterale" style="background: #ffffff; border-color: #cbd5e1;">
-                            💬 Envoyer un Feedback
-                        </a>
                         <a href="{{ '/' | relative_url }}" class="Btn-Comando-Laterale" style="border-color: #cbd5e1; background: #ffffff;">
                             🏠 Retour à l'Accueil
                         </a>
                     {% endif %}
+                </div>
+
+                <!-- MODULO DI COMMENTO DIRETTO NELLA SIDEBAR -->
+                <div class="Box-Modulo-Commento">
+                    <div style="font-size: 0.75em; text-transform: uppercase; font-weight: 800; color: #a0aec0; letter-spacing: 0.5px;">
+                        {% if page.lingua == "it" %}Segnala un refuso / Commento{% else %}Signaler une erreur / Commentaire{% endif %}
+                    </div>
+                    <form action="mailto:giovanni.mantegazza@edu.unige.it" method="POST" enctype="text/plain">
+                        <textarea class="Input-Commento-Testo" name="commento" placeholder="{% if page.lingua == 'it' %}Scrivi qui la tua nota...{% else %}Écrivez votre note ici...{% endif %}" required></textarea>
+                        <button type="submit" class="Btn-Invia-Commento" style="width: 100%; margin-top: 5px;">
+                            {% if page.lingua == "it" %}Invia Segnalazione{% else %}Envoyer{% endif %}
+                        </button>
+                    </form>
                 </div>
             </aside>
 
@@ -554,7 +654,6 @@ title: {{ page.title }} | Glossario Rolli
             window.addEventListener("scroll", function() {
                 if (headerPodio) {
                     const rect = headerPodio.getBoundingClientRect();
-                    // Quando il podio esce completamente dallo schermo verso l'alto, attiva la barra sticky
                     if (rect.bottom < 0) {
                         stickyNav.classList.add("visibile");
                     } else {
@@ -569,7 +668,7 @@ title: {{ page.title }} | Glossario Rolli
 
             searchInput.addEventListener("input", function() {
                 const query = this.value.toLowerCase().trim();
-                righe.forEach(riga => {
+                righe.query = righe.forEach(riga => {
                     const lemma = riga.getAttribute("data-lemma") || "";
                     riga.style.display = (!query || lemma.includes(query)) ? "block" : "none";
                 });
