@@ -15,10 +15,9 @@ title: {{ page.title }} | Glossario Rolli
             font-size: 1.15em;
             text-align: justify;
             margin: 0 !important;
-            padding: 30px 4% !important; /* Spaziatura fluida identica alla Home */
+            padding: 30px 4% !important;
             box-sizing: border-box;
             
-            /* --- SFONDO ISTITUZIONALE E CALDO GLOBALE --- */
             background-color: #f1f5f9;
             background-image: 
                 radial-gradient(rgba(148, 163, 184, 0.15) 1px, transparent 0),
@@ -29,13 +28,13 @@ title: {{ page.title }} | Glossario Rolli
 
         .Scheda-Container {
             background: #ffffff;
-            border-top: 10px solid #1a365d; /* Spessore maestoso coordinato */
+            border-top: 10px solid #1a365d;
             border-radius: 12px;
             box-shadow: 0 15px 35px rgba(26, 54, 93, 0.06);
             padding: 40px;
             margin: 20px auto 0 auto;
             width: 100%;
-            max-width: 1600px; /* Larghezza adattiva coordinata con tutto il portale */
+            max-width: 1600px;
             box-sizing: border-box;
         }
 
@@ -47,7 +46,6 @@ title: {{ page.title }} | Glossario Rolli
             align-items: flex-start;
         }
 
-        /* 1. BARRA LATERALE SINISTRA SCORREVOLE ED EVOLUTA */
         .Sidebar-Lemmi {
             border-right: 1px solid #e2e8f0;
             padding-right: 15px;
@@ -102,7 +100,6 @@ title: {{ page.title }} | Glossario Rolli
             border-left: 4px solid #2b6cb0; border-radius: 0 6px 6px 0; padding-left: 6px;
         }
 
-        /* 2. CONTENUTO CENTRALE */
         .Contenuto-Scheda { min-width: 0; width: 100%; }
         
         .Contenuto-Scheda h1.Lemma-Visibile-Alto { 
@@ -137,7 +134,6 @@ title: {{ page.title }} | Glossario Rolli
         
         .Contenuto-Scheda p { font-size: 1.05em; color: #4a5568; margin: 10px 0; }
 
-        /* Sfondo acquamarina chiaro coordinato per i box Note e Fonti */
         .Contenuto-Scheda h3 + p:last-of-type,
         .Contenuto-Scheda h3[id*="note"] + p,
         .Contenuto-Scheda h3[id*="sources"] + p,
@@ -154,7 +150,6 @@ title: {{ page.title }} | Glossario Rolli
             white-space: pre-line;
         }
 
-        /* 3. COLONNA DESTRA */
         .Sidebar-Immagine {
             border-left: 1px solid #e2e8f0; padding-left: 20px;
             position: sticky; top: 20px; display: flex; flex-direction: column; gap: 20px;
@@ -164,7 +159,6 @@ title: {{ page.title }} | Glossario Rolli
         .Visual-Foto { width: 100%; height: auto; display: block; object-fit: cover; }
         .Visual-Didascalia { padding: 12px; font-size: 0.85em; color: #718096; line-height: 1.4; border-top: 1px solid #e8f9f7; background-color: #ffffff; }
 
-        /* Pannello comandi coordinato */
         .Pannello-Comandi-Navigazione {
             background-color: #f2f9f8; border: 1px solid #e8f9f7; border-radius: 8px; padding: 15px; display: flex; flex-direction: column; gap: 10px;
         }
@@ -173,21 +167,19 @@ title: {{ page.title }} | Glossario Rolli
         }
         .Btn-Comando-Laterale:hover { border-color: #1a365d; color: #1a365d; background: #e8f9f7; transform: translateX(2px); }
 
-        /* Frecce di navigazione inferiori dello stesso stile blu */
         .Navigazione-Schede { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 25px; border-top: 1px solid #e2e8f0; }
         .Btn-Navigazione { display: inline-flex; align-items: center; text-decoration: none; color: #4a5568; background-color: #ffffff; border: 1px solid #cbd5e1; padding: 10px 18px; border-radius: 6px; font-size: 0.9em; font-weight: 600; transition: all 0.2s ease; }
         .Btn-Navigazione:hover { background-color: #1a365d; color: #ffffff; border-color: #1a365d; }
 
-        /* --- PODIO ISTITUZIONALE MAESTOSO MENTA COERENTE CON LA HOME --- */
         .Header-Podio { 
             display: flex; 
             justify-content: space-between; 
-            align-items: flex-end; /* Allineamento geometrico inferiore perfetto */
+            align-items: flex-end; 
             border-bottom: 2px solid #e2e8f0; 
-            padding: 60px 50px; /* Grandezza solenne ereditata */
+            padding: 60px 50px; 
             margin: -40px -40px 35px -40px; 
             gap: 25px; 
-            background-color: #e8f9f7 !important; /* Sfondo menta ufficiale */
+            background-color: #e8f9f7 !important; 
         }
 
         .Podio-Dipartimento { flex: 1; display: flex; justify-content: flex-start; align-items: flex-end; }
@@ -209,29 +201,29 @@ title: {{ page.title }} | Glossario Rolli
         .Meta-Item.lingua-active { background-color: #e8f9f7; border-color: #cbd5e1; color: #1a365d; }
 
         @media (max-width: 1100px) {
-    .Main-Layout { 
-        display: flex; 
-        flex-direction: column; 
-    }
-    .Contenuto-Scheda { 
-        order: 1; /* Il contenuto va al primo posto */
-    }
-    .Sidebar-Lemmi { 
-        order: 2; /* L'elenco lemmi va al secondo posto */
-        border-right: none; padding-right: 0; 
-        background-color: #f2f9f8; border: 1px solid #e8f9f7; 
-        border-radius: 8px; padding: 12px 18px; 
-        position: relative; max-height: none; 
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .Albero-Lemmi { columns: 2; } /* Su mobile 2 colonne sono più leggibili */
-    .Sidebar-Immagine { 
-        order: 3; /* L'immagine va in fondo */
-        border-left: none; border-top: 1px solid #e2e8f0; 
-        padding-left: 0; padding-top: 20px; 
-    }
-}
+            .Main-Layout { 
+                display: flex; 
+                flex-direction: column; 
+            }
+            .Contenuto-Scheda { 
+                order: 1; 
+            }
+            .Sidebar-Lemmi { 
+                order: 2; 
+                border-right: none; padding-right: 0; 
+                background-color: #f2f9f8; border: 1px solid #e8f9f7; 
+                border-radius: 8px; padding: 12px 18px; 
+                position: relative; max-height: none; 
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .Albero-Lemmi { columns: 2; } 
+            .Sidebar-Immagine { 
+                order: 3; 
+                border-left: none; border-top: 1px solid #e2e8f0; 
+                padding-left: 0; padding-top: 20px; 
+            }
+        }
     </style>
 </head>
 <body>
@@ -357,35 +349,37 @@ title: {{ page.title }} | Glossario Rolli
                     <div style="font-size: 0.75em; text-transform: uppercase; font-weight: 800; color: #a0aec0; letter-spacing: 0.5px; margin-bottom: 5px;">Navigazione Portale</div>
                     
                     {% if page.lingua == "it" %}
-                        <a href="/glossariobalbisenarega/glossario-it/" class="Btn-Comando-Laterale">
+                        <a href="{{ '/glossario-it/' | relative_url }}" class="Btn-Comando-Laterale">
                             📋 Elenco Glossario (IT)
                         </a>
-                        <a href="{{ '/sfera.html' | relative_url }}?nodo={{ page.title | url_encode }}" class="Btn-Comando-Laterale" target="_blank" rel="noopener noreferrer" style="border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.05); color: #7c3aed;">
+                        <!-- LINK AGGIORNATO AL GRAFO 3D CON PARAMETRO NODO -->
+                        <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" class="Btn-Comando-Laterale" target="_blank" rel="noopener noreferrer" style="border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.05); color: #7c3aed;">
                             🌐 Esplora nel Grafo 3D ↗
                         </a>
-                        <a href="/glossariobalbisenarega/ricerca-it/" class="Btn-Comando-Laterale">
+                        <a href="{{ '/ricerca-it/' | relative_url }}" class="Btn-Comando-Laterale">
                             🔄 Ruota di Traduzione
                         </a>
-                        <a href="/glossariobalbisenarega/contatti/" class="Btn-Comando-Laterale" style="background: #ffffff; border-color: #cbd5e1;">
+                        <a href="{{ '/contatti/' | relative_url }}" class="Btn-Comando-Laterale" style="background: #ffffff; border-color: #cbd5e1;">
                             💬 Invia Feedback
                         </a>
-                        <a href="/glossariobalbisenarega/" class="Btn-Comando-Laterale" style="border-color: #cbd5e1; background: #ffffff;">
+                        <a href="{{ '/' | relative_url }}" class="Btn-Comando-Laterale" style="border-color: #cbd5e1; background: #ffffff;">
                             🏠 Torna alla Home
                         </a>
                     {% else %}
-                        <a href="/glossariobalbisenarega/glossario-fr/" class="Btn-Comando-Laterale">
+                        <a href="{{ '/glossario-fr/' | relative_url }}" class="Btn-Comando-Laterale">
                             📋 Liste du Glossaire (FR)
                         </a>
-                        <a href="{{ '/sfera.html' | relative_url }}?nodo={{ page.title | url_encode }}" class="Btn-Comando-Laterale" target="_blank" rel="noopener noreferrer" style="border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.05); color: #7c3aed;">
+                        <!-- LINK AGGIORNATO AL GRAFO 3D CON PARAMETRO NODO -->
+                        <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" class="Btn-Comando-Laterale" target="_blank" rel="noopener noreferrer" style="border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.05); color: #7c3aed;">
                             🌐 Explorer le Graphe 3D ↗
                         </a>
-                        <a href="/glossariobalbisenarega/ricerca-fr/" class="Btn-Comando-Laterale">
+                        <a href="{{ '/ricerca-fr/' | relative_url }}" class="Btn-Comando-Laterale">
                             🔄 Roue de Traduction
                         </a>
-                        <a href="/glossariobalbisenarega/contatti/" class="Btn-Comando-Laterale" style="background: #ffffff; border-color: #cbd5e1;">
+                        <a href="{{ '/contatti/' | relative_url }}" class="Btn-Comando-Laterale" style="background: #ffffff; border-color: #cbd5e1;">
                             💬 Envoyer un Feedback
                         </a>
-                        <a href="/glossariobalbisenarega/" class="Btn-Comando-Laterale" style="border-color: #cbd5e1; background: #ffffff;">
+                        <a href="{{ '/' | relative_url }}" class="Btn-Comando-Laterale" style="border-color: #cbd5e1; background: #ffffff;">
                             🏠 Retour à l'Accueil
                         </a>
                     {% endif %}
@@ -456,7 +450,6 @@ title: {{ page.title }} | Glossario Rolli
     
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // 1. FILTRO BARRA LATERALE
             const searchInput = document.getElementById("Search-Sidebar-Input");
             const listaElementi = document.getElementById("Albero-Lemmi-Lista");
             const righe = Array.from(listaElementi.children);
@@ -469,7 +462,6 @@ title: {{ page.title }} | Glossario Rolli
                 });
             });
 
-            // 2. PARSER AUTOMATICO FONTI FRANCESI CON PRESERVAZIONE LINK
             const linguaPagina = "{{ page.lingua }}";
             
             if (linguaPagina === "fr") {

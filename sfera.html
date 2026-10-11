@@ -392,8 +392,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
     <div class="hud-header">
       <h1>Comandi e Legenda</h1>
       <div class="hud-header-actions">
-        <!-- LINK HOME CORRETTO CON RELATIVE_URL -->
-        <a href="{{ '/' | relative_url }}" class="theme-toggle-btn" title="Torna alla Home" style="background: rgba(168, 85, 247, 0.2); border-color: rgba(168, 85, 247, 0.5); color: #c084fc;">🏠 Home</a>
+        <a href="https://g-mantegazza.github.io/glossariobalbisenarega/" class="theme-toggle-btn" title="Torna alla Home" style="background: rgba(168, 85, 247, 0.2); border-color: rgba(168, 85, 247, 0.5); color: #c084fc;">🏠 Home</a>
         <button class="theme-toggle-btn" id="themeToggle" onclick="toggleTheme()">☀️ Chiaro</button>
       </div>
     </div>
@@ -615,6 +614,12 @@ title: Grafo 3D - Palazzo Balbi Senarega
         ontology.nodes.unshift(thingNode);
 
         ontology.nodes.forEach(n => {
+          // CORREZIONE URL: Mappa i link alla struttura a cartelle pulite con suffisso _it/ e _fr/
+          const baseSlug = n.id.toLowerCase().replace(/[^a-z0-9]/g, '_');
+          n.urls = {
+            it: `../${baseSlug}_it/`,
+            fr: `../${baseSlug}_fr/`
+          };
           nodeMap[n.id] = n;
         });
 
