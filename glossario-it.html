@@ -67,10 +67,10 @@ title: Glossario Tradizionale (IT)
             position: relative;
         }
 
-        /* Prima riga: pulsanti ingranditi e ravvicinati in modo equilibrato */
+        /* Prima riga: pulsanti più grandi, distribuiti ed elegantemente distanziati */
         .Top-Nav-Row {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             margin-bottom: 35px;
             gap: 20px;
@@ -78,9 +78,10 @@ title: Glossario Tradizionale (IT)
         }
 
         .Top-Nav-Row a {
-            font-size: 0.95em;
-            padding: 12px 22px;
-            border-radius: 8px;
+            font-size: 1.05em;
+            padding: 14px 26px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
         }
 
         /* Seconda riga: ricerca centrata e bandierine a destra */
@@ -266,7 +267,7 @@ title: Glossario Tradizionale (IT)
         <main>
             <div class="Sezione-Glossario-Statico">
                 
-                <!-- Prima Riga: I tre pulsanti ravvicinati e centrati (Home, Traduzione, Sfera) -->
+                <!-- Prima Riga: I tre pulsanti più grandi e ben distanziati (Home, Traduzione, Sfera) -->
                 <div class="Top-Nav-Row">
                     <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: #ffffff; font-weight: 600; background: #1a365d; border: 1px solid #1a365d; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;" onmouseover="this.style.background='#2b6cb0'; this.style.borderColor='#2b6cb0';" onmouseout="this.style.background='#1a365d'; this.style.borderColor='#1a365d';">
                         🏠 Torna alla Home
