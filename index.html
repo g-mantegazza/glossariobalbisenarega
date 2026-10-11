@@ -117,8 +117,6 @@ title: Home
         }
 
         .Colonna-Pannello-Accesso {
-            background-color: #f2f9f8;
-            border: 1px solid #e2e8f0;
             border-radius: 12px;
             padding: 30px 25px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.01);
@@ -129,10 +127,9 @@ title: Home
             font-size: 0.9em;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #1a365d;
             font-weight: 800;
             margin-bottom: 20px;
-            border-left: 4px solid #1a365d;
+            border-left: 4px solid;
             padding-left: 10px;
         }
 
@@ -144,11 +141,9 @@ title: Home
 
         .Card-Ingresso {
             background: #ffffff;
-            border: 2px solid #cbd5e1;
             border-radius: 10px;
             padding: 18px 20px;
             text-decoration: none;
-            color: #1a365d;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
             transition: all 0.2s ease;
             display: flex;
@@ -158,8 +153,7 @@ title: Home
         }
 
         .Card-Ingresso:hover {
-            border-color: #1a365d;
-            box-shadow: 0 6px 15px rgba(26, 54, 93, 0.08);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
             transform: translateY(-2px);
             background-color: #ffffff;
         }
@@ -246,64 +240,63 @@ title: Home
 
             <div class="Griglia-Accessi-Inferiore">
                 
-                <!-- 1. TRADUZIONE RAPIDA -->
-                <div class="Colonna-Pannello-Accesso">
-                    <div class="Categoria-Pulsanti-Titolo" id="cat-traduzione">Traduzione Rapida</div>
+                <!-- 1. TRADUZIONE RAPIDA (BLU) -->
+                <div class="Colonna-Pannello-Accesso" style="background-color: rgba(37, 99, 235, 0.03); border: 1px solid rgba(37, 99, 235, 0.2);">
+                    <div class="Categoria-Pulsanti-Titolo" id="cat-traduzione" style="color: #2563eb; border-left-color: #2563eb;">Traduzione Rapida</div>
                     <div class="Gruppo-Bottoni">
-                        <a href="{{ '/ricerca-it/' | relative_url }}" class="Card-Ingresso">
+                        <a href="{{ '/ricerca-it/' | relative_url }}" class="Card-Ingresso" style="border: 2px solid rgba(37, 99, 235, 0.25);">
                             <img src="https://flagcdn.com/w40/it.png" class="Bollino-Flag-Home" style="cursor:default;" alt="IT">
                             <div class="Testi-Bottone">
-                                <span class="Titolo-Bottone" id="btn-it-interfaccia">Interfaccia Italiana</span>
+                                <span class="Titolo-Bottone" id="btn-it-interfaccia" style="color: #1e40af;">Interfaccia Italiana</span>
                                 <span class="Sottotitolo-Bottone" id="btn-it-sub">Navigazione tridimensionnelle sincrona</span>
                             </div>
                         </a>
-                        <a href="{{ '/ricerca-fr/' | relative_url }}" class="Card-Ingresso">
+                        <a href="{{ '/ricerca-fr/' | relative_url }}" class="Card-Ingresso" style="border: 2px solid rgba(37, 99, 235, 0.25);">
                             <img src="https://flagcdn.com/w40/fr.png" class="Bollino-Flag-Home" style="cursor:default;" alt="FR">
                             <div class="Testi-Bottone">
-                                <span class="Titolo-Bottone" id="btn-fr-interfaccia">Interface Française</span>
+                                <span class="Titolo-Bottone" id="btn-fr-interfaccia" style="color: #1e40af;">Interface Française</span>
                                 <span class="Sottotitolo-Bottone" id="btn-fr-sub">Navigation synchrone de FR à IT</span>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- 2. CONSULTAZIONE GLOSSARIO -->
-                <div class="Colonna-Pannello-Accesso">
-                    <div class="Categoria-Pulsanti-Titolo" id="cat-glossario">Consultazione Glossario</div>
+                <!-- 2. CONSULTAZIONE GLOSSARIO (VERDE PETROLIO) -->
+                <div class="Colonna-Pannello-Accesso" style="background-color: rgba(13, 148, 136, 0.03); border: 1px solid rgba(13, 148, 136, 0.2);">
+                    <div class="Categoria-Pulsanti-Titolo" id="cat-glossario" style="color: #0d9488; border-left-color: #0d9488;">Consultazione Glossario</div>
                     <div class="Gruppo-Bottoni">
-                        <a href="{{ '/glossario-it/' | relative_url }}" class="Card-Ingresso">
+                        <a href="{{ '/glossario-it/' | relative_url }}" class="Card-Ingresso" style="border: 2px solid rgba(13, 148, 136, 0.25);">
                             <img src="https://flagcdn.com/w40/it.png" class="Bollino-Flag-Home" style="cursor:default;" alt="IT">
                             <div class="Testi-Bottone">
-                                <span class="Titolo-Bottone" id="btn-glo-it">Glossario Italiano</span>
+                                <span class="Titolo-Bottone" id="btn-glo-it" style="color: #115e59;">Glossario Italiano</span>
                                 <span class="Sottotitolo-Bottone" id="btn-glo-it-sub">Ricerca alfabetica tradizionale</span>
                             </div>
                         </a>
-                        <a href="{{ '/glossario-fr/' | relative_url }}" class="Card-Ingresso">
+                        <a href="{{ '/glossario-fr/' | relative_url }}" class="Card-Ingresso" style="border: 2px solid rgba(13, 148, 136, 0.25);">
                             <img src="https://flagcdn.com/w40/fr.png" class="Bollino-Flag-Home" style="cursor:default;" alt="FR">
                             <div class="Testi-Bottone">
-                                <span class="Titolo-Bottone" id="btn-glo-fr">Glossaire Français</span>
+                                <span class="Titolo-Bottone" id="btn-glo-fr" style="color: #115e59;">Glossaire Français</span>
                                 <span class="Sottotitolo-Bottone" id="btn-glo-fr-sub">Recherche alphabétique par filtres</span>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- 3. GRAFO 3D ONTOLOGICO (FOCUS) -->
-                <div class="Colonna-Pannello-Accesso" style="background-color: rgba(168, 85, 247, 0.04); border-color: rgba(168, 85, 247, 0.3);">
+                <!-- 3. ESPLORAZIONE IMMERSIVA (VIOLA) -->
+                <div class="Colonna-Pannello-Accesso" style="background-color: rgba(168, 85, 247, 0.03); border: 1px solid rgba(168, 85, 247, 0.25);">
                     <div class="Categoria-Pulsanti-Titolo" id="cat-3d" style="color: #7c3aed; border-left-color: #7c3aed;">Esplorazione Immersiva</div>
                     <div class="Gruppo-Bottoni">
-                        <!-- LINK AGGIORNATO A sfera.html -->
-                        <a href="{{ '/sfera/' | relative_url }}" class="Card-Ingresso" style="border-color: rgba(168, 85, 247, 0.4); background: #ffffff;">
+                        <a href="{{ '/sfera.html' | relative_url }}" class="Card-Ingresso" style="border: 2px solid rgba(168, 85, 247, 0.35); background: #ffffff;">
                             <span style="font-size: 1.8em; flex-shrink: 0;">🌐</span>
                             <div class="Testi-Bottone">
                                 <span class="Titolo-Bottone" id="btn-3d-title" style="color: #7c3aed;">Grafo 3D (Focus)</span>
                                 <span class="Sottotitolo-Bottone" id="btn-3d-sub" style="color: #4a5568;">Visualizzazione interattiva dell'ontologia</span>
                             </div>
                         </a>
-                        <a href="{{ '/contatti/' | relative_url }}" class="Card-Ingresso" style="border-color: #cbd5e1;">
+                        <a href="{{ '/contatti/' | relative_url }}" class="Card-Ingresso" style="border: 2px solid rgba(168, 85, 247, 0.35);">
                             <span style="font-size: 1.8em; flex-shrink: 0;">💬</span>
                             <div class="Testi-Bottone">
-                                <span class="Titolo-Bottone" id="btn-feed-title" style="color: #1a365d;">Revisione & Suggerimenti</span>
+                                <span class="Titolo-Bottone" id="btn-feed-title" style="color: #7c3aed;">Revisione & Suggerimenti</span>
                                 <span class="Sottotitolo-Bottone" id="btn-feed-sub" style="color: #4a5568;">Invia proposte o segnala refusi</span>
                             </div>
                         </a>
@@ -426,7 +419,7 @@ title: Home
                 document.getElementById('btn-lang-fr').style.borderColor = '#1a365d';
                 document.getElementById('btn-lang-it').style.opacity = '0.5';
                 document.getElementById('btn-lang-it').style.borderColor = 'transparent';
-                document.documentElement.lang = 'fr';
+                documentElement.lang = 'fr';
             }
         }
 
