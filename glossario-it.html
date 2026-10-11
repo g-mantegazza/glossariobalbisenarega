@@ -67,9 +67,19 @@ title: Glossario Tradizionale (IT)
             position: relative;
         }
 
+        .Top-Controls-Bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
         .Search-Container {
+            flex: 1;
             max-width: 600px;
-            margin: 15px auto 25px auto;
+            margin: 0 auto;
         }
 
         .Search-Input {
@@ -237,9 +247,28 @@ title: Glossario Tradizionale (IT)
                         <img src="https://flagcdn.com/w40/fr.png" class="Bollino-Flag">
                     </a>
                 </div>
-                
-                <div class="Search-Container">
-                    <input type="text" id="Input-Filtro-Testo" class="Search-Input" placeholder="Cerca un termine... (es. loggia, abside)">
+
+                <!-- Barra superiore con i bottoni ai lati della ricerca -->
+                <div class="Top-Controls-Bar">
+                    <div>
+                        <a href="{{ '/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #ffffff; font-size: 0.85em; font-weight: 600; padding: 10px 16px; background: #1a365d; border: 1px solid #1a365d; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.background='#2b6cb0'; this.style.borderColor='#2b6cb0';" onmouseout="this.style.background='#1a365d'; this.style.borderColor='#1a365d';">
+                            🏠 Torna alla Home
+                        </a>
+                    </div>
+                    
+                    <div class="Search-Container">
+                        <input type="text" id="Input-Filtro-Testo" class="Search-Input" placeholder="Cerca un termine... (es. loggia, abside)">
+                    </div>
+
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <a href="{{ '/ricerca-it/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #4a5568; font-size: 0.85em; font-weight: 600; padding: 10px 14px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='#1a365d'; this.style.color='#1a365d'; this.style.background='#e8f9f7';" onmouseout="this.style.borderColor='#cbd5e1'; this.style.color='#4a5568'; this.style.background='#ffffff';">
+                            🔄 Traduzione Rapida
+                        </a>
+
+                        <a href="{{ '/sfera_2/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #7c3aed; font-size: 0.85em; font-weight: 600; padding: 10px 14px; background: #faf5ff; border: 1px solid #d8b4fe; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.background='#f3e8ff'; this.style.borderColor='#c084fc';" onmouseout="this.style.background='#faf5ff'; this.style.borderColor='#d8b4fe';">
+                            🌌 Ontologia 3D
+                        </a>
+                    </div>
                 </div>
 
                 <div class="Contenitore-Alfabeto" id="Tastiera-Lettere">
@@ -266,25 +295,6 @@ title: Glossario Tradizionale (IT)
                 </ul>
 
                 <div class="Nessun-Risultato" id="Messaggio-Vuoto">Nessun lemma corrisponde ai criteri di ricerca</div>
-
-                <!-- Pulsanti di navigazione: Home a sinistra, Traduzione e Ontologia 3D a destra -->
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 35px; padding-top: 20px; border-top: 1px dashed #cbd5e1; flex-wrap: wrap; gap: 15px;">
-                    <div>
-                        <a href="{{ '/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #ffffff; font-size: 0.85em; font-weight: 600; padding: 10px 18px; background: #1a365d; border: 1px solid #1a365d; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.background='#2b6cb0'; this.style.borderColor='#2b6cb0';" onmouseout="this.style.background='#1a365d'; this.style.borderColor='#1a365d';">
-                            🏠 Torna alla Home
-                        </a>
-                    </div>
-                    
-                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-                        <a href="{{ '/ricerca-it/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #4a5568; font-size: 0.85em; font-weight: 600; padding: 10px 16px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='#1a365d'; this.style.color='#1a365d'; this.style.background='#e8f9f7';" onmouseout="this.style.borderColor='#cbd5e1'; this.style.color='#4a5568'; this.style.background='#ffffff';">
-                            🔄 Traduzione Rapida
-                        </a>
-
-                        <a href="{{ '/sfera_2/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #7c3aed; font-size: 0.85em; font-weight: 600; padding: 10px 16px; background: #faf5ff; border: 1px solid #d8b4fe; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.background='#f3e8ff'; this.style.borderColor='#c084fc';" onmouseout="this.style.background='#faf5ff'; this.style.borderColor='#d8b4fe';">
-                            🌌 Ontologia 3D
-                        </a>
-                    </div>
-                </div>
 
             </div>
         </main>
