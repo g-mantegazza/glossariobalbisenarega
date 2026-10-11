@@ -67,19 +67,20 @@ title: Glossario Tradizionale (IT)
             position: relative;
         }
 
-        .Top-Controls-Bar {
+        /* Riga superiore per i pulsanti di navigazione (Home a sinistra, altri a destra, lasciando spazio alle bandiere) */
+        .Top-Nav-Bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 25px;
+            padding-right: 90px; /* Spazio riservato alle bolle delle bandiere in alto a destra */
             gap: 15px;
             flex-wrap: wrap;
         }
 
         .Search-Container {
-            flex: 1;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 0 auto 25px auto;
         }
 
         .Search-Input {
@@ -215,6 +216,7 @@ title: Glossario Tradizionale (IT)
 
         @media (max-width: 950px) {
             .Header-Podio { flex-direction: column; align-items: center; gap: 20px; padding: 30px 20px; }
+            .Top-Nav-Bar { padding-right: 0; }
         }
         @media (max-width: 768px) {
             .Insieme-Schede { column-count: 1; }
@@ -248,18 +250,14 @@ title: Glossario Tradizionale (IT)
                     </a>
                 </div>
 
-                <!-- Barra superiore con i bottoni ai lati della ricerca -->
-                <div class="Top-Controls-Bar">
+                <!-- Riga superiore pulita con Home a sinistra e i bottoni di navigazione a destra (lasciando spazio alle bandiere) -->
+                <div class="Top-Nav-Bar">
                     <div>
                         <a href="{{ '/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #ffffff; font-size: 0.85em; font-weight: 600; padding: 10px 16px; background: #1a365d; border: 1px solid #1a365d; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.background='#2b6cb0'; this.style.borderColor='#2b6cb0';" onmouseout="this.style.background='#1a365d'; this.style.borderColor='#1a365d';">
                             🏠 Torna alla Home
                         </a>
                     </div>
                     
-                    <div class="Search-Container">
-                        <input type="text" id="Input-Filtro-Testo" class="Search-Input" placeholder="Cerca un termine... (es. loggia, abside)">
-                    </div>
-
                     <div style="display: flex; gap: 10px; flex-wrap: wrap;">
                         <a href="{{ '/ricerca-it/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #4a5568; font-size: 0.85em; font-weight: 600; padding: 10px 14px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='#1a365d'; this.style.color='#1a365d'; this.style.background='#e8f9f7';" onmouseout="this.style.borderColor='#cbd5e1'; this.style.color='#4a5568'; this.style.background='#ffffff';">
                             🔄 Traduzione Rapida
@@ -269,6 +267,11 @@ title: Glossario Tradizionale (IT)
                             🌌 Ontologia 3D
                         </a>
                     </div>
+                </div>
+
+                <!-- Barra di ricerca centrata e indipendente -->
+                <div class="Search-Container">
+                    <input type="text" id="Input-Filtro-Testo" class="Search-Input" placeholder="Cerca un termine... (es. loggia, abside)">
                 </div>
 
                 <div class="Contenitore-Alfabeto" id="Tastiera-Lettere">
