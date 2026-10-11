@@ -67,17 +67,23 @@ title: Glossario Tradizionale (IT)
             position: relative;
         }
 
-        /* Prima riga: pulsanti distribuiti (Home, Traduzione, Sfera) con ampio respiro sopra la ricerca */
+        /* Prima riga: pulsanti ingranditi e ravvicinati in modo equilibrato */
         .Top-Nav-Row {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             margin-bottom: 35px;
-            gap: 15px;
+            gap: 20px;
             flex-wrap: wrap;
         }
 
-        /* Seconda riga: ricerca perfettamente centrata e bandierine a destra */
+        .Top-Nav-Row a {
+            font-size: 0.95em;
+            padding: 12px 22px;
+            border-radius: 8px;
+        }
+
+        /* Seconda riga: ricerca centrata e bandierine a destra */
         .Search-Language-Row {
             display: flex;
             justify-content: center;
@@ -260,28 +266,22 @@ title: Glossario Tradizionale (IT)
         <main>
             <div class="Sezione-Glossario-Statico">
                 
-                <!-- Prima Riga: I tre pulsanti ben distribuiti -->
+                <!-- Prima Riga: I tre pulsanti ravvicinati e centrati (Home, Traduzione, Sfera) -->
                 <div class="Top-Nav-Row">
-                    <div>
-                        <a href="{{ '/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #ffffff; font-size: 0.85em; font-weight: 600; padding: 10px 16px; background: #1a365d; border: 1px solid #1a365d; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.background='#2b6cb0'; this.style.borderColor='#2b6cb0';" onmouseout="this.style.background='#1a365d'; this.style.borderColor='#1a365d';">
-                            🏠 Torna alla Home
-                        </a>
-                    </div>
+                    <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: #ffffff; font-weight: 600; background: #1a365d; border: 1px solid #1a365d; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;" onmouseover="this.style.background='#2b6cb0'; this.style.borderColor='#2b6cb0';" onmouseout="this.style.background='#1a365d'; this.style.borderColor='#1a365d';">
+                        🏠 Torna alla Home
+                    </a>
                     
-                    <div>
-                        <a href="{{ '/ricerca-it/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #4a5568; font-size: 0.85em; font-weight: 600; padding: 10px 16px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='#1a365d'; this.style.color='#1a365d'; this.style.background='#e8f9f7';" onmouseout="this.style.borderColor='#cbd5e1'; this.style.color='#4a5568'; this.style.background='#ffffff';">
-                            🔄 Traduzione Rapida
-                        </a>
-                    </div>
+                    <a href="{{ '/ricerca-it/' | relative_url }}" style="text-decoration: none; color: #4a5568; font-weight: 600; background: #ffffff; border: 1px solid #cbd5e1; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='#1a365d'; this.style.color='#1a365d'; this.style.background='#e8f9f7';" onmouseout="this.style.borderColor='#cbd5e1'; this.style.color='#4a5568'; this.style.background='#ffffff';">
+                        🔄 Traduzione Rapida
+                    </a>
 
-                    <div>
-                        <a href="{{ '/sfera_2/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #7c3aed; font-size: 0.85em; font-weight: 600; padding: 10px 16px; background: #faf5ff; border: 1px solid #d8b4fe; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.background='#f3e8ff'; this.style.borderColor='#c084fc';" onmouseout="this.style.background='#faf5ff'; this.style.borderColor='#d8b4fe';">
-                            🌌 Ontologia 3D
-                        </a>
-                    </div>
+                    <a href="{{ '/sfera_2/' | relative_url }}" style="text-decoration: none; color: #7c3aed; font-weight: 600; background: #faf5ff; border: 1px solid #d8b4fe; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;" onmouseover="this.style.background='#f3e8ff'; this.style.borderColor='#c084fc';" onmouseout="this.style.background='#faf5ff'; this.style.borderColor='#d8b4fe';">
+                        🌌 Ontologia 3D
+                    </a>
                 </div>
 
-                <!-- Seconda Riga: Barra di ricerca centrata e bandierine di selezione lingua a destra -->
+                <!-- Seconda Riga: Barra di ricerca centrata e bandierine a destra -->
                 <div class="Search-Language-Row">
                     <div class="Search-Container">
                         <input type="text" id="Input-Filtro-Testo" class="Search-Input" placeholder="Cerca un termine... (es. loggia, abside)">
