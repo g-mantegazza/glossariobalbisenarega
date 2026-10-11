@@ -246,14 +246,6 @@ title: {{ page.title }} | Glossario Rolli
         .Visual-Foto { width: 100%; height: auto; display: block; object-fit: cover; }
         .Visual-Didascalia { padding: 12px; font-size: 0.85em; color: #718096; line-height: 1.4; border-top: 1px solid #e8f9f7; background-color: #ffffff; }
 
-        .Pannello-Comandi-Navigazione {
-            background-color: #f2f9f8; border: 1px solid #e8f9f7; border-radius: 8px; padding: 15px; display: flex; flex-direction: column; gap: 10px;
-        }
-        .Btn-Comando-Laterale {
-            display: flex; align-items: center; gap: 10px; text-decoration: none; color: #4a5568; font-size: 0.85em; font-weight: 600; padding: 10px 12px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; transition: all 0.2s ease;
-        }
-        .Btn-Comando-Laterale:hover { border-color: #1a365d; color: #1a365d; background: #e8f9f7; transform: translateX(2px); }
-
         /* --- STILI PER IL MODULO COMMENTI DIRETTO --- */
         .Box-Modulo-Commento {
             background-color: #f2f9f8;
@@ -371,12 +363,12 @@ title: {{ page.title }} | Glossario Rolli
         <div class="Sticky-Nav-Group">
             {% if page.lingua == "it" %}
                 <a href="{{ '/glossario-it/' | relative_url }}" class="Sticky-Nav-Btn Sticky-Nav-Other">📋 Elenco Glossario</a>
-                <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" class="Sticky-Nav-Btn Sticky-Nav-3D" target="_blank" rel="noopener noreferrer">🌐 Grafo 3D ↗</a>
                 <a href="{{ '/ricerca-it/' | relative_url }}" class="Sticky-Nav-Btn Sticky-Nav-Other">🔄 Ruota Traduzione</a>
+                <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" class="Sticky-Nav-Btn Sticky-Nav-3D" target="_blank" rel="noopener noreferrer">🌐 Grafo 3D ↗</a>
             {% else %}
                 <a href="{{ '/glossario-fr/' | relative_url }}" class="Sticky-Nav-Btn Sticky-Nav-Other">📋 Liste du Glossaire</a>
-                <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" class="Sticky-Nav-Btn Sticky-Nav-3D" target="_blank" rel="noopener noreferrer">🌐 Graphe 3D ↗</a>
                 <a href="{{ '/ricerca-fr/' | relative_url }}" class="Sticky-Nav-Btn Sticky-Nav-Other">🔄 Roue Traduction</a>
+                <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" class="Sticky-Nav-Btn Sticky-Nav-3D" target="_blank" rel="noopener noreferrer">🌐 Graphe 3D ↗</a>
             {% endif %}
         </div>
     </nav>
@@ -395,7 +387,7 @@ title: {{ page.title }} | Glossario Rolli
             </div>
         </div>
 
-        <!-- RIGA DI NAVIGAZIONE SUPERIORE (HOME A SINISTRA, ALTRI A DESTRA) -->
+        <!-- RIGA DI NAVIGAZIONE SUPERIORE (HOME A SINISTRA, ALTRI A DESTRA CON SFERA A ESTREMA DESTRA) -->
         <div class="Top-Nav-Page-Row">
             <div>
                 {% if page.lingua == "it" %}
@@ -414,21 +406,21 @@ title: {{ page.title }} | Glossario Rolli
                     <a href="{{ '/glossario-it/' | relative_url }}" style="text-decoration: none; color: #4a5568; font-weight: 600; background: #ffffff; border: 1px solid #cbd5e1; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
                         📋 Elenco Glossario
                     </a>
-                    <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #7c3aed; font-weight: 600; background: #faf5ff; border: 1px solid #d8b4fe; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
-                        🌐 Grafo 3D ↗
-                    </a>
                     <a href="{{ '/ricerca-it/' | relative_url }}" style="text-decoration: none; color: #4a5568; font-weight: 600; background: #ffffff; border: 1px solid #cbd5e1; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
                         🔄 Ruota Traduzione
+                    </a>
+                    <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #7c3aed; font-weight: 600; background: #faf5ff; border: 1px solid #d8b4fe; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
+                        🌐 Grafo 3D ↗
                     </a>
                 {% else %}
                     <a href="{{ '/glossario-fr/' | relative_url }}" style="text-decoration: none; color: #4a5568; font-weight: 600; background: #ffffff; border: 1px solid #cbd5e1; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
                         📋 Liste du Glossaire
                     </a>
-                    <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #7c3aed; font-weight: 600; background: #faf5ff; border: 1px solid #d8b4fe; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
-                        🌐 Graphe 3D ↗
-                    </a>
                     <a href="{{ '/ricerca-fr/' | relative_url }}" style="text-decoration: none; color: #4a5568; font-weight: 600; background: #ffffff; border: 1px solid #cbd5e1; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
                         🔄 Roue Traduction
+                    </a>
+                    <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #7c3aed; font-weight: 600; background: #faf5ff; border: 1px solid #d8b4fe; padding: 10px 14px; border-radius: 6px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
+                        🌐 Graphe 3D ↗
                     </a>
                 {% endif %}
             </div>
@@ -537,39 +529,7 @@ title: {{ page.title }} | Glossario Rolli
                     </div>
                 </div>
 
-                <div class="Pannello-Comandi-Navigazione">
-                    <div style="font-size: 0.75em; text-transform: uppercase; font-weight: 800; color: #a0aec0; letter-spacing: 0.5px; margin-bottom: 5px;">Navigazione Portale</div>
-                    
-                    {% if page.lingua == "it" %}
-                        <a href="{{ '/glossario-it/' | relative_url }}" class="Btn-Comando-Laterale">
-                            📋 Elenco Glossario (IT)
-                        </a>
-                        <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" class="Btn-Comando-Laterale" target="_blank" rel="noopener noreferrer" style="border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.05); color: #7c3aed;">
-                            🌐 Esplora nel Grafo 3D ↗
-                        </a>
-                        <a href="{{ '/ricerca-it/' | relative_url }}" class="Btn-Comando-Laterale">
-                            🔄 Ruota di Traduzione
-                        </a>
-                        <a href="{{ '/' | relative_url }}" class="Btn-Comando-Laterale" style="border-color: #cbd5e1; background: #ffffff;">
-                            🏠 Torna alla Home
-                        </a>
-                    {% else %}
-                        <a href="{{ '/glossario-fr/' | relative_url }}" class="Btn-Comando-Laterale">
-                            📋 Liste du Glossaire (FR)
-                        </a>
-                        <a href="{{ '/sfera/' | relative_url }}?nodo={{ page.title | url_encode }}" class="Btn-Comando-Laterale" target="_blank" rel="noopener noreferrer" style="border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.05); color: #7c3aed;">
-                            🌐 Explorer le Graphe 3D ↗
-                        </a>
-                        <a href="{{ '/ricerca-fr/' | relative_url }}" class="Btn-Comando-Laterale">
-                            🔄 Roue de Traduction
-                        </a>
-                        <a href="{{ '/' | relative_url }}" class="Btn-Comando-Laterale" style="border-color: #cbd5e1; background: #ffffff;">
-                            🏠 Retour à l'Accueil
-                        </a>
-                    {% endif %}
-                </div>
-
-                <!-- MODULO DI COMMENTO DIRETTO NELLA SIDEBAR -->
+                <!-- MODULO DI COMMENTO DIRETTO NELLA SIDEBAR (SENZA PULSANTI SOPRA) -->
                 <div class="Box-Modulo-Commento">
                     <div style="font-size: 0.75em; text-transform: uppercase; font-weight: 800; color: #a0aec0; letter-spacing: 0.5px;">
                         {% if page.lingua == "it" %}Segnala un refuso / Commento{% else %}Signaler une erreur / Commentaire{% endif %}
@@ -647,7 +607,6 @@ title: {{ page.title }} | Glossario Rolli
     
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Script per la gestione della barra sticky a comparsa in base allo scroll
             const stickyNav = document.getElementById("StickyNav");
             const headerPodio = document.getElementById("HeaderPodioTriggers");
 
@@ -668,7 +627,7 @@ title: {{ page.title }} | Glossario Rolli
 
             searchInput.addEventListener("input", function() {
                 const query = this.value.toLowerCase().trim();
-                righe.query = righe.forEach(riga => {
+                righe.forEach(riga => {
                     const lemma = riga.getAttribute("data-lemma") || "";
                     riga.style.display = (!query || lemma.includes(query)) ? "block" : "none";
                 });
