@@ -14,11 +14,9 @@ title: Glossaire Traditionnel (FR)
             color: #2d3748;
             width: 100% !important;
             margin: 0 !important;
-            padding: 30px 4% !important; /* Spaziatura laterale fluida in percentuale */
+            padding: 30px 4% !important;
             font-size: 1.15em;
             box-sizing: border-box;
-            
-            /* --- SFONDO ISTITUZIONALE E CALDO --- */
             background-color: #f1f5f9;
             background-image: 
                 radial-gradient(rgba(148, 163, 184, 0.15) 1px, transparent 0),
@@ -34,36 +32,32 @@ title: Glossaire Traditionnel (FR)
             box-shadow: 0 15px 35px rgba(26, 54, 93, 0.06);
             padding: 40px;
             margin: 20px auto 0 auto;
-            width: 100%; /* Occupa tutto lo spazio disponibile */
-            max-width: 1600px; /* Coordinato con la larghezza massima globale */
+            width: 100%;
+            max-width: 1600px;
             box-sizing: border-box;
         }
 
-        /* --- PODIO ISTITUZIONALE: VERSIONE MAESTOSA --- */
         .Header-Podio {
             display: flex; 
             justify-content: space-between; 
-            align-items: flex-end; /* Allineamento perfetto sulla linea di fondo */
+            align-items: flex-end;
             border-bottom: 2px solid #e2e8f0; 
-            padding: 60px 50px; /* Altezza solenne e ariosa */
+            padding: 60px 50px;
             margin: -40px -40px 35px -40px; 
             gap: 25px;
-            background-color: #e8f9f7; /* Sfondo menta/acquamarina coordinato */
+            background-color: #e8f9f7;
             box-sizing: border-box;
         }
 
         .Podio-Dipartimento { flex: 1; display: flex; justify-content: flex-start; align-items: flex-end; }
         .Logo-Dip { height: 95px; width: auto; display: block; }
-        
         .Podio-Ateneo { flex: 1.2; display: flex; justify-content: center; align-items: flex-end; } 
         .Logo-Unige-Sigillo { height: 155px; width: auto; display: block; transition: transform 0.2s ease; } 
-        
         .Podio-Dottorato { flex: 1; display: flex; justify-content: flex-end; align-items: flex-end; }
         .Logo-Phd { height: 95px; width: auto; display: block; }
 
-        /* --- SEZIONE GLOSSARIO ADATTIVA --- */
         .Sezione-Glossario-Statico {
-            background-color: #f2f9f8; /* Sfondo acquamarina chiaro coordinato con la Home */
+            background-color: #f2f9f8;
             border: 1px solid #e8f9f7;
             border-radius: 8px;
             padding: 30px;
@@ -73,17 +67,43 @@ title: Glossaire Traditionnel (FR)
             position: relative;
         }
 
-        .Search-Container {
-            max-width: 600px;
-            margin: 15px auto 25px auto;
+        /* Prima riga: pulsanti più grandi, distribuiti ed elegantemente distanziati */
+        .Top-Nav-Row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 35px;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
-        /* --- BARRA DI RICERCA INGRANDITA --- */
+        .Top-Nav-Row a {
+            font-size: 1.05em;
+            padding: 14px 26px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Seconda riga: ricerca centrata (allargata e con bordo più scuro) */
+        .Search-Language-Row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .Search-Container {
+            flex: 1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
         .Search-Input {
             width: 100%;
             padding: 18px 28px;
-            font-size: 1.3em; /* Ingrandito per massima leggibilità */
-            border: 2px solid #cbd5e1;
+            font-size: 1.3em;
+            border: 2px solid #94a3b8;
             border-radius: 50px;
             outline: none;
             transition: all 0.2s ease;
@@ -94,10 +114,17 @@ title: Glossaire Traditionnel (FR)
 
         .Search-Input:focus {
             border-color: #1a365d;
-            box-shadow: 0 4px 12px rgba(26, 54, 93, 0.08);
+            box-shadow: 0 4px 12px rgba(26, 54, 93, 0.12);
         }
 
-        /* --- TASTIERA ALFABETICA INGRANDITA --- */
+        .Language-Flags-Container {
+            position: absolute;
+            right: 0;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
         .Contenitore-Alfabeto {
             display: flex;
             justify-content: center;
@@ -110,9 +137,9 @@ title: Glossaire Traditionnel (FR)
             background: #ffffff;
             border: 1px solid #cbd5e1;
             color: #4a5568;
-            padding: 10px 18px; /* Più spazio per il clic */
-            font-size: 1.15em; /* Lettere più grandi */
-            font-weight: 700; /* Grassetto deciso */
+            padding: 10px 18px;
+            font-size: 1.15em;
+            font-weight: 700;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.15s ease;
@@ -131,7 +158,6 @@ title: Glossaire Traditionnel (FR)
             border-color: #1a365d;
         }
 
-        /* --- DISPOSIZIONE MULTI-COLONNA ADATTIVA --- */
         .Insieme-Schede {
             list-style: none;
             padding: 0;
@@ -213,14 +239,10 @@ title: Glossaire Traditionnel (FR)
         }
 
         @media (max-width: 950px) {
-            .Header-Podio {
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-                padding: 30px 20px;
-            }
+            .Header-Podio { flex-direction: column; align-items: center; gap: 20px; padding: 30px 20px; }
+            .Search-Language-Row { flex-direction: column; gap: 15px; }
+            .Language-Flags-Container { position: static; justify-content: center; }
         }
-
         @media (max-width: 768px) {
             .Insieme-Schede { column-count: 1; }
         }
@@ -245,15 +267,33 @@ title: Glossaire Traditionnel (FR)
         <main>
             <div class="Sezione-Glossario-Statico">
                 
-                <div style="position: absolute; top: 15px; right: 25px; z-index: 20; display: flex; gap: 15px; align-items: center;">
-                    <a href="{{ '/glossario-it/' | relative_url }}" style="text-decoration: none; transition: transform 0.2s; display: block;" onmouseover="this.style.transform='scale(1.15)';" onmouseout="this.style.transform='scale(1)';" title="Glossario Italiano">
-                        <img src="https://flagcdn.com/w40/it.png" class="Bollino-Flag">
+                <!-- Prima Riga: I tre pulsanti (Retour à l'Accueil, Traduction Rapide, Ontologie 3D) -->
+                <div class="Top-Nav-Row">
+                    <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: #ffffff; font-weight: 600; background: #1a365d; border: 1px solid #1a365d; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;" onmouseover="this.style.background='#2b6cb0'; this.style.borderColor='#2b6cb0';" onmouseout="this.style.background='#1a365d'; this.style.borderColor='#1a365d';">
+                        🏠 Retour à l'Accueil
                     </a>
-                    <img src="https://flagcdn.com/w40/fr.png" class="Bollino-Flag" style="opacity: 0.35; cursor: default;" title="Glossaire Français (Courant)">
+                    
+                    <a href="{{ '/ricerca-fr/' | relative_url }}" style="text-decoration: none; color: #4a5568; font-weight: 600; background: #ffffff; border: 1px solid #cbd5e1; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='#1a365d'; this.style.color='#1a365d'; this.style.background='#e8f9f7';" onmouseout="this.style.borderColor='#cbd5e1'; this.style.color='#4a5568'; this.style.background='#ffffff';">
+                        🔄 Traduction Rapide
+                    </a>
+
+                    <a href="{{ '/sfera_2/' | relative_url }}" style="text-decoration: none; color: #7c3aed; font-weight: 600; background: #faf5ff; border: 1px solid #d8b4fe; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;" onmouseover="this.style.background='#f3e8ff'; this.style.borderColor='#c084fc';" onmouseout="this.style.background='#faf5ff'; this.style.borderColor='#d8b4fe';">
+                        🌌 Ontologie 3D
+                    </a>
                 </div>
-                
-                <div class="Search-Container">
-                    <input type="text" id="Input-Filtro-Testo" class="Search-Input" placeholder="Tapez un terme... (ex. bordure)">
+
+                <!-- Seconda Riga: Barra di ricerca centrata e bandierine di cambio lingua a destra -->
+                <div class="Search-Language-Row">
+                    <div class="Search-Container">
+                        <input type="text" id="Input-Filtro-Testo" class="Search-Input" placeholder="Tapez un terme... (ex. bordure, loggia)">
+                    </div>
+
+                    <div class="Language-Flags-Container">
+                        <a href="{{ '/glossario-it/' | relative_url }}" style="text-decoration: none; transition: transform 0.2s; display: block;" onmouseover="this.style.transform='scale(1.15)';" onmouseout="this.style.transform='scale(1)';" title="Glossario Italiano">
+                            <img src="https://flagcdn.com/w40/it.png" class="Bollino-Flag">
+                        </a>
+                        <img src="https://flagcdn.com/w40/fr.png" class="Bollino-Flag" style="opacity: 0.35; cursor: default;" title="Glossaire Français (Courant)">
+                    </div>
                 </div>
 
                 <div class="Contenitore-Alfabeto" id="Tastiera-Lettere">
@@ -281,16 +321,6 @@ title: Glossaire Traditionnel (FR)
 
                 <div class="Nessun-Risultato" id="Messaggio-Vuoto">Aucun terme ne correspond aux critères de recherche</div>
 
-                <div style="display: flex; gap: 15px; justify-content: center; margin-top: 35px; padding-top: 20px; border-top: 1px dashed #cbd5e1; flex-wrap: wrap;">
-                    <a href="/glossariobalbisenarega/ricerca-fr/" style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #4a5568; font-size: 0.85em; font-weight: 600; padding: 10px 16px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='#1a365d'; this.style.color='#1a365d'; this.style.background='#e8f9f7';" onmouseout="this.style.borderColor='#cbd5e1'; this.style.color='#4a5568'; this.style.background='#ffffff';">
-                        🔄 Traduction Rapide FR
-                    </a>
-                    
-                    <a href="/glossariobalbisenarega/" style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #ffffff; font-size: 0.85em; font-weight: 600; padding: 10px 16px; background: #1a365d; border: 1px solid #1a365d; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.background='#2b6cb0'; this.style.borderColor='#2b6cb0';" onmouseout="this.style.background='#1a365d'; this.style.borderColor='#1a365d';">
-                        🏠 Retour à l'Accueil
-                    </a>
-                </div>
-
             </div>
         </main>
         <footer style="margin-top: 60px; padding-top: 30px; border-top: 1px dashed #cbd5e1; font-size: 0.85em; color: #64748b; line-height: 1.6; text-align: left;">
@@ -298,50 +328,56 @@ title: Glossaire Traditionnel (FR)
         
         <div style="flex: 2; min-width: 280px;">
             <strong style="color: #1a365d; display: block; margin-bottom: 5px;">Glossaire Terminologique du Palais Balbi Senarega</strong>
-            <p style="margin: 0;">Projet de recherche doctorale en <em>Digital Humanities</em> développé au sein du <strong>Centre de Recherche en Terminologie Multilingue (CeRTeM)</strong>, Département de Langues et Cultures Modernes, Université des Études de Gênes.</p>
+            <p style="margin: 0;">Projet de recherche doctorale en <em>Digital Humanities</em> développé au sein du <strong>Centre de Recherche en Terminologie Multilingue (CeRTeM)</strong>, Département de Langues et Cultures Modernes, Université des Études de Gênes[cite: 2].</p>
         </div>
         
         <div style="flex: 1; min-width: 200px;">
             <strong style="color: #1a365d; display: block; margin-bottom: 5px;">Contacts et Retours</strong>
             <p style="margin: 0;">
-                Auteur: Giovanni Mantegazza<br>
-                E-mail: <a href="mailto:giovanni.mantegazza@edu.unige.it" style="color: #2b6cb0; text-decoration: none;">giovanni.mantegazza@edu.unige.it</a><br>
-                <small style="color: #94a3b8;">Pour toute suggestion ou correction, veuillez nous contacter par courriel.</small>
+                Auteur: Giovanni Mantegazza[cite: 2]<br>
+                E-mail: <a href="mailto:giovanni.mantegazza@edu.unige.it" style="color: #2b6cb0; text-decoration: none;">giovanni.mantegazza@edu.unige.it</a>[cite: 2]<br>
+                <small style="color: #94a3b8;">Pour toute suggestion ou correction, veuillez nous contacter par courriel[cite: 2].</small>
             </p>
         </div>
         
         <div style="flex: 1; min-width: 220px;">
             <strong style="color: #1a365d; display: block; margin-bottom: 5px;">Licence et Droits d'Auteur</strong>
             <p style="margin: 0;">
-                Les données terminologiques sont protégées par la Licence<br>
-                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank" style="color: #2b6cb0; text-decoration: none; font-weight: 600;">CC BY-NC-SA 4.0</a>.<br>
-                <small style="color: #94a3b8;">Images de l'appareil visuel © de leurs auteurs respectifs.</small>
+                Les données terminologiques sont protégées par la Licence[cite: 2]<br>
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank" style="color: #2b6cb0; text-decoration: none; font-weight: 600;">CC BY-NC-SA 4.0</a>[cite: 2].<br>
+                <small style="color: #94a3b8;">Images de l'appareil visuel © de leurs auteurs respectifs[cite: 2].</small>
             </p>
         </div>
         
     </div>
     
     <div style="text-align: center; margin-top: 30px; padding-top: 15px; border-top: 1px solid #f1f5f9; font-size: 0.9em; color: #94a3b8;">
-        © 2026 Université de Gênes | CeRTeM.
+        © 2026 Université de Gênes | CeRTeM[cite: 2].
     </div>
 </footer>
     </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            const inputTesto = document.getElementById("Input-Filtro-Testo");
             const tastiera = document.getElementById("Tastiera-Lettere");
             const listaSchede = document.getElementById("Lista-Schede-Elementi");
             const messaggioVuoto = document.getElementById("Messaggio-Vuoto");
             const pannelloBenvenuto = document.getElementById("Pannello-Benvenuto");
             const schede = Array.from(listaSchede.children);
 
-            function filtraSoloTesto(e) {
-                const query = e.target.value.toLowerCase().trim();
+            function normalizzaTesto(testo) {
+                return testo.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            }
+
+            function filtraSoloTesto() {
+                const query = normalizzaTesto(inputTesto.value.trim());
 
                 if (!query) {
                     pannelloBenvenuto.style.display = "block";
                     listaSchede.style.display = "none";
                     messaggioVuoto.style.display = "none";
+                    tastiera.querySelectorAll(".Btn-Lettera").forEach(b => b.classList.remove("attiva"));
                     return;
                 }
 
@@ -351,7 +387,7 @@ title: Glossaire Traditionnel (FR)
 
                 let contatore = 0;
                 schede.forEach(scheda => {
-                    const titolo = scheda.getAttribute("data-titolo") || "";
+                    const titolo = normalizzaTesto(scheda.getAttribute("data-titolo") || "");
                     if (titolo.includes(query)) {
                         scheda.style.setProperty("display", "flex", "important");
                         contatore++;
@@ -364,9 +400,7 @@ title: Glossaire Traditionnel (FR)
             }
 
             function filtraSoloLettera(letteraSelezionata) {
-                const inputElement = document.getElementById("Input-Filtro-Testo");
-                if (inputElement) inputElement.value = "";
-                
+                inputTesto.value = "";
                 pannelloBenvenuto.style.display = "none";
                 listaSchede.style.display = "block";
 
@@ -384,12 +418,7 @@ title: Glossaire Traditionnel (FR)
                 messaggioVuoto.style.display = (contatore === 0) ? "block" : "none";
             }
 
-            const inputOriginale = document.getElementById("Input-Filtro-Testo");
-            if (inputOriginale) {
-                inputOriginale.replaceWith(inputOriginale.cloneNode(true));
-                const nuovoInputTesto = document.getElementById("Input-Filtro-Testo");
-                nuovoInputTesto.addEventListener("input", filtraSoloTesto);
-            }
+            inputTesto.addEventListener("input", filtraSoloTesto);
 
             tastiera.addEventListener("click", function(e) {
                 if (!e.target.classList.contains("Btn-Lettera")) return;
