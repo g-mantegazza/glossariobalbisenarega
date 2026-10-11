@@ -4654,6 +4654,2552 @@
         "fr": "pala_d'altare_fr.html"
       },
       "distance": 95
+    },
+    {
+      "id": "Abbondanza",
+      "label": "Abbondanza",
+      "type": "instance",
+      "parentId": "Soggetto_Allegorico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "abbondanza_it.html",
+        "fr": "abbondanza_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Allegrezza",
+      "label": "Allegrezza",
+      "type": "instance",
+      "parentId": "Soggetto_Allegorico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "allegrezza_it.html",
+        "fr": "allegrezza_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Carro_del_Tempo",
+      "label": "Carro del Tempo",
+      "type": "instance",
+      "parentId": "Soggetto_Allegorico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "carro_del_tempo_it.html",
+        "fr": "carro_del_tempo_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Discordia",
+      "label": "Discordia",
+      "type": "instance",
+      "parentId": "Soggetto_Allegorico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "discordia_it.html",
+        "fr": "discordia_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Le_Arti",
+      "label": "Le Arti",
+      "type": "instance",
+      "parentId": "Soggetto_Allegorico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "le_arti_it.html",
+        "fr": "le_arti_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Lussuria",
+      "label": "Lussuria",
+      "type": "instance",
+      "parentId": "Soggetto_Allegorico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "lussuria_it.html",
+        "fr": "lussuria_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Pace",
+      "label": "Pace",
+      "type": "instance",
+      "parentId": "Soggetto_Allegorico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "pace_it.html",
+        "fr": "pace_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Tempo",
+      "label": "Tempo",
+      "type": "instance",
+      "parentId": "Soggetto_Allegorico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "tempo_it.html",
+        "fr": "tempo_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Verità",
+      "label": "Verità",
+      "type": "instance",
+      "parentId": "Soggetto_Allegorico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "verità_it.html",
+        "fr": "verità_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Virtù",
+      "label": "Virtù",
+      "type": "instance",
+      "parentId": "Soggetto_Allegorico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "virtù_it.html",
+        "fr": "virtù_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Abbondanza_Significato",
+      "label": "Abbondanza Significato",
+      "type": "instance",
+      "parentId": "Allegoria",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "abbondanza_significato_it.html",
+        "fr": "abbondanza_significato_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Allegrezza_Significato",
+      "label": "Allegrezza Significato",
+      "type": "instance",
+      "parentId": "Allegoria",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "allegrezza_significato_it.html",
+        "fr": "allegrezza_significato_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Pace_Significato",
+      "label": "Pace Significato",
+      "type": "instance",
+      "parentId": "Allegoria",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "pace_significato_it.html",
+        "fr": "pace_significato_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Andrea_Seghizzi",
+      "label": "Andrea Seghizzi",
+      "type": "instance",
+      "parentId": "Quadraturista",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "andrea_seghizzi_it.html",
+        "fr": "andrea_seghizzi_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Paolo_Brozzi",
+      "label": "Paolo Brozzi",
+      "type": "instance",
+      "parentId": "Quadraturista",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "paolo_brozzi_it.html",
+        "fr": "paolo_brozzi_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Apollo",
+      "label": "Apollo",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "apollo_it.html",
+        "fr": "apollo_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Borea",
+      "label": "Borea",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "borea_it.html",
+        "fr": "borea_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Carro_Fetonte",
+      "label": "Carro Fetonte",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "carro_fetonte_it.html",
+        "fr": "carro_fetonte_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Carro_Plutone",
+      "label": "Carro Plutone",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "carro_plutone_it.html",
+        "fr": "carro_plutone_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Cigno",
+      "label": "Cigno",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "cigno_it.html",
+        "fr": "cigno_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Concilio_Dei",
+      "label": "Concilio Dei",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "concilio_dei_it.html",
+        "fr": "concilio_dei_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Cupido",
+      "label": "Cupido",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "cupido_it.html",
+        "fr": "cupido_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Deianira",
+      "label": "Deianira",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "deianira_it.html",
+        "fr": "deianira_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Ercole",
+      "label": "Ercole",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "ercole_it.html",
+        "fr": "ercole_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Fetonte",
+      "label": "Fetonte",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "fetonte_it.html",
+        "fr": "fetonte_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Flora",
+      "label": "Flora",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "flora_it.html",
+        "fr": "flora_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Giove",
+      "label": "Giove",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "giove_it.html",
+        "fr": "giove_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Le_Muse",
+      "label": "Le Muse",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "le_muse_it.html",
+        "fr": "le_muse_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Leda",
+      "label": "Leda",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "leda_it.html",
+        "fr": "leda_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Marte",
+      "label": "Marte",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "marte_it.html",
+        "fr": "marte_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Nesso",
+      "label": "Nesso",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "nesso_it.html",
+        "fr": "nesso_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Orizia",
+      "label": "Orizia",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "orizia_it.html",
+        "fr": "orizia_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Plutone",
+      "label": "Plutone",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "plutone_it.html",
+        "fr": "plutone_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Proserpina",
+      "label": "Proserpina",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "proserpina_it.html",
+        "fr": "proserpina_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Tisbe",
+      "label": "Tisbe",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "tisbe_it.html",
+        "fr": "tisbe_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Venere",
+      "label": "Venere",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "venere_it.html",
+        "fr": "venere_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Vulcano",
+      "label": "Vulcano",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "vulcano_it.html",
+        "fr": "vulcano_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Zefiro",
+      "label": "Zefiro",
+      "type": "instance",
+      "parentId": "Soggetto_Mitologico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "zefiro_it.html",
+        "fr": "zefiro_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Armi_Famiglia_Balbi",
+      "label": "Armi Famiglia Balbi",
+      "type": "instance",
+      "parentId": "Soggetto_Araldico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "armi_famiglia_balbi_it.html",
+        "fr": "armi_famiglia_balbi_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Aula_Magna_della_Scuola_di_Scienze_Umanistiche",
+      "label": "Aula Magna della Scuola di Scienze Umanistiche",
+      "type": "instance",
+      "parentId": "Aula_Magna",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "aula_magna_della_scuola_di_scienze_umanistiche_it.html",
+        "fr": "aula_magna_della_scuola_di_scienze_umanistiche_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Bartolomeo_Bianco",
+      "label": "Bartolomeo Bianco",
+      "type": "instance",
+      "parentId": "Architetto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "bartolomeo_bianco_it.html",
+        "fr": "bartolomeo_bianco_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Gregorio_Petondi",
+      "label": "Gregorio Petondi",
+      "type": "instance",
+      "parentId": "Architetto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "gregorio_petondi_it.html",
+        "fr": "gregorio_petondi_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Pietro_Antonio_Corradi",
+      "label": "Pietro Antonio Corradi",
+      "type": "instance",
+      "parentId": "Architetto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "pietro_antonio_corradi_it.html",
+        "fr": "pietro_antonio_corradi_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "CBS_Caduta_di_Saulo",
+      "label": "CBS Caduta di Saulo",
+      "type": "instance",
+      "parentId": "Quadro",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "cbs_caduta_di_saulo_it.html",
+        "fr": "cbs_caduta_di_saulo_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "CBS_Ritratto_Gio._Paolo_Balbi",
+      "label": "CBS Ritratto Gio. Paolo Balbi",
+      "type": "instance",
+      "parentId": "Quadro",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "cbs_ritratto_gio._paolo_balbi_it.html",
+        "fr": "cbs_ritratto_gio._paolo_balbi_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Caravaggio",
+      "label": "Caravaggio",
+      "type": "instance",
+      "parentId": "Pittore",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "caravaggio_it.html",
+        "fr": "caravaggio_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Giovanni_Andrea_Carlone",
+      "label": "Giovanni Andrea Carlone",
+      "type": "instance",
+      "parentId": "Pittore",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "giovanni_andrea_carlone_it.html",
+        "fr": "giovanni_andrea_carlone_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Simon_de_Bois",
+      "label": "Simon de Bois",
+      "type": "instance",
+      "parentId": "Pittore",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "simon_de_bois_it.html",
+        "fr": "simon_de_bois_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Van_Dyck",
+      "label": "Van Dyck",
+      "type": "instance",
+      "parentId": "Pittore",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "van_dyck_it.html",
+        "fr": "van_dyck_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Collezione_Balbi_Senarega",
+      "label": "Collezione Balbi Senarega",
+      "type": "instance",
+      "parentId": "Collezione",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "collezione_balbi_senarega_it.html",
+        "fr": "collezione_balbi_senarega_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Cornelio_Gallo",
+      "label": "Cornelio Gallo",
+      "type": "instance",
+      "parentId": "Soggetto_Storico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "cornelio_gallo_it.html",
+        "fr": "cornelio_gallo_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Licoride",
+      "label": "Licoride",
+      "type": "instance",
+      "parentId": "Soggetto_Storico",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "licoride_it.html",
+        "fr": "licoride_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Domenico_Piola",
+      "label": "Domenico Piola",
+      "type": "instance",
+      "parentId": "Artista",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "domenico_piola_it.html",
+        "fr": "domenico_piola_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Gregorio_De_Ferrari",
+      "label": "Gregorio De Ferrari",
+      "type": "instance",
+      "parentId": "Artista",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "gregorio_de_ferrari_it.html",
+        "fr": "gregorio_de_ferrari_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Peter_Paul_Rubens",
+      "label": "Peter Paul Rubens",
+      "type": "instance",
+      "parentId": "Artista",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "peter_paul_rubens_it.html",
+        "fr": "peter_paul_rubens_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Valerio_Castello",
+      "label": "Valerio Castello",
+      "type": "instance",
+      "parentId": "Artista",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "valerio_castello_it.html",
+        "fr": "valerio_castello_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Francesco_Maria_Balbi",
+      "label": "Francesco Maria Balbi",
+      "type": "instance",
+      "parentId": "Proprietari",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "francesco_maria_balbi_it.html",
+        "fr": "francesco_maria_balbi_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Giacomo_Balbi",
+      "label": "Giacomo Balbi",
+      "type": "instance",
+      "parentId": "Proprietari",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "giacomo_balbi_it.html",
+        "fr": "giacomo_balbi_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Pantaleo_Balbi",
+      "label": "Pantaleo Balbi",
+      "type": "instance",
+      "parentId": "Proprietari",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "pantaleo_balbi_it.html",
+        "fr": "pantaleo_balbi_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Universita_degli_Studi_di_Genova",
+      "label": "Universita degli Studi di Genova",
+      "type": "instance",
+      "parentId": "Proprietari",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "universita_degli_studi_di_genova_it.html",
+        "fr": "universita_degli_studi_di_genova_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Giovanni_Battista_Barberini",
+      "label": "Giovanni Battista Barberini",
+      "type": "instance",
+      "parentId": "Scultore",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "giovanni_battista_barberini_it.html",
+        "fr": "giovanni_battista_barberini_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Mito_Borea_e_Orizia",
+      "label": "Mito Borea e Orizia",
+      "type": "instance",
+      "parentId": "Tema",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "mito_borea_e_orizia_it.html",
+        "fr": "mito_borea_e_orizia_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Mito_Carro_Fetonte",
+      "label": "Mito Carro Fetonte",
+      "type": "instance",
+      "parentId": "Tema",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "mito_carro_fetonte_it.html",
+        "fr": "mito_carro_fetonte_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Mito_Leda_e_Cigno",
+      "label": "Mito Leda e Cigno",
+      "type": "instance",
+      "parentId": "Tema",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "mito_leda_e_cigno_it.html",
+        "fr": "mito_leda_e_cigno_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Mito_Rapimento_Proserpina",
+      "label": "Mito Rapimento Proserpina",
+      "type": "instance",
+      "parentId": "Tema",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "mito_rapimento_proserpina_it.html",
+        "fr": "mito_rapimento_proserpina_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_Apollo_e_le_muse",
+      "label": "PBS Affresco Apollo e le muse",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1650 e il 1660.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1650 et 1660."
+      },
+      "urls": {
+        "it": "pbs_affresco_apollo_e_le_muse_it.html",
+        "fr": "pbs_affresco_apollo_e_le_muse_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_Apoteosi_di_Ercole",
+      "label": "PBS Affresco Apoteosi di Ercole",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Gregorio De Ferrari esegue il riquadro centrale della volta su un'impostazione/quadratura decorativa già sviluppata da Andrea Seghizzi e Valerio Castello; le fonti storiografiche ipotizzano inoltre una possibile collaborazione di Domenico Piola per i monocromi e le virtù.",
+        "fr": "Gregorio De Ferrari réalise le compartiment central de la voûte sur une composition décorative et une quadratura préalablement développées par Andrea Seghizzi et Valerio Castello ; les sources historiographiques émettent en outre l'hypothèse d'une possible collaboration de Domenico Piola pour les camaïeux et les vertus."
+      },
+      "urls": {
+        "it": "pbs_affresco_apoteosi_di_ercole_it.html",
+        "fr": "pbs_affresco_apoteosi_di_ercole_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_Borea_e_Orizia",
+      "label": "PBS Affresco Borea e Orizia",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_affresco_borea_e_orizia_it.html",
+        "fr": "pbs_affresco_borea_e_orizia_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_Carro_Fetonte",
+      "label": "PBS Affresco Carro Fetonte",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_affresco_carro_fetonte_it.html",
+        "fr": "pbs_affresco_carro_fetonte_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_Carro_del_Tempo",
+      "label": "PBS Affresco Carro del Tempo",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_affresco_carro_del_tempo_it.html",
+        "fr": "pbs_affresco_carro_del_tempo_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_Fortezza_che_trionfa_sui_Vizi",
+      "label": "PBS Affresco Fortezza che trionfa sui Vizi",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1650 e il 1660.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1650 et 1660."
+      },
+      "urls": {
+        "it": "pbs_affresco_fortezza_che_trionfa_sui_vizi_it.html",
+        "fr": "pbs_affresco_fortezza_che_trionfa_sui_vizi_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_Giove_tra_le_Arti",
+      "label": "PBS Affresco Giove tra le Arti",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1650 e il 1660.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1650 et 1660."
+      },
+      "urls": {
+        "it": "pbs_affresco_giove_tra_le_arti_it.html",
+        "fr": "pbs_affresco_giove_tra_le_arti_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_La_Gloria_dei_Balbi",
+      "label": "PBS Affresco La Gloria dei Balbi",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1670 e il 1680.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1670 et 1680."
+      },
+      "urls": {
+        "it": "pbs_affresco_la_gloria_dei_balbi_it.html",
+        "fr": "pbs_affresco_la_gloria_dei_balbi_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_Leda_e_Cigno",
+      "label": "PBS Affresco Leda e Cigno",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_affresco_leda_e_cigno_it.html",
+        "fr": "pbs_affresco_leda_e_cigno_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_Pace_Allegrezza_e_Abbondanza",
+      "label": "PBS Affresco Pace Allegrezza e Abbondanza",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_affresco_pace_allegrezza_e_abbondanza_it.html",
+        "fr": "pbs_affresco_pace_allegrezza_e_abbondanza_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_Rapimento_Proserpina",
+      "label": "PBS Affresco Rapimento Proserpina",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_affresco_rapimento_proserpina_it.html",
+        "fr": "pbs_affresco_rapimento_proserpina_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_Trionfi_di_amore",
+      "label": "PBS Affresco Trionfi di amore",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo; le fonti utilizzate indicano che potrebbe essere stato realizzato in occasione del matrimonio tra Francesco Maria II e Clarice Durazzo.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent qu'il pourrait avoir été réalisé à l'occasion du mariage entre Francesco Maria II et Clarice Durazzo."
+      },
+      "urls": {
+        "it": "pbs_affresco_trionfi_di_amore_it.html",
+        "fr": "pbs_affresco_trionfi_di_amore_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_Verità_svelata_dal_Tempo",
+      "label": "PBS Affresco Verità svelata dal Tempo",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo; le fonti utilizzate indicano che potrebbe essere stato realizzato in occasione del matrimonio tra Francesco Maria II e Clarice Durazzo.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent qu'il pourrait avoir été réalisé à l'occasion du mariage entre Francesco Maria II et Clarice Durazzo."
+      },
+      "urls": {
+        "it": "pbs_affresco_verità_svelata_dal_tempo_it.html",
+        "fr": "pbs_affresco_verità_svelata_dal_tempo_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_Virtù_abbatte_Discordia",
+      "label": "PBS Affresco Virtù abbatte Discordia",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1670 e il 1680.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1670 et 1680."
+      },
+      "urls": {
+        "it": "pbs_affresco_virtù_abbatte_discordia_it.html",
+        "fr": "pbs_affresco_virtù_abbatte_discordia_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Affresco_di_Zefiro_e_Flora",
+      "label": "PBS Affresco di Zefiro e Flora",
+      "type": "instance",
+      "parentId": "Affresco",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1650 e il 1660.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1650 et 1660."
+      },
+      "urls": {
+        "it": "pbs_affresco_di_zefiro_e_flora_it.html",
+        "fr": "pbs_affresco_di_zefiro_e_flora_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Aiuola",
+      "label": "PBS Aiuola",
+      "type": "instance",
+      "parentId": "Aiuola",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_aiuola_it.html",
+        "fr": "pbs_aiuola_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Ala",
+      "label": "PBS Ala",
+      "type": "instance",
+      "parentId": "Ala",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_ala_it.html",
+        "fr": "pbs_ala_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Ala_Di_Ponente",
+      "label": "PBS Ala Di Ponente",
+      "type": "instance",
+      "parentId": "Ala",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_ala_di_ponente_it.html",
+        "fr": "pbs_ala_di_ponente_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Aranceto",
+      "label": "PBS Aranceto",
+      "type": "instance",
+      "parentId": "Aranceto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_aranceto_it.html",
+        "fr": "pbs_aranceto_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Giardino",
+      "label": "PBS Giardino",
+      "type": "instance",
+      "parentId": "Hortus_Conclusus",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_giardino_it.html",
+        "fr": "pbs_giardino_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Atrio",
+      "label": "PBS Atrio",
+      "type": "instance",
+      "parentId": "Atrio",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti impiegate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_atrio_it.html",
+        "fr": "pbs_atrio_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Cartiglio_Affresco_Trionfi_di_Amore",
+      "label": "PBS Cartiglio Affresco Trionfi di Amore",
+      "type": "instance",
+      "parentId": "Cartiglio",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Elemento decorativo a cartiglio che reca l'iscrizione 'Omnia vicit amor' ('L'amore vince su tutto' / 'L'amore trionfa su tutto').",
+        "fr": "Élément décoratif en cartouche portant l'inscription 'Omnia vicit amor' ('L'amour triomphe de tout')."
+      },
+      "urls": {
+        "it": "pbs_cartiglio_affresco_trionfi_di_amore_it.html",
+        "fr": "pbs_cartiglio_affresco_trionfi_di_amore_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Ciclo_Decorativo_Galleria_Passante",
+      "label": "PBS Ciclo Decorativo Galleria Passante",
+      "type": "instance",
+      "parentId": "Opera_pittorica",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_ciclo_decorativo_galleria_passante_it.html",
+        "fr": "pbs_ciclo_decorativo_galleria_passante_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Colonna_PT",
+      "label": "PBS Colonna PT",
+      "type": "instance",
+      "parentId": "Colonna",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_colonna_pt_it.html",
+        "fr": "pbs_colonna_pt_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Colonnato_Cortile",
+      "label": "PBS Colonnato Cortile",
+      "type": "instance",
+      "parentId": "Colonnato",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "pbs_colonnato_cortile_it.html",
+        "fr": "pbs_colonnato_cortile_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Cornice_Portale",
+      "label": "PBS Cornice Portale",
+      "type": "instance",
+      "parentId": "Cornice",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources historiques."
+      },
+      "urls": {
+        "it": "pbs_cornice_portale_it.html",
+        "fr": "pbs_cornice_portale_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Cortile",
+      "label": "PBS Cortile",
+      "type": "instance",
+      "parentId": "Cortile",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti storiche.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_cortile_it.html",
+        "fr": "pbs_cortile_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Facciata",
+      "label": "PBS Facciata",
+      "type": "instance",
+      "parentId": "Facciata",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_facciata_it.html",
+        "fr": "pbs_facciata_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Galleria_Passante",
+      "label": "PBS Galleria Passante",
+      "type": "instance",
+      "parentId": "Galleria",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_galleria_passante_it.html",
+        "fr": "pbs_galleria_passante_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Galleria_dei_Trionfi_di_amore",
+      "label": "PBS Galleria dei Trionfi di amore",
+      "type": "instance",
+      "parentId": "Galleria",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "Dans les textes de référence, elle est nommée aussi Galleria del Trionfo d'amore (Galerie du Triomphe de l'amour en français)."
+      },
+      "urls": {
+        "it": "pbs_galleria_dei_trionfi_di_amore_it.html",
+        "fr": "pbs_galleria_dei_trionfi_di_amore_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Lampadario",
+      "label": "PBS Lampadario",
+      "type": "instance",
+      "parentId": "Lampadario",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "pbs_lampadario_it.html",
+        "fr": "pbs_lampadario_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Linea_Marcapiano",
+      "label": "PBS Linea Marcapiano",
+      "type": "instance",
+      "parentId": "Marcapiano",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_linea_marcapiano_it.html",
+        "fr": "pbs_linea_marcapiano_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Loggia_PN1",
+      "label": "PBS Loggia PN1",
+      "type": "instance",
+      "parentId": "Loggia",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_loggia_pn1_it.html",
+        "fr": "pbs_loggia_pn1_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Loggia_sud_PN2",
+      "label": "PBS Loggia sud PN2",
+      "type": "instance",
+      "parentId": "Loggia",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_loggia_sud_pn2_it.html",
+        "fr": "pbs_loggia_sud_pn2_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_loggia_est_PN2",
+      "label": "PBS loggia est PN2",
+      "type": "instance",
+      "parentId": "Loggia",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_loggia_est_pn2_it.html",
+        "fr": "pbs_loggia_est_pn2_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Loggiato_Cortile",
+      "label": "PBS Loggiato Cortile",
+      "type": "instance",
+      "parentId": "Loggiato",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_loggiato_cortile_it.html",
+        "fr": "pbs_loggiato_cortile_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Ninfeo",
+      "label": "PBS Ninfeo",
+      "type": "instance",
+      "parentId": "Ninfeo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_ninfeo_it.html",
+        "fr": "pbs_ninfeo_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Ninfeo_Polilobato",
+      "label": "PBS Ninfeo Polilobato",
+      "type": "instance",
+      "parentId": "Ninfeo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_ninfeo_polilobato_it.html",
+        "fr": "pbs_ninfeo_polilobato_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Pavimento_a_Risseau",
+      "label": "PBS Pavimento a Risseau",
+      "type": "instance",
+      "parentId": "Risseau",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_pavimento_a_risseau_it.html",
+        "fr": "pbs_pavimento_a_risseau_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Piano_Terreno",
+      "label": "PBS_Piano_Terreno",
+      "type": "instance",
+      "parentId": "Piano_terreno",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_piano_terreno_it.html",
+        "fr": "pbs_piano_terreno_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Pianta",
+      "label": "PBS Pianta",
+      "type": "instance",
+      "parentId": "Pianta",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "pbs_pianta_it.html",
+        "fr": "pbs_pianta_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Portale",
+      "label": "PBS Portale",
+      "type": "instance",
+      "parentId": "Portale",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_portale_it.html",
+        "fr": "pbs_portale_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Primo_Piano_Nobile",
+      "label": "PBS_Primo_Piano_Nobile",
+      "type": "instance",
+      "parentId": "Piano_nobile",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti storiche.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources historiques."
+      },
+      "urls": {
+        "it": "pbs_primo_piano_nobile_it.html",
+        "fr": "pbs_primo_piano_nobile_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Secondo_Piano_Nobile",
+      "label": "PBS_Secondo_Piano_Nobile",
+      "type": "instance",
+      "parentId": "Piano_nobile",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_secondo_piano_nobile_it.html",
+        "fr": "pbs_secondo_piano_nobile_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Prospetto",
+      "label": "PBS Prospetto",
+      "type": "instance",
+      "parentId": "Prospetto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "pbs_prospetto_it.html",
+        "fr": "pbs_prospetto_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Salone_del_Carro_del_Tempo",
+      "label": "Salone del Carro del Tempo",
+      "type": "instance",
+      "parentId": "Salone",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_salone_del_carro_del_tempo_it.html",
+        "fr": "pbs_salone_del_carro_del_tempo_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Salone_del_Primo_Piano_Nobile",
+      "label": "PBS Salone del Primo Piano Nobile",
+      "type": "instance",
+      "parentId": "Salone",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_salone_del_primo_piano_nobile_it.html",
+        "fr": "pbs_salone_del_primo_piano_nobile_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Salotto_Apoteosi_di_Ercole",
+      "label": "PBS Salotto Apoteosi di Ercole",
+      "type": "instance",
+      "parentId": "Salotto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1650 et 1660."
+      },
+      "urls": {
+        "it": "pbs_salotto_apoteosi_di_ercole_it.html",
+        "fr": "pbs_salotto_apoteosi_di_ercole_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Salotto_Leda_e_Cigno",
+      "label": "PBS Salotto Leda e Cigno",
+      "type": "instance",
+      "parentId": "Salotto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_salotto_leda_e_cigno_it.html",
+        "fr": "pbs_salotto_leda_e_cigno_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Salotto_de_La_Gloria_dei_Balbi",
+      "label": "PBS Salotto de La Gloria dei Balbi",
+      "type": "instance",
+      "parentId": "Salotto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_salotto_de_la_gloria_dei_balbi_it.html",
+        "fr": "pbs_salotto_de_la_gloria_dei_balbi_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Salotto_di_Apollo_e_le_muse",
+      "label": "PBS Salotto di Apollo e le muse",
+      "type": "instance",
+      "parentId": "Salotto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_salotto_di_apollo_e_le_muse_it.html",
+        "fr": "pbs_salotto_di_apollo_e_le_muse_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Salotto_di_Borea_e_Orizia",
+      "label": "PBS Salotto di Borea e Orizia",
+      "type": "instance",
+      "parentId": "Salotto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "pbs_salotto_di_borea_e_orizia_it.html",
+        "fr": "pbs_salotto_di_borea_e_orizia_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Salotto_di_Giove_tra_le_Arti",
+      "label": "PBS Salotto di Giove tra le Arti",
+      "type": "instance",
+      "parentId": "Salotto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_salotto_di_giove_tra_le_arti_it.html",
+        "fr": "pbs_salotto_di_giove_tra_le_arti_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Salotto_di_Pace_Allegrezza_e_Abbondanza",
+      "label": "PBS Salotto di Pace Allegrezza e Abbondanza",
+      "type": "instance",
+      "parentId": "Salotto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_salotto_di_pace_allegrezza_e_abbondanza_it.html",
+        "fr": "pbs_salotto_di_pace_allegrezza_e_abbondanza_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Salotto_di_Verità_Svelata_dal_Tempo",
+      "label": "PBS Salotto di Verità Svelata dal Tempo",
+      "type": "instance",
+      "parentId": "Salotto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_salotto_di_verità_svelata_dal_tempo_it.html",
+        "fr": "pbs_salotto_di_verità_svelata_dal_tempo_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Salotto_di_Virtù_abbatte_Discordia",
+      "label": "PBS Salotto di Virtù abbatte Discordia",
+      "type": "instance",
+      "parentId": "Salotto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_salotto_di_virtù_abbatte_discordia_it.html",
+        "fr": "pbs_salotto_di_virtù_abbatte_discordia_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Salotto_di_Zefiro_e_Flora",
+      "label": "PBS Salotto di Zefiro e Flora",
+      "type": "instance",
+      "parentId": "Salotto",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_salotto_di_zefiro_e_flora_it.html",
+        "fr": "pbs_salotto_di_zefiro_e_flora_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Scalone",
+      "label": "PBS Scalone",
+      "type": "instance",
+      "parentId": "Scalone",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_scalone_it.html",
+        "fr": "pbs_scalone_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Scultura_Aquila_Imperiale_Bicipite",
+      "label": "PBS Scultura Aquila Imperiale Bicipite",
+      "type": "instance",
+      "parentId": "Scultura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "pbs_scultura_aquila_imperiale_bicipite_it.html",
+        "fr": "pbs_scultura_aquila_imperiale_bicipite_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Statua_Caronte",
+      "label": "PBS Statua Caronte",
+      "type": "instance",
+      "parentId": "Statua",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è incerto. Le fonti datano un periodo compreso tra il 1659 e il 1661.",
+        "fr": "L'année de réalisation est incertaine ; les sources datent une période comprise entre 1659 et 1661."
+      },
+      "urls": {
+        "it": "pbs_statua_caronte_it.html",
+        "fr": "pbs_statua_caronte_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Statua_Giove",
+      "label": "PBS Statua Giove",
+      "type": "instance",
+      "parentId": "Statua",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è incerto. Le fonti datano un periodo compreso tra il 1659 e il 1661.",
+        "fr": "L'année de réalisation est incertaine ; les sources datent une période comprise entre 1659 et 1661."
+      },
+      "urls": {
+        "it": "pbs_statua_giove_it.html",
+        "fr": "pbs_statua_giove_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Statua_Nettuno",
+      "label": "PBS Statua Nettuno",
+      "type": "instance",
+      "parentId": "Statua",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è incerto. Le fonti datano un periodo compreso tra il 1659 e il 1661.",
+        "fr": "L'année de réalisation est incertaine ; les sources datent une période comprise entre 1659 et 1661."
+      },
+      "urls": {
+        "it": "pbs_statua_nettuno_it.html",
+        "fr": "pbs_statua_nettuno_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Statua_Plutone",
+      "label": "PBS Statua Plutone",
+      "type": "instance",
+      "parentId": "Statua",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è incerto. Le fonti datano un periodo compreso tra il 1659 e il 1661.",
+        "fr": "L'année de réalisation est incertaine ; les sources datent une période comprise entre 1659 et 1661."
+      },
+      "urls": {
+        "it": "pbs_statua_plutone_it.html",
+        "fr": "pbs_statua_plutone_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Statua_Proserpina",
+      "label": "PBS Statua Proserpina",
+      "type": "instance",
+      "parentId": "Statua",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è incerto. Le fonti datano un periodo compreso tra il 1659 e il 1661.",
+        "fr": "L'année de réalisation est incertaine ; les sources datent une période comprise entre 1659 et 1661."
+      },
+      "urls": {
+        "it": "pbs_statua_proserpina_it.html",
+        "fr": "pbs_statua_proserpina_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Tamponatura_Loggiato_PN2",
+      "label": "PBS Tamponatura Loggiato PN2",
+      "type": "instance",
+      "parentId": "Tamponatura",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "pbs_tamponatura_loggiato_pn2_it.html",
+        "fr": "pbs_tamponatura_loggiato_pn2_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "PBS_Volta_Crociera_PT",
+      "label": "PBS Volta Crociera PT",
+      "type": "instance",
+      "parentId": "Volta_a_crociera",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1618 indica l'inizio dei lavori di costruzione su progetto di Bartolomeo Bianco; la data di conclusione del cantiere originario non è indicata con certezza nelle fonti utilizzate.",
+        "fr": "L'année 1618 indique le début des travaux de construction d'après le projet de Bartolomeo Bianco ; la date d'achèvement du chantier d'origine n'est pas connue avec certitude dans les sources utilisées."
+      },
+      "urls": {
+        "it": "pbs_volta_crociera_pt_it.html",
+        "fr": "pbs_volta_crociera_pt_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Palazzo_Balbi_Senarega",
+      "label": "Palazzo Balbi Senarega",
+      "type": "instance",
+      "parentId": "Palazzo",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "Individuo registrato nell'ontologia.",
+        "fr": "Individu enregistré dans l'ontologie."
+      },
+      "urls": {
+        "it": "palazzo_balbi_senarega_it.html",
+        "fr": "palazzo_balbi_senarega_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Putti_Alati",
+      "label": "Putti Alati",
+      "type": "instance",
+      "parentId": "Soggetto_Ornamentale",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno di realizzazione è approssimativo, nelle fonti utilizzate viene indicato un periodo di realizzazione compreso tra il 1645 e il 1655.",
+        "fr": "L'année de réalisation est approximative ; les sources utilisées indiquent une période de réalisation comprise entre 1645 et 1655."
+      },
+      "urls": {
+        "it": "putti_alati_it.html",
+        "fr": "putti_alati_fr.html"
+      },
+      "distance": 120
+    },
+    {
+      "id": "Via_Balbi",
+      "label": "Via Balbi",
+      "type": "instance",
+      "parentId": "Strada",
+      "ipa": {
+        "it": "",
+        "fr": ""
+      },
+      "def": {
+        "it": "L'anno 1605 indica l'inizio dei lavori di costruzione.",
+        "fr": "L'année 1605 indique le début des travaux de constructio."
+      },
+      "urls": {
+        "it": "via_balbi_it.html",
+        "fr": "via_balbi_fr.html"
+      },
+      "distance": 120
     }
   ],
   "links": [
@@ -5861,6 +8407,676 @@
       "source": "Volta",
       "target": "Volta_a_crociera",
       "rel": "subClassOf"
+    },
+    {
+      "source": "Soggetto_Allegorico",
+      "target": "Abbondanza",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Allegorico",
+      "target": "Allegrezza",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Allegorico",
+      "target": "Carro_del_Tempo",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Allegorico",
+      "target": "Discordia",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Allegorico",
+      "target": "Le_Arti",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Allegorico",
+      "target": "Lussuria",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Allegorico",
+      "target": "Pace",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Allegorico",
+      "target": "Tempo",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Allegorico",
+      "target": "Verità",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Allegorico",
+      "target": "Virtù",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Allegoria",
+      "target": "Abbondanza_Significato",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Allegoria",
+      "target": "Allegrezza_Significato",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Allegoria",
+      "target": "Pace_Significato",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Quadraturista",
+      "target": "Andrea_Seghizzi",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Quadraturista",
+      "target": "Paolo_Brozzi",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Apollo",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Borea",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Carro_Fetonte",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Carro_Plutone",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Cigno",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Concilio_Dei",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Cupido",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Deianira",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Ercole",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Fetonte",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Flora",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Giove",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Le_Muse",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Leda",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Marte",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Nesso",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Orizia",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Plutone",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Proserpina",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Tisbe",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Venere",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Vulcano",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Mitologico",
+      "target": "Zefiro",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Araldico",
+      "target": "Armi_Famiglia_Balbi",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Aula_Magna",
+      "target": "Aula_Magna_della_Scuola_di_Scienze_Umanistiche",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Architetto",
+      "target": "Bartolomeo_Bianco",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Architetto",
+      "target": "Gregorio_Petondi",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Architetto",
+      "target": "Pietro_Antonio_Corradi",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Quadro",
+      "target": "CBS_Caduta_di_Saulo",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Quadro",
+      "target": "CBS_Ritratto_Gio._Paolo_Balbi",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Pittore",
+      "target": "Caravaggio",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Pittore",
+      "target": "Giovanni_Andrea_Carlone",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Pittore",
+      "target": "Simon_de_Bois",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Pittore",
+      "target": "Van_Dyck",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Collezione",
+      "target": "Collezione_Balbi_Senarega",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Storico",
+      "target": "Cornelio_Gallo",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Storico",
+      "target": "Licoride",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Artista",
+      "target": "Domenico_Piola",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Artista",
+      "target": "Gregorio_De_Ferrari",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Artista",
+      "target": "Peter_Paul_Rubens",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Artista",
+      "target": "Valerio_Castello",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Proprietari",
+      "target": "Francesco_Maria_Balbi",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Proprietari",
+      "target": "Giacomo_Balbi",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Proprietari",
+      "target": "Pantaleo_Balbi",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Proprietari",
+      "target": "Universita_degli_Studi_di_Genova",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Scultore",
+      "target": "Giovanni_Battista_Barberini",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Tema",
+      "target": "Mito_Borea_e_Orizia",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Tema",
+      "target": "Mito_Carro_Fetonte",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Tema",
+      "target": "Mito_Leda_e_Cigno",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Tema",
+      "target": "Mito_Rapimento_Proserpina",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_Apollo_e_le_muse",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_Apoteosi_di_Ercole",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_Borea_e_Orizia",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_Carro_Fetonte",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_Carro_del_Tempo",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_Fortezza_che_trionfa_sui_Vizi",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_Giove_tra_le_Arti",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_La_Gloria_dei_Balbi",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_Leda_e_Cigno",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_Pace_Allegrezza_e_Abbondanza",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_Rapimento_Proserpina",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_Trionfi_di_amore",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_Verità_svelata_dal_Tempo",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_Virtù_abbatte_Discordia",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Affresco",
+      "target": "PBS_Affresco_di_Zefiro_e_Flora",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Aiuola",
+      "target": "PBS_Aiuola",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Ala",
+      "target": "PBS_Ala",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Ala",
+      "target": "PBS_Ala_Di_Ponente",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Aranceto",
+      "target": "PBS_Aranceto",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Hortus_Conclusus",
+      "target": "PBS_Giardino",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Atrio",
+      "target": "PBS_Atrio",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Cartiglio",
+      "target": "PBS_Cartiglio_Affresco_Trionfi_di_Amore",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Opera_pittorica",
+      "target": "PBS_Ciclo_Decorativo_Galleria_Passante",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Colonna",
+      "target": "PBS_Colonna_PT",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Colonnato",
+      "target": "PBS_Colonnato_Cortile",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Cornice",
+      "target": "PBS_Cornice_Portale",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Cortile",
+      "target": "PBS_Cortile",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Facciata",
+      "target": "PBS_Facciata",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Galleria",
+      "target": "PBS_Galleria_Passante",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Galleria",
+      "target": "PBS_Galleria_dei_Trionfi_di_amore",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Lampadario",
+      "target": "PBS_Lampadario",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Marcapiano",
+      "target": "PBS_Linea_Marcapiano",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Loggia",
+      "target": "PBS_Loggia_PN1",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Loggia",
+      "target": "PBS_Loggia_sud_PN2",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Loggia",
+      "target": "PBS_loggia_est_PN2",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Loggiato",
+      "target": "PBS_Loggiato_Cortile",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Ninfeo",
+      "target": "PBS_Ninfeo",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Ninfeo",
+      "target": "PBS_Ninfeo_Polilobato",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Risseau",
+      "target": "PBS_Pavimento_a_Risseau",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Piano_terreno",
+      "target": "PBS_Piano_Terreno",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Pianta",
+      "target": "PBS_Pianta",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Portale",
+      "target": "PBS_Portale",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Piano_nobile",
+      "target": "PBS_Primo_Piano_Nobile",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Piano_nobile",
+      "target": "PBS_Secondo_Piano_Nobile",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Prospetto",
+      "target": "PBS_Prospetto",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Salone",
+      "target": "PBS_Salone_del_Carro_del_Tempo",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Salone",
+      "target": "PBS_Salone_del_Primo_Piano_Nobile",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Salotto",
+      "target": "PBS_Salotto_Apoteosi_di_Ercole",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Salotto",
+      "target": "PBS_Salotto_Leda_e_Cigno",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Salotto",
+      "target": "PBS_Salotto_de_La_Gloria_dei_Balbi",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Salotto",
+      "target": "PBS_Salotto_di_Apollo_e_le_muse",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Salotto",
+      "target": "PBS_Salotto_di_Borea_e_Orizia",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Salotto",
+      "target": "PBS_Salotto_di_Giove_tra_le_Arti",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Salotto",
+      "target": "PBS_Salotto_di_Pace_Allegrezza_e_Abbondanza",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Salotto",
+      "target": "PBS_Salotto_di_Verità_Svelata_dal_Tempo",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Salotto",
+      "target": "PBS_Salotto_di_Virtù_abbatte_Discordia",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Salotto",
+      "target": "PBS_Salotto_di_Zefiro_e_Flora",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Scalone",
+      "target": "PBS_Scalone",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Scultura",
+      "target": "PBS_Scultura_Aquila_Imperiale_Bicipite",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Statua",
+      "target": "PBS_Statua_Caronte",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Statua",
+      "target": "PBS_Statua_Giove",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Statua",
+      "target": "PBS_Statua_Nettuno",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Statua",
+      "target": "PBS_Statua_Plutone",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Statua",
+      "target": "PBS_Statua_Proserpina",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Tamponatura",
+      "target": "PBS_Tamponatura_Loggiato_PN2",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Volta_a_crociera",
+      "target": "PBS_Volta_Crociera_PT",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Palazzo",
+      "target": "Palazzo_Balbi_Senarega",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Soggetto_Ornamentale",
+      "target": "Putti_Alati",
+      "rel": "instanceOf"
+    },
+    {
+      "source": "Strada",
+      "target": "Via_Balbi",
+      "rel": "instanceOf"
     }
   ]
 }
