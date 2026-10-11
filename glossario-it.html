@@ -67,20 +67,29 @@ title: Glossario Tradizionale (IT)
             position: relative;
         }
 
-        /* Riga superiore per i pulsanti di navigazione (Home a sinistra, altri a destra, lasciando spazio alle bandiere) */
-        .Top-Nav-Bar {
+        /* Prima riga: pulsanti distribuiti (Home, Traduzione, Sfera) con ampio respiro sopra la ricerca */
+        .Top-Nav-Row {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 25px;
-            padding-right: 90px; /* Spazio riservato alle bolle delle bandiere in alto a destra */
+            margin-bottom: 35px;
             gap: 15px;
             flex-wrap: wrap;
         }
 
+        /* Seconda riga: ricerca perfettamente centrata e bandierine a destra */
+        .Search-Language-Row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
         .Search-Container {
+            flex: 1;
             max-width: 600px;
-            margin: 0 auto 25px auto;
+            margin: 0 auto;
         }
 
         .Search-Input {
@@ -99,6 +108,14 @@ title: Glossario Tradizionale (IT)
         .Search-Input:focus {
             border-color: #1a365d;
             box-shadow: 0 4px 12px rgba(26, 54, 93, 0.08);
+        }
+
+        .Language-Flags-Container {
+            position: absolute;
+            right: 0;
+            display: flex;
+            gap: 12px;
+            align-items: center;
         }
 
         .Contenitore-Alfabeto {
@@ -216,7 +233,8 @@ title: Glossario Tradizionale (IT)
 
         @media (max-width: 950px) {
             .Header-Podio { flex-direction: column; align-items: center; gap: 20px; padding: 30px 20px; }
-            .Top-Nav-Bar { padding-right: 0; }
+            .Search-Language-Row { flex-direction: column; gap: 15px; }
+            .Language-Flags-Container { position: static; justify-content: center; }
         }
         @media (max-width: 768px) {
             .Insieme-Schede { column-count: 1; }
@@ -242,36 +260,39 @@ title: Glossario Tradizionale (IT)
         <main>
             <div class="Sezione-Glossario-Statico">
                 
-                <!-- Bolle con le bandiere per il cambio lingua in alto a destra -->
-                <div style="position: absolute; top: 15px; right: 25px; z-index: 20; display: flex; gap: 15px; align-items: center;">
-                    <img src="https://flagcdn.com/w40/it.png" class="Bollino-Flag" style="opacity: 0.35; cursor: default;" title="Glossario Italiano (Corrente)">
-                    <a href="{{ '/glossario-fr/' | relative_url }}" style="text-decoration: none; transition: transform 0.2s; display: block;" onmouseover="this.style.transform='scale(1.15)';" onmouseout="this.style.transform='scale(1)';" title="Glossaire Français">
-                        <img src="https://flagcdn.com/w40/fr.png" class="Bollino-Flag">
-                    </a>
-                </div>
-
-                <!-- Riga superiore pulita con Home a sinistra e i bottoni di navigazione a destra (lasciando spazio alle bandiere) -->
-                <div class="Top-Nav-Bar">
+                <!-- Prima Riga: I tre pulsanti ben distribuiti -->
+                <div class="Top-Nav-Row">
                     <div>
                         <a href="{{ '/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #ffffff; font-size: 0.85em; font-weight: 600; padding: 10px 16px; background: #1a365d; border: 1px solid #1a365d; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.background='#2b6cb0'; this.style.borderColor='#2b6cb0';" onmouseout="this.style.background='#1a365d'; this.style.borderColor='#1a365d';">
                             🏠 Torna alla Home
                         </a>
                     </div>
                     
-                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                        <a href="{{ '/ricerca-it/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #4a5568; font-size: 0.85em; font-weight: 600; padding: 10px 14px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='#1a365d'; this.style.color='#1a365d'; this.style.background='#e8f9f7';" onmouseout="this.style.borderColor='#cbd5e1'; this.style.color='#4a5568'; this.style.background='#ffffff';">
+                    <div>
+                        <a href="{{ '/ricerca-it/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #4a5568; font-size: 0.85em; font-weight: 600; padding: 10px 16px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='#1a365d'; this.style.color='#1a365d'; this.style.background='#e8f9f7';" onmouseout="this.style.borderColor='#cbd5e1'; this.style.color='#4a5568'; this.style.background='#ffffff';">
                             🔄 Traduzione Rapida
                         </a>
+                    </div>
 
-                        <a href="{{ '/sfera_2/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #7c3aed; font-size: 0.85em; font-weight: 600; padding: 10px 14px; background: #faf5ff; border: 1px solid #d8b4fe; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.background='#f3e8ff'; this.style.borderColor='#c084fc';" onmouseout="this.style.background='#faf5ff'; this.style.borderColor='#d8b4fe';">
+                    <div>
+                        <a href="{{ '/sfera_2/' | relative_url }}" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #7c3aed; font-size: 0.85em; font-weight: 600; padding: 10px 16px; background: #faf5ff; border: 1px solid #d8b4fe; border-radius: 6px; transition: all 0.2s ease;" onmouseover="this.style.background='#f3e8ff'; this.style.borderColor='#c084fc';" onmouseout="this.style.background='#faf5ff'; this.style.borderColor='#d8b4fe';">
                             🌌 Ontologia 3D
                         </a>
                     </div>
                 </div>
 
-                <!-- Barra di ricerca centrata e indipendente -->
-                <div class="Search-Container">
-                    <input type="text" id="Input-Filtro-Testo" class="Search-Input" placeholder="Cerca un termine... (es. loggia, abside)">
+                <!-- Seconda Riga: Barra di ricerca centrata e bandierine di selezione lingua a destra -->
+                <div class="Search-Language-Row">
+                    <div class="Search-Container">
+                        <input type="text" id="Input-Filtro-Testo" class="Search-Input" placeholder="Cerca un termine... (es. loggia, abside)">
+                    </div>
+
+                    <div class="Language-Flags-Container">
+                        <img src="https://flagcdn.com/w40/it.png" class="Bollino-Flag" style="opacity: 0.35; cursor: default;" title="Glossario Italiano (Corrente)">
+                        <a href="{{ '/glossario-fr/' | relative_url }}" style="text-decoration: none; transition: transform 0.2s; display: block;" onmouseover="this.style.transform='scale(1.15)';" onmouseout="this.style.transform='scale(1)';" title="Glossaire Français">
+                            <img src="https://flagcdn.com/w40/fr.png" class="Bollino-Flag">
+                        </a>
+                    </div>
                 </div>
 
                 <div class="Contenitore-Alfabeto" id="Tastiera-Lettere">
