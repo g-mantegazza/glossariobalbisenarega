@@ -454,8 +454,12 @@ title: Grafo 3D - Palazzo Balbi Senarega
     <div class="hud-section">
       <strong style="color: var(--hud-muted); font-size: 0.7rem; text-transform: uppercase;">Relazioni e Binari:</strong>
       <div class="legend-item">
-        <div class="legend-left"><span class="line-dot" style="background: #e2e8f0;"></span> subClassOf / istanze</div>
-        <span class="legend-desc">Gerarchia</span>
+        <div class="legend-left"><span class="line-dot" style="background: #e2e8f0;"></span> subClassOf</div>
+        <span class="legend-desc">Gerarchia di classe</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-left"><span class="line-dot" style="background: #3b82f6;"></span> instanceOf</div>
+        <span class="legend-desc">Istanza specifica (Blu)</span>
       </div>
       <div class="legend-item">
         <div class="legend-left"><span class="line-dot" style="background: #06b6d4;"></span> Progettazione / Autore</div>
@@ -468,6 +472,9 @@ title: Grafo 3D - Palazzo Balbi Senarega
       <div class="legend-item">
         <div class="legend-left"><span class="line-dot" style="background: #ec4899;"></span> Soggetto / Iconografia</div>
         <span class="legend-desc">Magenta</span>
+      </div>
+      <div style="font-size: 0.71rem; color: var(--hud-muted); font-style: italic; margin-top: 6px; border-top: 1px dashed var(--hud-border); padding-top: 4px;">
+        💡 Cliccando sugli individui compaiono binari relazionali aggiuntivi.
       </div>
     </div>
 
@@ -524,8 +531,9 @@ title: Grafo 3D - Palazzo Balbi Senarega
       instance: 0x9333ea
     };
 
-    const REL_COLORS_DARK = { subClassOf: 0xe2e8f0, instanceOf: 0x9333ea };
-    const REL_COLORS_LIGHT = { subClassOf: 0x1e293b, instanceOf: 0x7c3aed };
+    // instanceOf spostato su Blu Elettrico per distinguerlo nettamente dai nodi viola
+    const REL_COLORS_DARK = { subClassOf: 0xe2e8f0, instanceOf: 0x3b82f6 };
+    const REL_COLORS_LIGHT = { subClassOf: 0x1e293b, instanceOf: 0x2563eb };
 
     // Palette cromatica completa delle relazioni semantiche
     const SEMANTIC_REL_COLORS = {
@@ -606,7 +614,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
     const labelSprites = [];
     let allLinksData = [];
     
-    // Gruppo per i tubi semantici dinamici interattivi e percorribili
     const dynamicRailsGroup = new THREE.Group();
     scene.add(dynamicRailsGroup);
     
@@ -896,7 +903,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
           labelSprites.push(sprite);
         });
 
-        // Calcolo delle curve geometriche (CatmullRom) per TUTTI i link (gerarchici e semantici)
+        // Calcolo delle curve geometriche per TUTTI i link
         allLinksData.forEach(link => {
           const sourceNode = nodeMap[link.source];
           const targetNode = nodeMap[link.target];
@@ -913,14 +920,27 @@ title: Grafo 3D - Palazzo Balbi Senarega
           const curve = new THREE.CatmullRomCurve3([start, mid, end], false, 'centripetal', 0.5);
           link.curve = curve;
 
-          // Creazione tubi fissi solo per gerarchie
-          if (isFixed) {
-            const relColor = CURRENT_REL_COLORS[link.rel] || 0x94a3b8;
-            const tubeGeo = new THREE.TubeGeometry(curve, 32, link.rel === 'instanceOf' ? 0.35 : 0.55, 6, false);
+          if (link.rel === 'subClassOf') {
+            const relColor = CURRENT_REL_COLORS[link.rel] || 0xe2e8f0;
+            const tubeGeo = new THREE.TubeGeometry(curve, 32, 0.55, 6, false);
             const tubeMat = new THREE.MeshStandardMaterial({
               color: relColor,
               emissive: relColor,
               emissiveIntensity: 0.35,
+              roughness: 0.3
+            });
+            const tubeMesh = new THREE.Mesh(tubeGeo, tubeMat);
+            tubeMesh.userData = link;
+            link.mesh = tubeMesh;
+            scene.add(tubeMesh);
+          }
+          else if (link.rel === 'instanceOf') {
+            const relColor = CURRENT_REL_COLORS[link.rel] || 0x3b82f6;
+            const tubeGeo = new THREE.TubeGeometry(curve, 32, 0.35, 6, false);
+            const tubeMat = new THREE.MeshStandardMaterial({
+              color: relColor,
+              emissive: relColor,
+              emissiveIntensity: 0.45,
               roughness: 0.3
             });
             const tubeMesh = new THREE.Mesh(tubeGeo, tubeMat);
@@ -977,8 +997,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
       }
     }
 
-    // Funzione per mostrare e rendere percorribili tutti i collegamenti (gerarchici + semantici) del nodo aperto
-    function showDynamicSemanticRails(node) {
+    function showDynamicSemanticRails(node, activeLink = null) {
       while (dynamicRailsGroup.children.length > 0) {
         const obj = dynamicRailsGroup.children[0];
         dynamicRailsGroup.remove(obj);
@@ -988,31 +1007,29 @@ title: Grafo 3D - Palazzo Balbi Senarega
 
       if (!node) return;
 
-      // Disegna i tubi semantici dinamici per il nodo attivo
       const semanticLinks = allLinksData.filter(l => 
         (l.source === node.id || l.target === node.id) && 
         l.rel !== 'subClassOf' && l.rel !== 'instanceOf' && l.curve
       );
 
-      semanticLinks.forEach((link, idx) => {
+      semanticLinks.forEach(link => {
         const sNode = nodeMap[link.source];
         const tNode = nodeMap[link.target];
         if (!sNode || !tNode) return;
 
-        const tubeGeo = new THREE.TubeGeometry(link.curve, 32, 0.45, 6, false);
-        const relColor = SEMANTIC_REL_COLORS[link.rel] || 0xa855f7;
-
-        // Se questo link è attualmente selezionato tramite le frecce, lo illuminiamo al massimo
-        const isActiveNeighbor = (currentNeighbors[neighborIndex] && currentNeighbors[neighborIndex].link === link);
+        const isSelected = (activeLink === link);
+        const tubeGeo = new THREE.TubeGeometry(link.curve, 32, isSelected ? 0.65 : 0.45, 6, false);
+        
+        let relColor = SEMANTIC_REL_COLORS[link.rel] || 0xa855f7;
 
         const tubeMat = new THREE.MeshStandardMaterial({
           color: relColor,
           emissive: relColor,
-          emissiveIntensity: isActiveNeighbor ? 1.2 : 0.7,
+          emissiveIntensity: isSelected ? 1.4 : 0.7,
           roughness: 0.2,
           metalness: 0.3,
           transparent: true,
-          opacity: isActiveNeighbor ? 1.0 : 0.85,
+          opacity: isSelected ? 1.0 : 0.85,
           blending: THREE.AdditiveBlending
         });
 
@@ -1026,7 +1043,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
       if (!currentNode) return;
       currentNeighbors = [];
 
-      // Raccoglie TUTTI i collegamenti (sia gerarchici che semantici) connessi al nodo corrente
       allLinksData.forEach(link => {
         if (!link.curve) return;
         if (link.source === currentNode.id && nodeMap[link.target]) {
@@ -1039,10 +1055,10 @@ title: Grafo 3D - Palazzo Balbi Senarega
       if (neighborIndex >= currentNeighbors.length) neighborIndex = 0;
       if (neighborIndex < 0) neighborIndex = currentNeighbors.length - 1;
 
-      // Aggiorna l'intensità dei binari fissi gerarchici
+      // Reset tubi fissi
       allLinksData.forEach(l => {
         if (l.mesh && l.mesh.material) {
-          const baseColor = CURRENT_REL_COLORS[l.rel] || 0x94a3b8;
+          const baseColor = (l.rel === 'instanceOf') ? (CURRENT_REL_COLORS['instanceOf']) : (CURRENT_REL_COLORS[l.rel] || 0x94a3b8);
           l.mesh.material.color.setHex(baseColor);
           l.mesh.material.emissive.setHex(baseColor);
           l.mesh.material.emissiveIntensity = isDarkTheme ? 0.35 : 0.2;
@@ -1052,9 +1068,8 @@ title: Grafo 3D - Palazzo Balbi Senarega
       if (currentNeighbors.length > 0) {
         const active = currentNeighbors[neighborIndex];
         
-        // Se il binario attivo è gerarchico fisso, illumina il suo tubo
         if (active.link.mesh && active.link.mesh.material) {
-          active.link.mesh.material.emissiveIntensity = 1.0;
+          active.link.mesh.material.emissiveIntensity = 1.2;
         }
 
         const targetNameStr = active.targetNode.label || active.targetNode.id;
@@ -1071,14 +1086,14 @@ title: Grafo 3D - Palazzo Balbi Senarega
         document.getElementById('target-rel').style.color = '#' + colHex.toString(16).padStart(6, '0');
         showFlightIndicator(targetNameStr, colHex);
 
-        // Aggiorna i tubi semantici dinamici per evidenziare quello attivo
-        if (activeAnchorNode) {
-          showDynamicSemanticRails(activeAnchorNode);
+        if (currentNode) {
+          showDynamicSemanticRails(currentNode, active.link);
         }
       } else {
         document.getElementById('target-name').innerText = "Nessun collegamento";
         document.getElementById('target-rel').innerText = "-";
         hideFlightIndicator();
+        if (currentNode) showDynamicSemanticRails(currentNode, null);
       }
 
       document.getElementById('node-name').innerText = currentNode.label || currentNode.id;
@@ -1118,6 +1133,10 @@ title: Grafo 3D - Palazzo Balbi Senarega
 
       const flightData = { progress: 0 };
       const upAxis = new THREE.Vector3(0, 1, 0);
+
+      if (currentNode && active.link.rel !== 'subClassOf' && active.link.rel !== 'instanceOf') {
+        showDynamicSemanticRails(currentNode, active.link);
+      }
 
       new TWEEN.Tween(flightData)
         .to({ progress: 1 }, 2300)
@@ -1271,8 +1290,8 @@ title: Grafo 3D - Palazzo Balbi Senarega
       updateBubbleContent(node);
       bubbleEl.classList.add('active');
       updateBubblePosition();
-      showDynamicSemanticRails(node);
-      updateNeighborTargets();
+      const activeLink = currentNeighbors[neighborIndex] ? currentNeighbors[neighborIndex].link : null;
+      showDynamicSemanticRails(node, activeLink);
     }
 
     const _screenVec = new THREE.Vector3();
@@ -1311,7 +1330,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
       activeAnchorNode = null;
       isCursorOverBubble = false;
       isCursorOverSphere = false;
-      showDynamicSemanticRails(null);
+      showDynamicSemanticRails(null, null);
     }
 
     const raycaster = new THREE.Raycaster();
