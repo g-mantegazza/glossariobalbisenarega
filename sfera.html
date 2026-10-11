@@ -458,8 +458,8 @@ title: Grafo 3D - Palazzo Balbi Senarega
         <span class="legend-desc">Gerarchia di classe</span>
       </div>
       <div class="legend-item">
-        <div class="legend-left"><span class="line-dot" style="background: #3b82f6;"></span> instanceOf</div>
-        <span class="legend-desc">Istanza specifica (Blu)</span>
+        <div class="legend-left"><span class="line-dot" style="background: #9333ea;"></span> instanceOf</div>
+        <span class="legend-desc">Istanza specifica (Viola)</span>
       </div>
       <div class="legend-item">
         <div class="legend-left"><span class="line-dot" style="background: #06b6d4;"></span> Progettazione / Autore</div>
@@ -470,8 +470,8 @@ title: Grafo 3D - Palazzo Balbi Senarega
         <span class="legend-desc">Ambra</span>
       </div>
       <div class="legend-item">
-        <div class="legend-left"><span class="line-dot" style="background: #ec4899;"></span> Soggetto / Iconografia</div>
-        <span class="legend-desc">Magenta</span>
+        <div class="legend-left"><span class="line-dot" style="background: #f97316;"></span> Soggetto / Iconografia</div>
+        <span class="legend-desc">Arancione</span>
       </div>
       <div style="font-size: 0.71rem; color: var(--hud-muted); font-style: italic; margin-top: 6px; border-top: 1px dashed var(--hud-border); padding-top: 4px;">
         💡 Cliccando sugli individui compaiono binari relazionali aggiuntivi.
@@ -531,11 +531,10 @@ title: Grafo 3D - Palazzo Balbi Senarega
       instance: 0x9333ea
     };
 
-    // instanceOf spostato su Blu Elettrico per distinguerlo nettamente dai nodi viola
-    const REL_COLORS_DARK = { subClassOf: 0xe2e8f0, instanceOf: 0x3b82f6 };
-    const REL_COLORS_LIGHT = { subClassOf: 0x1e293b, instanceOf: 0x2563eb };
+    const REL_COLORS_DARK = { subClassOf: 0xe2e8f0, instanceOf: 0x9333ea };
+    const REL_COLORS_LIGHT = { subClassOf: 0x1e293b, instanceOf: 0x7c3aed };
 
-    // Palette cromatica completa delle relazioni semantiche
+    // Palette cromatica con Soggetti/Iconografia spostati su Arancione brillante (0xf97316) per evitare ogni confusione col viola
     const SEMANTIC_REL_COLORS = {
       ha_progettato: 0x06b6d4,
       è_stato_progettato_da: 0x06b6d4,
@@ -557,10 +556,10 @@ title: Grafo 3D - Palazzo Balbi Senarega
       era_proprietario_di: 0xf59e0b,
       aveva_per_proprietario: 0xf59e0b,
       
-      rappresenta: 0xec4899,
-      è_rappresentato_in: 0xec4899,
-      ha_per_soggetto: 0xec4899,
-      è_soggetto_di: 0xec4899,
+      rappresenta: 0xf97316,
+      è_rappresentato_in: 0xf97316,
+      ha_per_soggetto: 0xf97316,
+      è_soggetto_di: 0xf97316,
       
       è_parte_di: 0x14b8a6,
       era_parte_di: 0x14b8a6,
@@ -935,7 +934,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
             scene.add(tubeMesh);
           }
           else if (link.rel === 'instanceOf') {
-            const relColor = CURRENT_REL_COLORS[link.rel] || 0x3b82f6;
+            const relColor = CURRENT_REL_COLORS[link.rel] || 0x9333ea;
             const tubeGeo = new THREE.TubeGeometry(curve, 32, 0.35, 6, false);
             const tubeMat = new THREE.MeshStandardMaterial({
               color: relColor,
