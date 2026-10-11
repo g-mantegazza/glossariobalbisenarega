@@ -64,7 +64,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
       pointer-events: none;
     }
 
-    /* INDICATORE CENTRALE DINAMICO (FADE IN/OUT) */
     #flight-indicator {
       position: absolute;
       top: 25px;
@@ -399,7 +398,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
       text-decoration: underline;
     }
 
-    /* MEDIA QUERY RESPONSIVE PER DISPOSITIVI MOBILI */
     @media (max-width: 768px) {
       #hud {
         width: calc(100% - 30px);
@@ -521,6 +519,38 @@ title: Grafo 3D - Palazzo Balbi Senarega
     const REL_COLORS_DARK = { subClassOf: 0xe2e8f0, instanceOf: 0x9333ea };
     const REL_COLORS_LIGHT = { subClassOf: 0x1e293b, instanceOf: 0x7c3aed };
 
+    // Palette cromatica dedicata per le relazioni semantiche dinamiche
+    const SEMANTIC_REL_COLORS = {
+      ha_progettato: 0x06b6d4,          // Cyan brillante
+      è_stato_progettato_da: 0x06b6d4,
+      ha_per_autore: 0x06b6d4,
+      è_autore_di: 0x06b6d4,
+      ha_dipinto: 0x06b6d4,
+      è_stato_dipinto_da: 0x06b6d4,
+      ha_scolpito: 0x06b6d4,
+      è_stato_scolpito_da: 0x06b6d4,
+      
+      ha_per_committente: 0xf59e0b,     // Ambra / Oro
+      è_committente: 0xf59e0b,
+      ha_per_proprietario: 0xf59e0b,
+      è_proprietario: 0xf59e0b,
+      
+      rappresenta: 0xec4899,            // Rosa / Magenta (Iconografia / Soggetti)
+      è_rappresentato_in: 0xec4899,
+      ha_per_soggetto: 0xec4899,
+      è_soggetto_di: 0xec4899,
+      
+      è_parte_di: 0x14b8a6,             // Verde acqua (Spaziali / Parti / Delimitazioni)
+      ha_per_parte: 0x14b8a6,
+      si_affaccia_su: 0x14b8a6,
+      ospita: 0x14b8a6,
+      è_collocato_in: 0x14b8a6,
+      collega: 0x14b8a6,
+      è_collegato_a: 0x14b8a6,
+      delimita: 0x14b8a6,
+      è_delimitato_da: 0x14b8a6
+    };
+
     let isDarkTheme = true;
     let CURRENT_REL_COLORS = REL_COLORS_DARK;
 
@@ -554,6 +584,11 @@ title: Grafo 3D - Palazzo Balbi Senarega
     const nodeMeshes = [];
     const labelSprites = [];
     const rails = [];
+    let allLinksData = [];
+    
+    // Gruppo per contenere i binari semantici dinamici accesi al click
+    const dynamicRailsGroup = new THREE.Group();
+    scene.add(dynamicRailsGroup);
     
     let horizonHoloGroup = null;
     let ringOrbitYaw = null;
@@ -625,6 +660,8 @@ title: Grafo 3D - Palazzo Balbi Senarega
 
     function initSceneWithData(ontology) {
       try {
+        allLinksData = ontology.links || [];
+
         const thingNode = {
           id: "Thing",
           label: "owl:Thing",
@@ -644,7 +681,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
           if (n.id !== "Thing" && (n.parentId === null || n.type === "root")) {
             n.parentId = "Thing";
             n.type = "concept";
-            ontology.links.push({
+            allLinksData.push({
               source: "Thing",
               target: n.id,
               rel: "subClassOf"
@@ -839,7 +876,9 @@ title: Grafo 3D - Palazzo Balbi Senarega
           labelSprites.push(sprite);
         });
 
-        ontology.links.forEach(link => {
+        // Creazione dei binari fissi (gerarchia subClassOf e instanceOf)
+        allLinksData.forEach(link => {
+          if (link.rel !== 'subClassOf' && link.rel !== 'instanceOf') return;
           const sourceNode = nodeMap[link.source];
           const targetNode = nodeMap[link.target];
           if (!sourceNode || !targetNode || !sourceNode.position || !targetNode.position) return;
@@ -914,6 +953,60 @@ title: Grafo 3D - Palazzo Balbi Senarega
           loadingText.innerHTML = `Errore interfaccia: ${err.message}<br><small>Apri la console (F12) per i dettagli.</small>`;
         }
       }
+    }
+
+    // Funzione per accendere i binari tratteggiati dinamici associati al nodo selezionato
+    function showDynamicSemanticRails(node) {
+      // Pulisce i binari precedenti
+      while (dynamicRailsGroup.children.length > 0) {
+        const obj = dynamicRailsGroup.children[0];
+        dynamicRailsGroup.remove(obj);
+        if (obj.geometry) obj.geometry.dispose();
+        if (obj.material) obj.material.dispose();
+      }
+
+      if (!node) return;
+
+      // Filtra i link relazionali in cui il nodo è source o target (escludendo gerarchie fisse)
+      const semanticLinks = allLinksData.filter(l => 
+        (l.source === node.id || l.target === node.id) && 
+        l.rel !== 'subClassOf' && l.rel !== 'instanceOf'
+      );
+
+      semanticLinks.forEach(link => {
+        const sNode = nodeMap[link.source];
+        const tNode = nodeMap[link.target];
+        if (!sNode || !tNode || !sNode.position || !tNode.position) return;
+
+        const start = sNode.position;
+        const end = tNode.position;
+
+        const mid = new THREE.Vector3().addVectors(start, end).multiplyScalar(0.5);
+        const outward = mid.clone().normalize().multiplyScalar(6);
+        mid.add(outward);
+
+        const curve = new THREE.CatmullRomCurve3([start, mid, end], false, 'centripetal', 0.5);
+        const points = curve.getPoints(50);
+        const geo = new THREE.BufferGeometry().setFromPoints(points);
+
+        const relColor = SEMANTIC_REL_COLORS[link.rel] || 0xa855f7;
+
+        // Creazione linea tratteggiata luminosa
+        const mat = new THREE.LineDashedMaterial({
+          color: relColor,
+          linewidth: 2,
+          scale: 1,
+          dashSize: 4,
+          gapSize: 2,
+          transparent: true,
+          opacity: 0.9,
+          blending: THREE.AdditiveBlending
+        });
+
+        const line = new THREE.Line(geo, mat);
+        line.computeLineDistances(); // Obbligatorio per il tratteggio in Three.js
+        dynamicRailsGroup.add(line);
+      });
     }
 
     function updateNeighborTargets() {
@@ -1107,7 +1200,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
       document.getElementById('b-def').innerText = (node.def && node.def[bubbleLang]) ? node.def[bubbleLang] : "Nessuna definizione disponibile.";
 
       const linkedInstances = [];
-      rails.forEach(r => {
+      allLinksData.forEach(r => {
         if (r.rel === 'instanceOf' && r.source === node.id) {
           const instNode = nodeMap[r.target];
           if (instNode) linkedInstances.push(instNode);
@@ -1148,6 +1241,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
       updateBubbleContent(node);
       bubbleEl.classList.add('active');
       updateBubblePosition();
+      showDynamicSemanticRails(node); // Accende i binari tratteggiati colorati al click/apertura bolla
     }
 
     const _screenVec = new THREE.Vector3();
@@ -1186,6 +1280,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
       activeAnchorNode = null;
       isCursorOverBubble = false;
       isCursorOverSphere = false;
+      showDynamicSemanticRails(null); // Spegne i binari dinamici alla chiusura
     }
 
     const raycaster = new THREE.Raycaster();
@@ -1264,7 +1359,7 @@ title: Grafo 3D - Palazzo Balbi Senarega
       const intersects = raycaster.intersectObjects(nodeMeshes);
       if (intersects.length > 0) {
         const clicked = intersects[0].object.userData;
-        openBubbleForNode(clicked); // Apertura immediata al click/tap utile per mobile
+        openBubbleForNode(clicked);
 
         const nIndex = currentNeighbors.findIndex(cn => cn.targetNode.id === clicked.id);
         if (nIndex !== -1) {
