@@ -228,7 +228,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
       color: var(--hud-text);
     }
 
-    /* KEYCAP GRAFICI STILE TASTIERA */
     .key {
       background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 100%);
       border: 1px solid var(--hud-border);
@@ -243,7 +242,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
       display: inline-block;
     }
 
-    /* CARD DEFINIZIONE ANCORATA & INDIVIDUI */
     #definition-bubble {
       position: absolute;
       display: none;
@@ -325,7 +323,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
       font-size: 0.8rem;
     }
 
-    /* SEZIONE INDIVIDUI MULTICOLONNA NELLA BOLLA */
     .bubble-individuals {
       margin-top: 10px;
       padding-top: 8px;
@@ -389,15 +386,14 @@ title: Grafo 3D - Palazzo Balbi Senarega
     <span id="loading-text">Calibrazione Focus... Scansione Grafo in corso</span>
   </div>
 
-  <!-- INDICATORE CENTRALE DINAMICO (FADE IN/OUT) -->
   <div id="flight-indicator">Prossima classe: <span id="indicator-class-name">-</span></div>
 
-  <!-- HUD PRINCIPALE -->
   <div id="hud">
     <div class="hud-header">
       <h1>Comandi e Legenda</h1>
       <div class="hud-header-actions">
-        <a href="/index/" class="theme-toggle-btn" title="Torna alla Home" style="background: rgba(168, 85, 247, 0.2); border-color: rgba(168, 85, 247, 0.5); color: #c084fc;">🏠 Home</a>
+        <!-- LINK HOME CORRETTO CON RELATIVE_URL -->
+        <a href="{{ '/' | relative_url }}" class="theme-toggle-btn" title="Torna alla Home" style="background: rgba(168, 85, 247, 0.2); border-color: rgba(168, 85, 247, 0.5); color: #c084fc;">🏠 Home</a>
         <button class="theme-toggle-btn" id="themeToggle" onclick="toggleTheme()">☀️ Chiaro</button>
       </div>
     </div>
@@ -457,7 +453,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
     </div>
   </div>
 
-  <!-- BOLLA HOVER ANCORATA -->
   <div id="definition-bubble">
     <div class="bubble-header">
       <h3 class="bubble-title" id="b-title">-</h3>
@@ -466,7 +461,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
     <div class="bubble-ipa" id="b-ipa"></div>
     <p class="bubble-def" id="b-def">-</p>
     
-    <!-- Sezione Individui collegati -->
     <div class="bubble-individuals" id="bubble-ind-container" style="display: none;">
       <strong id="ind-section-title">Individui collegati:</strong>
       <ul class="individual-columns" id="b-ind-list"></ul>
@@ -533,7 +527,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
     let currentNeighbors = [];
     let isFlying = false;
 
-    // Gestione Indicatore Centrale Dinamico (Fade In / Fade Out)
     let indicatorTimeout = null;
 
     function showFlightIndicator(text, colorHex) {
@@ -689,7 +682,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
           if (d > maxNodeDist) maxNodeDist = d;
         });
 
-        // SFERA OLOGRAFICA STILE HORIZON
         const holoRadius = Math.max(maxNodeDist + 75, 430);
         horizonHoloGroup = new THREE.Group();
 
@@ -768,7 +760,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
         controls.minDistance = 15;
         controls.maxDistance = maxFitDistance;
 
-        // Mesh sfere ed etichette
         ontology.nodes.forEach(node => {
           const size = node.size || (node.type === 'root' ? 9.5 : (node.type === 'concept' ? 4.2 : 2.8));
           node.size = size;
@@ -803,7 +794,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
           labelSprites.push(sprite);
         });
 
-        // Binari
         ontology.links.forEach(link => {
           const sourceNode = nodeMap[link.source];
           const targetNode = nodeMap[link.target];
@@ -834,7 +824,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
           scene.add(tubeMesh);
         });
 
-        // Inquadratura iniziale & Deep-linking (?nodo=...)
         const urlParams = new URLSearchParams(window.location.search);
         const targetParam = urlParams.get('nodo');
 
@@ -848,7 +837,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
           currentNode = startTarget;
           const initialDest = getOptimalNodeViewPosition(startTarget, new THREE.Vector3(0, 80, 520));
           
-          // Animazione di zoom iniziale dall'esterno sul nodo richiesto dalla scheda
           camera.position.set(0, 300, 1200);
           controls.target.copy(startTarget.position);
 
@@ -918,7 +906,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
         const colHex = CURRENT_REL_COLORS[active.rail.rel] || 0xffffff;
         document.getElementById('target-rel').style.color = '#' + colHex.toString(16).padStart(6, '0');
 
-        // Mostra l'indicatore centrale dinamico con dissolvenza
         showFlightIndicator(targetNameStr, colHex);
       } else {
         document.getElementById('target-name').innerText = "Nessun collegamento";
@@ -1044,9 +1031,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
       updateNeighborTargets();
     }
 
-    // ==========================================
-    // SISTEMA BOLLA ANCORATA & INDIVIDUI
-    // ==========================================
     const bubbleEl = document.getElementById('definition-bubble');
     let activeAnchorNode = null;
     let bubbleLang = 'it';
@@ -1077,7 +1061,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
       document.getElementById('b-ipa').innerText = (node.ipa && node.ipa[bubbleLang]) ? node.ipa[bubbleLang] : "";
       document.getElementById('b-def').innerText = (node.def && node.def[bubbleLang]) ? node.def[bubbleLang] : "Nessuna definizione disponibile.";
 
-      // Ricerca individui collegati a questo concetto tramite relazione instanceOf
       const linkedInstances = [];
       rails.forEach(r => {
         if (r.rel === 'instanceOf' && r.source === node.id) {
@@ -1105,7 +1088,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
       const linkEl = document.getElementById('b-link');
       const linkText = document.getElementById('b-link-text');
       
-      // MOSTRA IL PULSANTE DELLA SCHEDA SOLO SE NON È UN INDIVIDUO E HA UN URL VALIDO
       if (node.type !== 'instance' && node.urls && node.urls[bubbleLang] && node.urls[bubbleLang] !== "#") {
         linkEl.href = node.urls[bubbleLang];
         linkEl.style.display = 'inline-flex';
@@ -1161,7 +1143,6 @@ title: Grafo 3D - Palazzo Balbi Senarega
       isCursorOverSphere = false;
     }
 
-    // Raycaster Mouse
     const raycaster = new THREE.Raycaster();
     const mouseVec = new THREE.Vector2();
 
